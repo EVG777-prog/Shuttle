@@ -1,0 +1,136 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 32rem;
+}.drop-down-about-us-pSw {
+  box-sizing: border-box;
+  padding: 2.254rem 2.255rem 9.4rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.drop-down-about-us-pSw .clarity-window-close-line-vVy {
+  margin: 0rem 0rem 4.246rem 25.245rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .auto-group-e2vo-Dzs {
+  margin-bottom: 1.8rem;
+  width: 11.1rem;
+  height: 3.4rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .auto-group-e2vo-Dzs .course-xSf {
+  width: 10.6853rem;
+  height: 3.4rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.drop-down-about-us-pSw .auto-group-e2vo-Dzs .course-xSf .courses-VhV {
+  margin-right: 0.6166rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .auto-group-e2vo-Dzs .course-xSf .vector-cn7 {
+  margin-top: 0.3308rem;
+  width: 1.1687rem;
+  height: 0.6433rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .auto-group-e2vo-Dzs .eva-arrow-ios-downward-fill-A2w {
+  width: 2rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 9.1rem;
+  top: 0.7rem;
+  overflow: hidden;
+}
+.drop-down-about-us-pSw .about-us-H7Z {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .our-teachers-13Z {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .blog-8ts {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .certificates-5ZD {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .conversation-club-pmh {
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.drop-down-about-us-pSw .contact-ZDV {
+  margin-left: 0.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #020b2f;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

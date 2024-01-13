@@ -1,0 +1,192 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.group-8-ECB {
+  box-sizing: border-box;
+  padding: 4.2rem 5.9rem 4.2rem 8.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #bebebe;
+}
+.group-8-ECB .auto-group-wdb1-wMV {
+  margin: 2.6rem 4.6rem 0rem 0rem;
+  width: 33.6rem;
+  height: 14.6rem;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP {
+  margin-right: 4.8rem;
+  width: 23rem;
+  height: 39rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .auto-group-5egk-Hpf {
+  margin-bottom: 1.8rem;
+  width: 100%;
+  height: 7.4rem;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .rectangle-29-ZGP {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .rectangle-30-6GK {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .rectangle-31-pi7 {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .rectangle-32-Mi3 {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rjf9-PUP .rectangle-33-GKD {
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP {
+  margin-right: 2.8rem;
+  width: 23rem;
+  height: 39rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .auto-group-ptrz-mQP {
+  margin-bottom: 1.8rem;
+  box-sizing: border-box;
+  padding: 1.3rem 0.4rem 1.2rem 2.5rem;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .rectangle-35-2LK {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .rectangle-36-a6w {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .rectangle-37-hhM {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .rectangle-38-Fis {
+  margin-bottom: 0.7rem;
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-umwr-kEP .rectangle-39-BsR {
+  width: 100%;
+  height: 5.4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rdij-vq1 {
+  margin: 2.1rem 4.9rem 0rem 0rem;
+  width: 32.9rem;
+  height: 7.1rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.group-8-ECB .auto-group-rdij-vq1 .rectangle-40-1rT {
+  width: 30.4rem;
+  height: 7.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #d9d9d9;
+}
+.group-8-ECB .auto-group-rdij-vq1 .item--Ldq {
+  width: 32.4rem;
+  height: 3.9rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 1.4rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.group-8-ECB .arrow-1-nkj {
+  margin-top: 0.5rem;
+  width: 0.1rem;
+  height: 27.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}

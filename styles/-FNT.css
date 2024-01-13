@@ -1,0 +1,2157 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.item-02-xzo {
+  width: 100%;
+  height: 102.4rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.item-02-xzo .item--6bD {
+  width: 95.2rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 9.2rem;
+  top: 65.6rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #91730a;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-02-xzo .item--WYT {
+  width: 31.6rem;
+  height: 3.4rem;
+  position: absolute;
+  left: 9.2rem;
+  top: 60.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #91730a;
+  font-family: Allan, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .head-html-Zmd {
+  width: 46.6rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 13.6rem;
+  top: 50rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .open-sans-Ecs {
+  width: 37.3rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 13.6rem;
+  top: 46.1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .google-web-fonts-typekit-google--uyu {
+  width: 96.2rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 9.7rem;
+  top: 37.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-02-xzo .item-02-d2j {
+  width: 28.7rem;
+  height: 40.4rem;
+  position: absolute;
+  left: 118.2rem;
+  top: 0;
+  font-size: 28.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #f4c54d;
+  font-family: Amatica SC, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .item--LSw {
+  width: 48.5rem;
+  height: 44.8rem;
+  position: absolute;
+  left: 56.7rem;
+  top: 8.4rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Amatic SC, 'Source Sans Pro';
+}
+.item-02-xzo .item--NuR {
+  width: 6.9rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 13.6rem;
+  top: 54.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .arial-calibri-trebuchet-etc--3kf {
+  width: 96.1rem;
+  height: 10.1rem;
+  position: absolute;
+  left: 8.7rem;
+  top: 74.3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-02-xzo .linked-path-group-N4B {
+  width: 47.8748rem;
+  height: 40.888rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh {
+  margin: 25.185rem 0.045rem 0rem 0rem;
+  width: 13.6123rem;
+  height: 15.7031rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--yZm {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 13.7031rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--zDy {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 13.1275rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--e3d {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 12.5837rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--tTm {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 11.9086rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--9Ph {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 11.2695rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--Csm {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 10.6626rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--sDD {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 9.9875rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--8Q3 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 9.4119rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--C91 {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 8.8367rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--4S7 {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 8.0663rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--j2T {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 7.3954rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--b4f {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 6.3396rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--f4X {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 5.5063rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--X6j {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 4.8672rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--aao {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 4.0967rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--eKm {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.3303rem;
+  top: 3.458rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--JfD {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.783rem;
+  top: 2.8186rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--mHu {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.7934rem;
+  top: 1.7945rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--2Uj {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4531rem;
+  top: 1.1517rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--V7R {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.9197rem;
+  top: 0.6079rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-rd8f-VPh .copy--MQX {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.4449rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd {
+  margin: 20.867rem 0.023rem 14.219rem 0rem;
+  width: 12.258rem;
+  height: calc(100% - 35.0861rem);
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--WRq {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 3.8019rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--aAo {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.8676rem;
+  top: 3.5339rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--paw {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.6404rem;
+  top: 3.2652rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--5mm {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4873rem;
+  top: 3.0198rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--jrK {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.1441rem;
+  top: 2.773rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--znF {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.9607rem;
+  top: 2.4747rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--e67 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 5.0602rem;
+  top: 2.162rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--5SK {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.1215rem;
+  top: 1.7366rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--L7M {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.3596rem;
+  top: 1.3941rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--yg7 {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.2482rem;
+  top: 1.1035rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--Ro1 {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.0646rem;
+  top: 0.8052rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--fhM {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.1432rem;
+  top: 0.5143rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-pet5-Dhd .copy--ivX {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.8416rem;
+  top: 0.2232rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R {
+  margin: 19.122rem 0.061rem 18.237rem 0rem;
+  width: 5.5711rem;
+  height: calc(100% - 37.3591rem);
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--HMM {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 1.5289rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--YHH {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.8469rem;
+  top: 1.2827rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--C6w {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.483rem;
+  top: 1.0585rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--Fb1 {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.2557rem;
+  top: 0.7906rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--uQf {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.1441rem;
+  top: 0.5rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--Zk7 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.0119rem;
+  top: 0.2312rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-ny7y-B3R .copy--RGX {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.6711rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu {
+  margin-bottom: 20.0491rem;
+  width: 16.3047rem;
+  height: 20.8389rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--N5H {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 16.39rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--owH {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.6568rem;
+  top: 16.1441rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--ctj {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.4734rem;
+  top: 15.8458rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--fs1 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4592rem;
+  top: 15.5698rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--KRm {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.6342rem;
+  top: 15.1076rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--yWK {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.8723rem;
+  top: 14.7644rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--2jV {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 5.7609rem;
+  top: 14.4737rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--5hm {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.0467rem;
+  top: 13.8032rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--Xpf {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.6141rem;
+  top: 13.0011rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--b3q {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.9803rem;
+  top: 12.1985rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--SaF {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.7311rem;
+  top: 10.9943rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--W4K {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.1551rem;
+  top: 10.3519rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--Aef {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.5266rem;
+  top: 9.6704rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--Rab {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.9449rem;
+  top: 8.9076rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--5v3 {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.3654rem;
+  top: 8.185rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--Lb5 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.834rem;
+  top: 7.4227rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--zQj {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.2521rem;
+  top: 6.6608rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--qgF {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.6762rem;
+  top: 6.0183rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--gB5 {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.0461rem;
+  top: 5.2959rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--8Hy {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.5092rem;
+  top: 4.4134rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--BX9 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 12.0285rem;
+  top: 3.6501rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--de3 {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 12.6729rem;
+  top: 2.3269rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--Gwu {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 13.2873rem;
+  top: 1.4436rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--vmZ {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 13.7541rem;
+  top: 0.6412rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--zWX {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 14.2174rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--T9D {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 14.7848rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-N4B .auto-group-wxoh-Tyu .copy--7Uf {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 15.1047rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .blue-ellipses-BDd {
+  width: 19.6rem;
+  height: 56.9rem;
+  position: absolute;
+  left: 9.6rem;
+  top: 0;
+}
+.item-02-xzo .blue-ellipses-BDd .ellipse-12-WWo {
+  margin: 0rem 0rem 29.3rem 2.6rem;
+  width: 17rem;
+  height: 17rem;
+  background-color: rgba(173, 183, 212, 0.6800000072);
+  border-radius: 8.5rem;
+}
+.item-02-xzo .blue-ellipses-BDd .ellipse-9-d5d {
+  margin-bottom: 2rem;
+  width: 2.3rem;
+  height: 2.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-02-xzo .blue-ellipses-BDd .ellipse-10-LVq {
+  margin-bottom: 2rem;
+  width: 2.3rem;
+  height: 2.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-02-xzo .blue-ellipses-BDd .ellipse-11-5iK {
+  width: 2.3rem;
+  height: 2.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item-02-xzo .linked-path-group-2tT {
+  width: 47.8748rem;
+  height: 40.888rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP {
+  margin: 25.185rem 0.045rem 0rem 0rem;
+  width: 13.6123rem;
+  height: 15.7031rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--4aF {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 13.7031rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--JzP {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.1301rem;
+  top: 13.1275rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--AWo {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.5967rem;
+  top: 12.5837rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--RSj {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.1842rem;
+  top: 11.9086rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--5nB {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.7723rem;
+  top: 11.2695rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--wZV {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.365rem;
+  top: 10.6626rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--QT5 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.9525rem;
+  top: 9.9875rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--TgF {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.55rem;
+  top: 9.4119rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--81h {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.0119rem;
+  top: 8.8367rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--Zco {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.6531rem;
+  top: 8.0663rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--2FV {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 5.3721rem;
+  top: 7.3954rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--5jZ {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.1746rem;
+  top: 6.3396rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--8xj {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.0773rem;
+  top: 5.5063rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--CBu {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.6656rem;
+  top: 4.8672rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--2Rq {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.3066rem;
+  top: 4.0967rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--sxF {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.0303rem;
+  top: 3.458rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--X1D {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.483rem;
+  top: 2.8186rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--aEP {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.4934rem;
+  top: 1.7945rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--RVu {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.1531rem;
+  top: 1.1517rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--TxP {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.6197rem;
+  top: 0.6079rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-enyj-ZtP .copy--XBZ {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 12.1449rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 {
+  margin: 20.867rem 0.023rem 14.219rem 0rem;
+  width: 12.258rem;
+  height: calc(100% - 35.0861rem);
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--sej {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 3.8019rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--8af {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.8676rem;
+  top: 3.5339rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--yrB {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.6404rem;
+  top: 3.2652rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--dvj {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4873rem;
+  top: 3.0198rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--hfh {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.1441rem;
+  top: 2.773rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--A3V {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.9607rem;
+  top: 2.4747rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--2Lb {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 5.0602rem;
+  top: 2.162rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--tdh {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.1215rem;
+  top: 1.7366rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--x7m {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.3596rem;
+  top: 1.3941rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--cTD {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.2482rem;
+  top: 1.1035rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--Tyd {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.0646rem;
+  top: 0.8052rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--LGj {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.1432rem;
+  top: 0.5143rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-hbk1-BG7 .copy--PVu {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.8416rem;
+  top: 0.2232rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh {
+  margin: 19.122rem 0.061rem 18.237rem 0rem;
+  width: 5.5711rem;
+  height: calc(100% - 37.3591rem);
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--xBd {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 1.5289rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--1fh {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.8469rem;
+  top: 1.2827rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--4dy {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.483rem;
+  top: 1.0585rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--X1m {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.2557rem;
+  top: 0.7906rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--P3y {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.1441rem;
+  top: 0.5rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--3eK {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.0119rem;
+  top: 0.2312rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-zz9m-qsh .copy--WH1 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.6711rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K {
+  margin-bottom: 20.0491rem;
+  width: 16.3047rem;
+  height: 20.8389rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--rVH {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 11.19rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--WJw {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.6568rem;
+  top: 10.9441rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--MqM {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.4734rem;
+  top: 10.6458rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--Dcf {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 2.4592rem;
+  top: 10.3698rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--gWF {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.6342rem;
+  top: 9.9076rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--vvP {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 4.8723rem;
+  top: 9.5644rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--z9Z {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 5.7609rem;
+  top: 9.2737rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--T39 {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.0467rem;
+  top: 8.6032rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--JpT {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.6141rem;
+  top: 7.8011rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--y9u {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 6.9803rem;
+  top: 6.9985rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--zao {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 7.7311rem;
+  top: 5.7943rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--pZq {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.1551rem;
+  top: 5.1519rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--HCX {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.5266rem;
+  top: 4.4704rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--Y8T {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 8.9449rem;
+  top: 3.7076rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--bMd {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.3654rem;
+  top: 2.985rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--rYT {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 9.834rem;
+  top: 2.2227rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--X8o {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.2521rem;
+  top: 1.4608rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--a75 {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 10.6762rem;
+  top: 0.8183rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--2Dy {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.0461rem;
+  top: 0.0959rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--Ubm {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 11.5092rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--L8B {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 12.0285rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--Udh {
+  width: 1.3rem;
+  height: 2rem;
+  position: absolute;
+  left: 12.6729rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--8TM {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 13.2873rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--bbq {
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  left: 13.7541rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--Te3 {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 14.2174rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--8VH {
+  width: 0.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 14.7848rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .linked-path-group-2tT .auto-group-cjt9-N4K .copy--o5d {
+  width: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 15.1047rem;
+  top: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Actor, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-02-xzo .union-rZh {
+  width: 128.4rem;
+  height: 57.2rem;
+  position: absolute;
+  left: 8.4rem;
+  top: 37.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}

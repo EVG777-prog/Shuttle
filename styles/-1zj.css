@@ -1,0 +1,106 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.item-04-YwD {
+  width: 100%;
+  height: 102.4rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.item-04-YwD .item--tkB {
+  width: 79.6rem;
+  height: 12.6rem;
+  position: absolute;
+  left: 58.1rem;
+  top: 49.3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-04-YwD .item--w87 {
+  width: 57.4rem;
+  height: 53.8rem;
+  position: absolute;
+  left: 58.1rem;
+  top: 9.4rem;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Amatic SC, 'Source Sans Pro';
+}
+.item-04-YwD .item-04-wnK {
+  width: 28.7rem;
+  height: 40.4rem;
+  position: absolute;
+  left: 119.1rem;
+  top: 0.9rem;
+  font-size: 28.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #f4c54d;
+  font-family: Amatica SC, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-04-YwD .vivaldi--fTR {
+  width: 48.8rem;
+  height: 17.7rem;
+  position: absolute;
+  left: 5.9rem;
+  top: 70.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  letter-spacing: 0.441rem;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-04-YwD .stars-PXq {
+  width: 106.3rem;
+  height: 69.9rem;
+  position: absolute;
+  left: 5.9rem;
+  top: 30.7rem;
+  display: flex;
+  align-items: flex-end;
+}
+.item-04-YwD .stars-PXq .star-2-KwH {
+  margin-right: 33rem;
+  width: 9.5rem;
+  height: 10.1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-04-YwD .stars-PXq .star-3-gG3 {
+  margin: 0rem 32.6rem 6.8rem 0rem;
+  width: 6rem;
+  height: 5.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item-04-YwD .stars-PXq .star-4-13R {
+  margin-bottom: 44.4rem;
+  width: 25.2rem;
+  height: 25.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}

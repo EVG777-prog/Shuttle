@@ -1,0 +1,256 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 100rem;
+}.item--fnB {
+  box-sizing: border-box;
+  padding: 4.5rem 4.5rem 10rem 8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.item--fnB .item--X3h {
+  margin: 0rem 0rem 1.5rem 83.5rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fnB .item--bpF {
+  margin: 0rem 0rem 4rem 0.3rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000000;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-ug5y-Sps {
+  margin: 0rem 3.5rem 1.5rem 0rem;
+  width: calc(100% - 3.5rem);
+  height: 8.7rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-ug5y-Sps .item--xYK {
+  margin-right: 3rem;
+  width: 40.5rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-ug5y-Sps .item--xYK .item--Hab {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fnB .auto-group-ug5y-Sps .item--xYK .auto-group-rnuh-o39 {
+  box-sizing: border-box;
+  padding: 1.7rem 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #5a808a;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #dee6e8;
+  border-radius: 0.5rem;
+}
+.item--fnB .auto-group-ug5y-Sps .item--fb9 {
+  width: 40.5rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-ug5y-Sps .item--fb9 .item--zNX {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fnB .auto-group-ug5y-Sps .item--fb9 .auto-group-liyt-hnj {
+  box-sizing: border-box;
+  padding: 1.7rem 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #5a808a;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #dee6e8;
+  border-radius: 0.5rem;
+}
+.item--fnB .auto-group-bu1q-PQf {
+  margin: 0rem 3.5rem 1.5rem 0rem;
+  width: calc(100% - 3.5rem);
+  height: 8.7rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-bu1q-PQf .item--iSw {
+  margin-right: 3rem;
+  width: 40.5rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-bu1q-PQf .item--iSw .item--2iX {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fnB .auto-group-bu1q-PQf .item--iSw .auto-group-zccj-X9V {
+  box-sizing: border-box;
+  padding: 1.7rem 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #5a808a;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #dee6e8;
+  border-radius: 0.5rem;
+}
+.item--fnB .auto-group-bu1q-PQf .item--1aT {
+  width: 40.5rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-bu1q-PQf .item--1aT .item--MuD {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fnB .auto-group-bu1q-PQf .item--1aT .auto-group-ytrf-Uyq {
+  box-sizing: border-box;
+  padding: 1.7rem 2.5rem 1.7rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #dee6e8;
+  border-radius: 0.5rem;
+}
+.item--fnB .auto-group-bu1q-PQf .item--1aT .auto-group-ytrf-Uyq .item--Qcb {
+  margin-right: 22.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fnB .auto-group-bu1q-PQf .item--1aT .auto-group-ytrf-Uyq .vector-KjZ {
+  margin-top: 0.5rem;
+  width: 1.7rem;
+  height: 0.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fnB .item--qxo {
+  margin: 0rem 3.5rem 3rem 0rem;
+  width: 84rem;
+  flex-shrink: 0;
+}
+.item--fnB .item--qxo .item--x1q {
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fnB .item--qxo .auto-group-qymd-Shh {
+  box-sizing: border-box;
+  padding: 1.7rem 2.5rem 1.7rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #dee6e8;
+  border-radius: 0.5rem;
+}
+.item--fnB .item--qxo .auto-group-qymd-Shh .item--aou {
+  margin-right: 60.6rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fnB .item--qxo .auto-group-qymd-Shh .vector-HCX {
+  margin-bottom: 0.1rem;
+  width: 1.7rem;
+  height: 0.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fnB .item--CaP {
+  margin: 0rem 22.6rem 3rem 0rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fnB .item--mG7 {
+  margin-right: 3.5rem;
+  width: 84rem;
+  height: 6rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Helvetica Neue, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9bab;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}

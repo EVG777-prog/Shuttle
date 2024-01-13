@@ -1,0 +1,274 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.item--NS7 {
+  box-sizing: border-box;
+  padding-right: 8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+}
+.item--NS7 .auto-group-ovrb-5rK {
+  margin-top: 24.2rem;
+  width: 8rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item--NS7 .auto-group-ovrb-5rK .margin-cbM {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000000;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--NS7 .auto-group-ovrb-5rK .rectangle-385-wNj {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #5a808a;
+  flex-shrink: 0;
+}
+.item--NS7 .auto-group-nwth-GR1 {
+  width: 128rem;
+  height: 102.4rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-372-Niw {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-373-X63 {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-374-4bm {
+  width: 8rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 21.8rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-375-brb {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 32.8rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-376-kUb {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 43.7rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-377-6YT {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 54.6rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-378-FAT {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 65.5rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-379-C5h {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 76.4rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-380-Xtf {
+  width: 8rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 87.3rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-381-H79 {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 98.3rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-382-2aX {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 109.2rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-383-nJo {
+  width: 7.9rem;
+  height: 102.4rem;
+  position: absolute;
+  left: 120.1rem;
+  top: 0;
+  background-color: #eeedeb;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-384-8Nf {
+  width: 127.8rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 8.8rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-386-531 {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 7.9rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-387-DQ7 {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 18.8rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-388-ZD5 {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 29.8rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-389-W8K {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 40.7rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-390-3tw {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 51.6rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-391-CG3 {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 62.5rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-392-8vP {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 73.4rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-393-t8s {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 84.3rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-394-caf {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 95.3rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-395-9qV {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 106.2rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .rectangle-396-to5 {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 117.1rem;
+  top: 46.6rem;
+  background-color: #5a808a;
+}
+.item--NS7 .auto-group-nwth-GR1 .columns-Ec3 {
+  width: 18.8rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 53rem;
+  top: 2.5rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000000;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--NS7 .auto-group-nwth-GR1 .gutter-MRm {
+  width: 7.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 7.9rem;
+  top: 43.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000000;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+}

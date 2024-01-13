@@ -1,0 +1,43 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 26rem;
+}.button-for-first-pop-up--21R {
+  width: 100%;
+  height: 3.6rem;
+  cursor: pointer;
+}
+.button-for-first-pop-up--21R .button-french-yBZ {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.button-for-first-pop-up--21R .button-french-yBZ .frame-4-8q9 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4000000272;
+  color: #ffffff;
+  font-family: Exo, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d59ab;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,83 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.item-09-pZR {
+  width: 100%;
+  height: 102.4rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.item-09-pZR .item--ySK {
+  width: 109.3rem;
+  height: 26.9rem;
+  position: absolute;
+  left: 61.8rem;
+  top: 8rem;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 1.3999999762;
+  color: #000000;
+  font-family: Amatic SC, 'Source Sans Pro';
+}
+.item-09-pZR .item-09-AFu {
+  width: 28.7rem;
+  height: 40.4rem;
+  position: absolute;
+  left: 117.7rem;
+  top: 0;
+  font-size: 28.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #f4c54d;
+  font-family: Amatica SC, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item-09-pZR .item-8--Tko {
+  width: 70.9rem;
+  height: 17.7rem;
+  position: absolute;
+  left: 38.2rem;
+  top: 48.7rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Abel, 'Source Sans Pro';
+}
+.item-09-pZR .item-8--Tko .item-8--Tko-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.0499999523;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-09-pZR .item-8--Tko .item-8--Tko-sub-1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3999999364;
+  color: #000000;
+  font-family: Allan, 'Source Sans Pro';
+}
+.item-09-pZR .greenred-ellipses-v5y {
+  width: 159.6rem;
+  height: 104.7rem;
+  position: absolute;
+  left: 0;
+  top: 3.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
