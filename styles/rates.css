@@ -138,6 +138,7 @@
   border: none; /* Убирает границу */
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none; /* Убирает подчеркивание текста */
 }
 
 .rates .pay-button {
