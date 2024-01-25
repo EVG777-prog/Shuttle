@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             <li>${rate.details[2]}</li>
             <li>${rate.details[3]}</li>
           </ul>
-        <button class="rate-signup">Записатися</button>
+        <button class="rate-signup apply-button">Записатися</button>
         `;
 
     ratesList.appendChild(rateElement);
