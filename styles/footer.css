@@ -136,6 +136,7 @@
 
 .footer-section .apply-button {
   background-color: #ff9bab;
+  border: none;
 }
 
 .footer-section .apply-button:hover {
