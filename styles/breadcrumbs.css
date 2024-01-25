@@ -1,0 +1,39 @@
+.breadcrumb-nav {
+  text-align: left;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: black;
+  margin: 5rem 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  margin-right: 1rem; /* Расстояние между элементами, необходимо уточнить */
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb-item--active {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Добавляем стрелку для всех элементов кроме последнего */
+.breadcrumb-item:not(:last-child)::after {
+  content: "›";
+  font-size: 1.8rem;
+  margin-left: 1rem; /* Расстояние до стрелки, необходимо уточнить */
+  color: black; /* Цвет стрелки, необходимо уточнить */
+}

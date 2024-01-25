@@ -1,0 +1,80 @@
+.why-us {
+  background-color: #ffffff; /* Цвет фона для секции */
+  margin: 10rem 0;
+}
+
+.why-us-title {
+  text-align: center; /* Выравнивание заголовка по центру */
+  border-bottom: 3px solid #5a808a;
+  margin-bottom: 6rem;
+  padding-bottom: 4rem;
+  font-family: "Exo", sans-serif;
+  line-height: 5rem;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
+  grid-gap: 5%; /* Отступы между элементами сетки */
+}
+
+.why-us-item {
+  display: flex;
+  align-items: left; /* Выравнивание элементов по центру */
+  position: relative;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  margin-left: 3rem;
+}
+
+.why-us-icon {
+  background-color: #d9ae4f; /* Цвет фона иконки */
+  border-radius: 50%; /* Скругление краев иконки */
+  width: 7rem; /* Размеры иконки */
+  height: 7rem;
+  position: relative; /* Позиционирование для вложенного текста */
+  margin-right: 1rem; /* Отступ между иконкой и текстом */
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  z-index: 1; /* Устанавливаем z-index выше, чем у иконки */
+}
+
+.icon-text {
+  position: absolute;
+  top: 50%;
+  left: -35%;
+  transform: rotate(-90deg);
+  font-weight: bold;
+  color: #5a808a;
+  font-family: "Exo", sans-serif;
+  line-height: 5rem;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.why-us-text {
+  text-align: left;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  z-index: 2; /* Устанавливаем z-index выше, чем у иконки */
+}
+
+@media (max-width: 768px) {
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr); /* Три колонки одинаковой ширины */
+    grid-gap: 5%; /* Отступы между элементами сетки */
+  }
+}
+
+@media (max-width: 480px) {
+  .why-us-grid {
+    grid-template-columns: repeat(1, 1fr); /* Три колонки одинаковой ширины */
+    grid-gap: 5%; /* Отступы между элементами сетки */
+    margin-bottom: 15rem;
+  }
+}

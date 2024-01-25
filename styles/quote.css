@@ -1,0 +1,71 @@
+.quote {
+  background-color: #edecea; /* Цвет фона для секции отзывов */
+  padding: 2rem; /* Паддинг вокруг секции */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.quote .quote-box {
+  margin: 0 auto; /* Центрирование отзывов */
+  max-width: 100rem; /* Максимальная ширина блока отзыва */
+}
+
+.quote blockquote {
+  color: black; /* Цвет текста отзыва */
+  margin: 2rem 0; /* Отступы сверху и снизу отзыва */
+}
+
+.quote .quotation-mark {
+  position: relative;
+  margin-bottom: 3rem;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  line-height: 18rem;
+  font-size: 20rem;
+  color: #ff9bab;
+  margin-bottom: -10rem;
+}
+
+.quote .text-quote {
+  position: relative;
+  margin-bottom: 3rem;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  font-weight: 400;
+  line-height: 1.2575;
+  font-size: 3.5rem;
+}
+.quote .text-quote::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem; /* Положение линии под текстом цитаты */
+  left: 50%; /* Центрирование линии */
+  transform: translateX(-50%);
+  width: 50%; /* Ширина линии */
+  height: 3px; /* Толщина линии */
+  background: #ff9bab; /* Цвет линии */
+}
+
+.quote cite {
+  font-style: normal;
+  display: block; /* Блочное отображение для имени автора */
+  margin-top: 1rem; /* Отступ сверху для имени автора */
+  font-size: 3rem;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .quote {
+    padding-top: 0rem;
+  }
+
+  .quote .text-quote {
+    font-size: 2rem;
+  }
+
+  .quote cite {
+    font-size: 2rem;
+  }
+
+  .quote .quotation-mark {
+    font-size: 10rem;
+  }
+}

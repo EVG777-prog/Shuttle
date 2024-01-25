@@ -1,187 +1,284 @@
-
-html {
-	font-size:62.5%;
-}
-* {
-	margin: 0;
-	padding: 0;
-}
-ul, li {
-	list-style: none;
-}
-input {
-	border: none;
-}
-body {
-  width: 144rem;
-}.item--e8K {
+header {
+  position: fixed; /* Фиксированное позиционирование хедера */
+  top: 0; /* Прикрепить хедер к верху окна просмотра */
+  left: 0; /* Прикрепить хедер к левому краю окна просмотра */
+  z-index: 1000; /* Убедитесь, что хедер находится над всеми другими элементами */
   box-sizing: border-box;
-  padding: 0.1rem 8rem 0.1rem 6.6rem;
   width: 100%;
+  height: 11rem;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   background-color: #edecea;
 }
-.item--e8K .item--uK9 {
-  margin-right: 9rem;
+header .logo {
   width: 20rem;
   height: 11.8rem;
   position: relative;
   background-size: 100% 169.492%;
   background-position: -0rem -2.9rem;
-  background-image: url('../assets/-iaw.png');
+  background-image: url("../assets/logo.png");
   flex-shrink: 0;
 }
-.item--e8K .item--9jH {
-  margin: 0.5rem 3.3rem 0rem 0rem;
+
+header .main-navigation {
+  /* margin-left: 6rem; */
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .menu-item {
+  margin: 0 1rem;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
+  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
-.item--e8K .item--F1d {
-  margin: 0.5rem 3.7rem 0rem 0rem;
+
+header .main-navigation li {
+  margin-right: 2rem;
+}
+
+header .main-navigation a {
+  text-decoration: none;
+  color: #000;
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2575;
-  color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
 }
-.item--e8K .item--MaT {
-  margin: 0.5rem 8.1rem 0rem 0rem;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2575;
-  color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+header .main-navigation a:hover {
+  text-decoration: underline;
 }
-.item--e8K .auto-group-vtym-4zf {
-  margin: 0.2rem 5.5rem 0rem 0rem;
+
+header .contact-info {
+  /* margin: 0 6rem; */
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.item--e8K .auto-group-vtym-4zf .item-38-097-000-79-96-QHq {
+header .contact-info .phone-number {
   margin: 0rem 0.6rem 0.8rem 0rem;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.3999999364;
+  line-height: 1.4;
   color: #1b1b1b;
-  font-family: Inter, 'Source Sans Pro';
+  font-family: Inter, "Source Sans Pro";
   white-space: nowrap;
   display: flex;
   align-items: baseline;
   flex-shrink: 0;
 }
-.item--e8K .auto-group-vtym-4zf .item-38-097-000-79-96-QHq .item-38-097-000-79-96-QHq-sub-0 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.3999999364;
-  color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
-}
-.item--e8K .auto-group-vtym-4zf .item-38-097-000-79-96-QHq .item-38-097-000-79-96-QHq-sub-1 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.3999999364;
-  color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
-}
-.item--e8K .auto-group-vtym-4zf .auto-group-qpcx-NXV {
-  width: 13.7rem;
-  height: 3rem;
-  position: relative;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.item--e8K .item--Vc7 {
-  margin-right: 1.8rem;
-  box-sizing: border-box;
-  padding: 1.4rem 1rem 1.3rem 1.2rem;
-  height: 5rem;
+header .contact__social {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+}
+
+header .contact__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+header .contact__icon img {
+  width: 100%; /* Задайте ширину изображения равной ширине контейнера */
+  height: 100%; /* Задайте высоту изображения равной высоте контейнера */
+}
+
+header .icon-instagram:hover img {
+  content: url("/assets/icons/icon_instagram_hover.png");
+}
+header .icon-telegram:hover img {
+  content: url("/assets/icons/icon_telegram_hover.png");
+}
+header .icon-email:hover img {
+  content: url("/assets/icons/icon_email_hover.png");
+}
+
+header .buttons {
+  max-width: 42rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  border: solid 0.1rem #000000;
-  border-radius: 0.5rem;
-  flex-shrink: 0;
+  gap: 1rem;
 }
-.item--e8K .item--Vc7 .auto-group-31p1-y1V {
-  margin-right: 0.3891rem;
-  width: 14.8109rem;
-  height: 100%;
-  position: relative;
-  flex-shrink: 0;
-}
-.item--e8K .item--Vc7 .auto-group-31p1-y1V .item--ufq {
-  width: 13.8rem;
-  height: 2.3rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2575;
-  color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.item--e8K .item--Vc7 .auto-group-31p1-y1V .vector-nzX {
-  width: 0.5rem;
-  height: 0.8rem;
-  position: absolute;
-  left: 13.8109rem;
-  top: 0.9rem;
-  background-color: #ff5f00;
-}
-.item--e8K .item--Vc7 .auto-group-31p1-y1V .vector-KjZ {
-  width: 0.8rem;
-  height: 1rem;
-  position: absolute;
-  left: 13.2109rem;
-  top: 0.8rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.item--e8K .item--Vc7 .auto-group-31p1-y1V .vector-emq {
-  width: 0.8rem;
-  height: 1rem;
-  position: absolute;
-  left: 14.0109rem;
-  top: 0.8rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.item--e8K .item--Vc7 .vector-zKu {
-  margin-top: 0.3rem;
-  width: 2.6rem;
-  height: 0.8rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.item--e8K .item--tw5 {
-  margin-bottom: 0.1rem;
+
+header .button {
   width: 20rem;
   height: 5rem;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, 'Source Sans Pro';
+  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff9bab;
   border-radius: 0.5rem;
   flex-shrink: 0;
+  cursor: pointer;
+  text-decoration: none; /* Убирает подчеркивание текста */
+}
+
+header .apply-button {
+  background-color: #ff9bab;
+}
+
+header .apply-button:hover {
+  background-color: #f4667d;
+}
+
+header .pay-button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid black;
+}
+
+header .pay-button:hover {
+  background-color: #dee6e8;
+}
+
+header .icon-mastercard,
+header .icon-visa {
+  width: 2.5rem; /* или другой размер, который подходит */
+  height: auto;
+  vertical-align: middle;
+}
+
+header .icon-mastercard {
+  margin-left: 1rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Стили для burger menu */
+.burger-menu {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+  z-index: 2000;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu .burger-bar {
+  width: 4rem;
+  height: 3px;
+  background-color: #5a808a;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.burger-menu .burger-bar::before,
+.burger-menu .burger-bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #5a808a;
+  transition: all 0.3s ease;
+}
+
+.burger-menu .burger-bar::before {
+  transform: translateY(-1.2rem);
+}
+
+.burger-menu .burger-bar::after {
+  transform: translateY(1.2rem);
+}
+
+/* Стили для fullscreen menu */
+.fullscreen-menu {
+  display: none; /* Initially hidden */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #edecea; /* Semi-transparent black */
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11rem;
+}
+
+.fullscreen-menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.fullscreen-menu ul li {
+  padding: 20px;
+}
+
+.fullscreen-menu ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+/* Стили для активного состояния (крестик) */
+.burger-menu.open .burger-bar {
+  background: transparent; /* Скрыть центральную полосу */
+}
+
+.burger-menu.open {
+  margin-right: 1.8rem;
+}
+
+.burger-menu.open .burger-bar::before,
+.burger-menu.open .burger-bar::after {
+  top: 0; /* Обе полосы в центр */
+}
+
+.burger-menu.open .burger-bar::before {
+  transform: rotate(45deg);
+}
+
+.burger-menu.open .burger-bar::after {
+  transform: rotate(-45deg);
+}
+
+.fullscreen-menu.show {
+  display: flex; /* Show the menu */
+}
+
+/* Стили для адаптивности */
+@media screen and (max-width: 1100px) {
+  header .main-navigation {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header .buttons {
+    flex-direction: column;
+  }
+
+  header .button {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  header .main-navigation {
+    display: none;
+  }
+
+  header .buttons {
+    display: none;
+  }
 }

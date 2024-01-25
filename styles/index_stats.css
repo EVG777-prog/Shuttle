@@ -1,0 +1,34 @@
+.stats {
+  background-color: #dee6e8; /* Цвет фона раздела */
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5%; /* Вертикальные отступы для раздела */
+  gap: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: "Exo", sans-serif;
+  color: #ff9bab; /* Цвет чисел статистики */
+  font-size: 6rem; /* Размер шрифта чисел */
+  font-weight: 700; /* Жирное начертание */
+  display: block; /* Чтобы числа были на отдельной строке */
+}
+
+.stat-description {
+  font-family: Helvetica Neue, "Source Sans Pro";
+  color: black; /* Цвет описания статистики */
+  font-size: 2rem; /* Размер шрифта описания */
+  margin-top: 5px; /* Отступ между числом и описанием */
+}
+
+/* Стили для планшетов и мобильных устройств */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column; /* Элементы идут в колонку */
+    align-items: center; /* Выравнивание элементов по центру */
+  }
+}

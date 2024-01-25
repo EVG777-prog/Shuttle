@@ -1,0 +1,61 @@
+.faq-section {
+  background-color: transparent;
+  padding: 2rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 700; /* Жирное начертание */
+}
+
+.faq-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-item {
+  background-color: transparent;
+  margin-bottom: 2rem; /* Отступ между элементами */
+  overflow: hidden; /* Обрезать содержимое вне блока */
+}
+
+.faq-question {
+  height: 5rem;
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 1rem; /* Внутренний отступ */
+  cursor: pointer; /* Курсор в виде руки для интерактивности */
+  background-color: #bdccd080; /* Фон вопроса */
+  font-family: Helvetica Neue, "Source Sans Pro";
+  font-size: 2rem; /* Размер шрифта чисел */
+  font-weight: 700; /* Жирное начертание */
+}
+
+.faq-icon {
+  margin-right: 2rem; /* Отступ иконки от текста */
+  margin-left: 3rem;
+  font-size: 3rem; /* Размер иконки */
+  width: 2rem;
+  text-align: center;
+  color: #5a808a;
+}
+
+.faq-answer {
+  background-color: transparent; /*Фон ответа*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; /*Плавная анимация*/
+  font-family: Helvetica Neue, "Source Sans Pro";
+  color: black; /* Цвет описания статистики */
+  font-size: 2rem; /* Размер шрифта описания */
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px; /* Максимальная высота, достаточная для отображения любого контента */
+}

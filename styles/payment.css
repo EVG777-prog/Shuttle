@@ -1,0 +1,71 @@
+.payment-section {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.payment-section h2 {
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 5rem;
+}
+
+.payment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.payment-card {
+  border: 3px solid #5a808a;
+  border-radius: 5px;
+  background-color: #edecea;
+  padding: 2rem;
+  width: calc(30% - 2rem);
+  margin-bottom: 2rem;
+  font-family: "Exo", sans-serif;
+  cursor: pointer;
+}
+
+.payment-card:hover {
+  background-color: #dee6e8;
+}
+
+.payment-card p {
+  margin: 1rem 0;
+}
+
+.payment-card .name {
+  font-size: 2rem;
+}
+.payment-card .price {
+  font-weight: 700;
+  font-size: 5rem;
+}
+.payment-card .duration {
+  font-size: 1.5rem;
+}
+.payment-card .quantity {
+  font-size: 2rem;
+}
+
+.discount-note {
+  border-top: 3px solid #5a808a;
+  font-size: 1rem;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  font-size: 3.5rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .payment-cards {
+    flex-direction: column;
+  }
+
+  .payment-card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}

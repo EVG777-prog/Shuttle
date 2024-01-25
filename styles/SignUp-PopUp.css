@@ -1,0 +1,131 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  overflow: auto; /* Enable scroll if needed */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal-content {
+  background-color: white;
+  padding: 7rem;
+  border: none;
+  width: 80%; /* You can adjust width */
+  max-width: 100rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  float: right;
+}
+
+.modal .close-button:hover,
+.modal .close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .modal-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.modal .modal-form .form-row {
+  margin-bottom: 2rem;
+}
+
+.modal .modal-form .form-row label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal .modal-form .form-row input[type="text"],
+.modal .modal-form .form-row input[type="tel"],
+.modal .modal-form .form-row select {
+  width: 100%;
+  padding: 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #dee6e8;
+}
+
+.modal .modal-form .form-row select {
+  -webkit-appearance: none; /* Убираем стандартный стиль в iOS */
+  -moz-appearance: none; /* Убираем стандартный стиль в Firefox */
+  appearance: none; /* Убираем стандартный стиль в остальных браузерах */
+  background-image: url("../assets/icons/icon-select-open.png");
+  background-position: right 2rem top 50%; /* Позиционирование иконки */
+  background-repeat: no-repeat;
+  background-size: 2rem; /* Размер иконки */
+}
+
+.modal .modal-form .form-row option {
+  padding: 5rem;
+  background: #f8f8f8; /* Фон каждого элемента option */
+  height: 5rem;
+}
+
+.modal .text-warning {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+}
+
+.modal .submit-button {
+  width: 100%;
+  height: 6rem;
+  padding: 0.8rem;
+  background-color: #ff9bab;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.modal .submit-button:hover {
+  background-color: #f4667d;
+}
+
+.modal .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.modal .flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .modal .flex-row {
+    flex-direction: column;
+  }
+  .modal .modal-content {
+    padding: 2rem;
+    width: 100%; /* You can adjust width */
+  }
+}

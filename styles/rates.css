@@ -1,0 +1,167 @@
+/* Устанавливаем box-sizing для всех элементов */
+.rates {
+  margin: 5rem auto;
+  /* padding: 2rem; */
+  text-align: center;
+  font-family: Helvetica Neue, "Source Sans Pro";
+}
+
+.rates-title {
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.rates-description {
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.rates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  gap: 5rem; /* Расстояние между карточками */
+  margin: 0 auto;
+  max-width: 100%; /* Максимальная ширина контейнера для центровки */
+  box-sizing: border-box; /* Учитываем padding и border в ширине элемента */
+}
+
+.rate-card {
+  background: #edecea;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 100%;
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 1rem; /* Отступ снизу для всех карточек */
+}
+
+.rate-header {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  margin: 1rem 0;
+  background: #7eb5c3;
+  border-radius: 5px;
+  padding: 5rem 1rem;
+}
+
+.rate-title {
+  font-size: 2rem;
+  margin-bottom: 0.3125rem;
+  font-weight: 400;
+}
+
+.rate-price {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.rate-duration {
+  font-size: 1.5rem;
+}
+
+.rate-details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.rate-details li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left; /* Выравнивает текст элементов списка по левому краю */
+  font-size: 2rem;
+}
+
+.rates ul.rate-details {
+  list-style-type: none; /* Убираем стандартные маркеры */
+  padding: 0; /* Убираем отступы, чтобы позиционирование иконок было точным */
+  margin-bottom: 3rem;
+}
+
+.rates ul.rate-details li::before {
+  content: url("../assets/list-marker.png"); /* Указываем путь к вашей иконке */
+  display: inline-block; /* Делаем псевдоэлемент строчно-блочным элементом */
+  width: 2rem; /* Задаем ширину иконки */
+  height: 2rem; /* Задаем высоту иконки */
+  margin-right: 3rem; /* Добавляем отступ справа для текста */
+  vertical-align: middle; /* Выравнивание иконки по центру относительно текста */
+}
+
+/* Пример пути к иконке: url('/images/list-icon.png') */
+
+.rate-signup {
+  background: #d9ae4f;
+  color: black;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 80%;
+  height: 5rem;
+  box-sizing: border-box;
+}
+
+.rate-signup:hover {
+  background: #cd961c;
+}
+
+/* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
+@media (max-width: 37.5rem) {
+  .rate-card {
+    max-width: 100%;
+  }
+}
+
+.payment {
+  margin-top: 5rem;
+}
+
+.rates .button {
+  width: 30rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: none; /* Убирает границу */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rates .pay-button {
+  background-color: #ff9bab;
+  color: #000;
+}
+
+.rates .pay-button:hover {
+  background-color: #f4667d;
+}
+
+.rates .icon-mastercard {
+  width: 2.5rem; /* или другой размер, который подходит */
+  height: auto;
+  vertical-align: middle;
+}
+
+.rates .icon-visa {
+  width: 4rem; /* или другой размер, который подходит */
+  height: auto;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.rates .icon-mastercard {
+  margin-left: 1rem;
+}

@@ -1,0 +1,72 @@
+.about {
+  background-color: white; /* Цвет фона секции */
+  padding: 5%; /* Отступы внутри секции */
+}
+
+.about .container {
+  margin: 0 auto; /* Центрирование контейнера */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+}
+
+.about .container-image {
+  margin-top: -5rem;
+  width: 40%;
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: flex-start; /* Выравнивание по горизонтали */
+}
+
+.about .container-image img {
+  width: 100%;
+  height: auto; /* Высота будет автоматически пропорциональна ширине */
+  display: block; /* чтобы избежать нежелательных отступов вокруг изображения */
+}
+
+.about .container-text {
+  max-width: 60%;
+}
+
+.about h2 {
+  color: black; /* Цвет заголовка */
+  font-family: "Exo", sans-serif; /* Шрифт заголовка, если он подключен */
+  margin-bottom: 1rem; /* Отступ после заголовка */
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+  border-bottom: 3px solid #5a808a;
+}
+
+.about .intro-text {
+  color: black; /* Цвет текста */
+  font-family: Helvetica Neue, "Source Sans Pro";
+  font-size: 2rem;
+  margin-bottom: 1.5rem; /* Отступ между абзацами */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .about .container {
+    flex-direction: column; /* Элементы располагаются в колонку */
+    align-items: center; /* Выравнивание элементов по центру */
+  }
+
+  .about .container-image,
+  .about .container-text {
+    max-width: 100%;
+    width: 100%; /* Ширина элементов составляет 100% контейнера */
+    margin-top: 2rem; /* Добавление небольшого отступа сверху */
+  }
+
+  .about h2 {
+    font-size: 3rem; /* Уменьшение размера шрифта заголовка */
+  }
+
+  .about .intro-text {
+    font-size: 2rem; /* Уменьшение размера шрифта текста */
+  }
+}
