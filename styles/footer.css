@@ -106,13 +106,13 @@
 }
 
 .icon-instagram:hover img {
-  content: url("/assets/icons/icon_instagram_hover.png");
+  content: url("./assets/icons/icon_instagram_hover.png");
 }
 .icon-telegram:hover img {
-  content: url("/assets/icons/icon_telegram_hover.png");
+  content: url("./assets/icons/icon_telegram_hover.png");
 }
 .icon-email:hover img {
-  content: url("/assets/icons/icon_email_hover.png");
+  content: url("./assets/icons/icon_email_hover.png");
 }
 
 .footer-section .button {
