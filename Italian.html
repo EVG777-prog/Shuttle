@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <title>Італійська</title>
@@ -42,16 +42,28 @@
   </head>
   <body>
     <header class="header">
-      <a href="/">
+      <!-- Existing header content -->
+
+      <!-- Fullscreen Menu -->
+      <div class="fullscreen-menu">
+        <ul>
+          <li><a href="./">Головна</a></li>
+          <li><a href="index.html#language-selection">Обрати мову</a></li>
+          <li><a href="About.html">Про школу</a></li>
+          <li><a href="Payment.html">Внести оплату</a></li>
+        </ul>
+      </div>
+
+      <a href="./">
         <div class="logo"></div>
       </a>
       <nav>
         <ul class="main-navigation">
-          <li class="menu-item"><a href="/">Головна</a></li>
+          <li class="menu-item"><a href="./">Головна</a></li>
           <li class="menu-item">
-            <a href="/index.html#language-selection">Мови</a>
+            <a href="index.html#language-selection">Мови</a>
           </li>
-          <li class="menu-item"><a href="/About.html">Про школу</a></li>
+          <li class="menu-item"><a href="About.html">Про школу</a></li>
         </ul>
       </nav>
       <div class="contact-info">
@@ -87,7 +99,8 @@
         </div>
       </div>
       <div class="buttons">
-        <a href="/Payment.html" class="button pay-button">
+        <!-- Ссылка стилизованная под кнопку "Внести оплату" -->
+        <a href="Payment.html" class="button pay-button">
           Внести оплату
           <img
             class="icon-mastercard"
@@ -96,7 +109,88 @@
           <img class="icon-visa" src="./assets/icons/icon_visa.png" />
         </a>
         <!-- Ссылка стилизованная под кнопку "Залишити заявку" -->
-        <a href="/SignUp.html" class="button apply-button">Залишити заявку</a>
+        <button id="apply-button" class="button apply-button">
+          Залишити заявку
+        </button>
+      </div>
+
+      <div class="burger-menu" aria-label="Open Menu">
+        <div class="burger-bar"></div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <img
+            class="close-button"
+            src="./assets/icons/icon-close.png"
+            alt="Close icon"
+          />
+          <h2 class="modal-title">Записатися на пробний урок</h2>
+          <form class="modal-form">
+            <div class="flex-row">
+              <div class="flex-column">
+                <div class="form-row">
+                  <label for="name">Ваше ім'я*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Владислава"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="telegram">Нік в телеграм через @*</label>
+                  <input
+                    type="text"
+                    id="telegram"
+                    name="telegram"
+                    placeholder="@vlada.vlada"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex-column">
+                <div class="form-row">
+                  <label for="phone">Номер телефону*</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+38 (063) 234 5678"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="language">Мова*</label>
+                  <select id="language" name="language">
+                    <option value="french">Французька</option>
+                    <option value="spanish">Іспанська</option>
+                    <option value="italian">Італійська</option>
+                    <option value="german">Німецька</option>
+                    <option value="english">Англійська</option>
+                    <!-- Other language options -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="experience">Ви раніше вивчали мову?*</label>
+              <select id="experience" name="experience">
+                <option value="no">Ні, потрібно з нуля</option>
+                <option value="yes">Так, був досвід</option>
+                <!-- Other experience options -->
+              </select>
+            </div>
+            <p class="text-warning">
+              *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
+              Публічної оферти
+            </p>
+            <button type="submit" class="submit-button">Залишити заявку</button>
+          </form>
+        </div>
       </div>
     </header>
 
@@ -104,7 +198,7 @@
       <section class="breadcrumbs">
         <nav class="breadcrumb-nav">
           <ul class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="/">Головна</a></li>
+            <li class="breadcrumb-item"><a href="./">Головна</a></li>
             <li class="breadcrumb-item breadcrumb-item--active">Італійська</li>
           </ul>
         </nav>
@@ -141,7 +235,7 @@
           <button class="trial-button">Записатися на пробний урок</button>
         </div>
         <div class="promo-img">
-          <img src="../assets/promo-italian.png" alt="Італія" />
+          <img src="./assets/promo-italian.png" alt="Італія" />
         </div>
       </section>
 
@@ -183,7 +277,7 @@
       <section class="speaking-club">
         <div class="speaker-image-container">
           <img
-            src="../assets/speaking_club_italian.png"
+            src="./assets/speaking_club_italian.png"
             alt="Speaker club"
             class="speaker-image"
           />
@@ -213,37 +307,37 @@
     <footer class="footer">
       <div class="footer-content">
         <section class="footer-section logo-section">
-          <a href="/">
+          <a href="./">
             <!-- Предполагаемое место для логотипа -->
             <img
-              src="../assets/logo_footer.png"
+              src="./assets/logo_footer.png"
               alt="Shuttle School Logo"
               class="logo"
             />
           </a>
           <div class="payment-methods">
             <img
-              src="../assets/icons/icon_ApplePay.png"
+              src="./assets/icons/icon_ApplePay.png"
               alt="Apple Pay"
               class="payment-icon"
             />
             <img
-              src="../assets/icons/icon_GooglePay.png"
+              src="./assets/icons/icon_GooglePay.png"
               alt="Google Pay"
               class="payment-icon"
             />
             <img
-              src="../assets/icons/icon_MonoPay.png"
+              src="./assets/icons/icon_MonoPay.png"
               alt="Mono Pay"
               class="payment-icon"
             />
             <img
-              src="../assets/icons/icon_Mastercard_black.png"
+              src="./assets/icons/icon_Mastercard_black.png"
               alt="Mastercard"
               class="payment-icon"
             />
             <img
-              src="../assets/icons/icon_Visa_black.png"
+              src="./assets/icons/icon_Visa_black.png"
               alt="Visa"
               class="payment-icon"
             />
@@ -255,11 +349,11 @@
           <hr class="footer-divider" />
           <!-- Линия разделения -->
           <ul class="languages-list">
-            <li class="language"><a href="/French.html">Французька</a></li>
-            <li class="language"><a href="/Spanish.html">Іспанська</a></li>
-            <li class="language"><a href="/Italian.html">Італійська</a></li>
-            <li class="language"><a href="/German.html">Німецька</a></li>
-            <li class="language"><a href="/English.html">Англійська</a></li>
+            <li class="language"><a href="./French.html">Французька</a></li>
+            <li class="language"><a href="./Spanish.html">Іспанська</a></li>
+            <li class="language"><a href="./Italian.html">Італійська</a></li>
+            <li class="language"><a href="./German.html">Німецька</a></li>
+            <li class="language"><a href="./English.html">Англійська</a></li>
           </ul>
         </section>
 
@@ -306,10 +400,12 @@
 
         <section class="footer-section buttons">
           <!-- Ссылка стилизованная под кнопку "Залишити заявку" -->
-          <a href="/SignUp.html" class="button apply-button">Залишити заявку</a>
+          <a href="./SignUp.html" class="button apply-button"
+            >Залишити заявку</a
+          >
 
           <!-- Ссылка стилизованная под кнопку "Внести оплату" -->
-          <a href="/Pay.html" class="button pay-button">
+          <a href="./Pay.html" class="button pay-button">
             Внести оплату
             <img
               class="icon-mastercard"
@@ -317,6 +413,17 @@
             />
             <img class="icon-visa" src="./assets/icons/icon_visa.png" />
           </a>
+        </section>
+        <section class="footer-section main-navigation">
+          <nav>
+            <ul class="main-navigation">
+              <li class="menu-item"><a href="./">Головна</a></li>
+              <li class="menu-item">
+                <a href="./index.html#language-selection">Мови</a>
+              </li>
+              <li class="menu-item"><a href="./About.html">Про школу</a></li>
+            </ul>
+          </nav>
         </section>
       </div>
 
