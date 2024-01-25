@@ -127,6 +127,7 @@ header .button {
 
 header .apply-button {
   background-color: #ff9bab;
+  border: none;
 }
 
 header .apply-button:hover {
