@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shuttle School</title>
-    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="styles/common.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Helvetica+Neue%3A400"
@@ -27,40 +27,55 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/SignUp-PopUp.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/index_hero.css" />
-    <link rel="stylesheet" href="./styles/quote.css" />
-    <link rel="stylesheet" href="./styles/index_about.css" />
-    <link rel="stylesheet" href="./styles/index_stats.css" />
-    <link rel="stylesheet" href="./styles/index_why-us.css" />
-    <link rel="stylesheet" href="./styles/index_lang.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/SignUp-PopUp.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/index_hero.css" />
+    <link rel="stylesheet" href="styles/quote.css" />
+    <link rel="stylesheet" href="styles/index_about.css" />
+    <link rel="stylesheet" href="styles/index_stats.css" />
+    <link rel="stylesheet" href="styles/index_why-us.css" />
+    <link rel="stylesheet" href="styles/index_lang.css" />
   </head>
   <body>
     <header class="header">
       <!-- Existing header content -->
 
       <!-- Fullscreen Menu -->
-      <div class="fullscreen-menu">
+      <nav class="fullscreen-menu">
         <ul>
-          <li><a href="./">Головна</a></li>
-          <li><a href="index.html#language-selection">Обрати мову</a></li>
-          <li><a href="About.html">Про школу</a></li>
-          <li><a href="Payment.html">Внести оплату</a></li>
+          <li class="menu-item">
+            <a href="/#section-about">Про школу</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#language-selection">Мови</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/reviews.html">Відгуки</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/faq.html">FAQ</a>
+          </li>
         </ul>
-      </div>
+      </nav>
 
-      <a href="./">
+      <a href="/">
         <div class="logo"></div>
       </a>
       <nav>
         <ul class="main-navigation">
-          <li class="menu-item"><a href="./">Головна</a></li>
           <li class="menu-item">
-            <a href="index.html#language-selection">Мови</a>
+            <a href="/#section-about">Про школу</a>
           </li>
-          <li class="menu-item"><a href="About.html">Про школу</a></li>
+          <li class="menu-item">
+            <a href="/#language-selection">Мови</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/reviews.html">Відгуки</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/faq.html">FAQ</a>
+          </li>
         </ul>
       </nav>
       <div class="contact-info">
@@ -72,7 +87,7 @@
             class="contact__icon icon-instagram"
           >
             <img
-              src="./assets/icons/icon_instagram_normal.png"
+              src="assets/icons/icon_instagram_normal.png"
               alt="Instagram icon"
             />
           </a>
@@ -82,7 +97,7 @@
             class="contact__icon icon-telegram"
           >
             <img
-              src="./assets/icons/icon_telegram_normal.png"
+              src="assets/icons/icon_telegram_normal.png"
               alt="Telegram icon"
             />
           </a>
@@ -91,19 +106,16 @@
             target="_blank"
             class="contact__icon icon-email"
           >
-            <img src="./assets/icons/icon_email_normal.png" alt="Email icon" />
+            <img src="assets/icons/icon_email_normal.png" alt="Email icon" />
           </a>
         </div>
       </div>
       <div class="buttons">
         <!-- Ссылка стилизованная под кнопку "Внести оплату" -->
-        <a href="Payment.html" class="button pay-button">
+        <a href="pages/payment.html" class="button pay-button">
           Внести оплату
-          <img
-            class="icon-mastercard"
-            src="./assets/icons/icon_mastercard.png"
-          />
-          <img class="icon-visa" src="./assets/icons/icon_visa.png" />
+          <img class="icon-mastercard" src="assets/icons/icon_mastercard.png" />
+          <img class="icon-visa" src="assets/icons/icon_visa.png" />
         </a>
         <!-- Ссылка стилизованная под кнопку "Залишити заявку" -->
         <button id="apply-button" class="button apply-button">
@@ -120,7 +132,7 @@
         <div class="modal-content">
           <img
             class="close-button"
-            src="./assets/icons/icon-close.png"
+            src="assets/icons/icon-close.png"
             alt="Close icon"
           />
           <h2 class="modal-title">Записатися на пробний урок</h2>
@@ -193,7 +205,7 @@
 
     <main>
       <section class="hero">
-        <img src="./assets/main-background.png" alt="Main" />
+        <img src="assets/main-background.png" alt="Main" />
         <div class="hero-content">
           <h1>Shuttle school - це онлайн школа іноземних мов</h1>
           <p>Відкрий світ мовного розвитку разом з нами!</p>
@@ -217,11 +229,11 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="section-about" class="about">
         <div class="container">
           <div class="container-image">
             <img
-              src="./assets/girl_with_books.png"
+              src="assets/girl_with_books.png"
               alt="Дівчина з книгами"
               class="girl-image"
             />
@@ -316,11 +328,11 @@
       <section id="language-selection" class="language-selection">
         <h2 class="language-selection-title">Обрати мову</h2>
         <ul class="languages-grid">
-          <li class="language"><a href="./French.html">Французька</a></li>
-          <li class="language"><a href="./Spanish.html">Іспанська</a></li>
-          <li class="language"><a href="./Italian.html">Італійська</a></li>
-          <li class="language"><a href="./German.html">Німецька</a></li>
-          <li class="language"><a href="./English.html">Англійська</a></li>
+          <li class="language"><a href="pages/french.html">Французька</a></li>
+          <li class="language"><a href="pages/spanish.html">Іспанська</a></li>
+          <li class="language"><a href="pages/italian.html">Італійська</a></li>
+          <li class="language"><a href="pages/german.html">Німецька</a></li>
+          <li class="language"><a href="pages/english.html">Англійська</a></li>
           <li class="language disabled"><a href="f">Згодом...</a></li>
         </ul>
       </section>
@@ -329,37 +341,37 @@
     <footer class="footer">
       <div class="footer-content">
         <section class="footer-section logo-section">
-          <a href="./">
+          <a href="/">
             <!-- Предполагаемое место для логотипа -->
             <img
-              src="./assets/logo_footer.png"
+              src="assets/logo_footer.png"
               alt="Shuttle School Logo"
               class="logo"
             />
           </a>
           <div class="payment-methods">
             <img
-              src="./assets/icons/icon_ApplePay.png"
+              src="assets/icons/icon_ApplePay.png"
               alt="Apple Pay"
               class="payment-icon"
             />
             <img
-              src="./assets/icons/icon_GooglePay.png"
+              src="assets/icons/icon_GooglePay.png"
               alt="Google Pay"
               class="payment-icon"
             />
             <img
-              src="./assets/icons/icon_MonoPay.png"
+              src="assets/icons/icon_MonoPay.png"
               alt="Mono Pay"
               class="payment-icon"
             />
             <img
-              src="./assets/icons/icon_Mastercard_black.png"
+              src="assets/icons/icon_Mastercard_black.png"
               alt="Mastercard"
               class="payment-icon"
             />
             <img
-              src="./assets/icons/icon_Visa_black.png"
+              src="assets/icons/icon_Visa_black.png"
               alt="Visa"
               class="payment-icon"
             />
@@ -371,11 +383,15 @@
           <hr class="footer-divider" />
           <!-- Линия разделения -->
           <ul class="languages-list">
-            <li class="language"><a href="./French.html">Французька</a></li>
-            <li class="language"><a href="./Spanish.html">Іспанська</a></li>
-            <li class="language"><a href="./Italian.html">Італійська</a></li>
-            <li class="language"><a href="./German.html">Німецька</a></li>
-            <li class="language"><a href="./English.html">Англійська</a></li>
+            <li class="language"><a href="pages/french.html">Французька</a></li>
+            <li class="language"><a href="pages/spanish.html">Іспанська</a></li>
+            <li class="language">
+              <a href="pages/italian.html">Італійська</a>
+            </li>
+            <li class="language"><a href="pages/german.html">Німецька</a></li>
+            <li class="language">
+              <a href="pages/english.html">Англійська</a>
+            </li>
           </ul>
         </section>
 
@@ -392,7 +408,7 @@
                 class="contact__icon icon-instagram"
               >
                 <img
-                  src="./assets/icons/icon_instagram_normal.png"
+                  src="assets/icons/icon_instagram_normal.png"
                   alt="Instagram icon"
                 />
               </a>
@@ -402,7 +418,7 @@
                 class="contact__icon icon-telegram"
               >
                 <img
-                  src="./assets/icons/icon_telegram_normal.png"
+                  src="assets/icons/icon_telegram_normal.png"
                   alt="Telegram icon"
                 />
               </a>
@@ -412,7 +428,7 @@
                 class="contact__icon icon-email"
               >
                 <img
-                  src="./assets/icons/icon_email_normal.png"
+                  src="assets/icons/icon_email_normal.png"
                   alt="Email icon"
                 />
               </a>
@@ -425,23 +441,30 @@
           <button class="button apply-button">Залишити заявку</button>
 
           <!-- Ссылка стилизованная под кнопку "Внести оплату" -->
-          <a href="./Payment.html" class="button pay-button">
+          <a href="pages/payment.html" class="button pay-button">
             Внести оплату
             <img
               class="icon-mastercard"
-              src="./assets/icons/icon_mastercard.png"
+              src="assets/icons/icon_mastercard.png"
             />
-            <img class="icon-visa" src="./assets/icons/icon_visa.png" />
+            <img class="icon-visa" src="assets/icons/icon_visa.png" />
           </a>
         </section>
         <section class="footer-section main-navigation">
           <nav>
             <ul class="main-navigation">
-              <li class="menu-item"><a href="./">Головна</a></li>
               <li class="menu-item">
-                <a href="./index.html#language-selection">Мови</a>
+                <a href="/#section-about">Про школу</a>
               </li>
-              <li class="menu-item"><a href="./About.html">Про школу</a></li>
+              <li class="menu-item">
+                <a href="/#language-selection">Мови</a>
+              </li>
+              <li class="menu-item">
+                <a href="pages/reviews.html">Відгуки</a>
+              </li>
+              <li class="menu-item">
+                <a href="pages/faq.html">FAQ</a>
+              </li>
             </ul>
           </nav>
         </section>
@@ -459,7 +482,7 @@
         </section>
       </div>
     </footer>
-    <script src="index.js"></script>
-    <script src="SignUp.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/sign-up.js"></script>
   </body>
 </html>
