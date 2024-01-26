@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(41rem, 1fr));
   gap: 3rem;
-  max-height: 115rem; /* Высота для двух строк карточек */
+  max-height: 116rem; /* Высота для двух строк карточек */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Плавный переход высоты */
 }

@@ -59,9 +59,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       teachersList.appendChild(teacherElement);
     });
 
+    console.log(teachersList);
+
     function updateButtonVisibility() {
       const totalHeight = teachersContainer.scrollHeight;
       const visibleHeight = teachersContainer.clientHeight;
+
+      console.log(totalHeight);
+      console.log(visibleHeight);
+
       showMoreButton.style.display =
         totalHeight > visibleHeight ? "block" : "none";
     }
