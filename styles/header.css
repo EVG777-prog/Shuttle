@@ -89,13 +89,13 @@ header .contact__icon img {
 }
 
 header .icon-instagram:hover img {
-  content: url("/assets/icons/icon_instagram_hover.png");
+  content: url("../assets/icons/icon_instagram_hover.png");
 }
 header .icon-telegram:hover img {
-  content: url("/assets/icons/icon_telegram_hover.png");
+  content: url("../assets/icons/icon_telegram_hover.png");
 }
 header .icon-email:hover img {
-  content: url("/assets/icons/icon_email_hover.png");
+  content: url("../assets/icons/icon_email_hover.png");
 }
 
 header .buttons {
