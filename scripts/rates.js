@@ -1,68 +1,26 @@
-const rates = [
-  {
-    name: "Тариф “Двічі”",
-    price: 2900,
-    duration: "(2 рази на тиждень по 90 хв.)",
-    details: [
-      "Ціна за 8 уроків",
-      "Міні-група до 6 осіб",
-      "Розмовний клуб",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-  {
-    name: "Тариф “Тричі”",
-    price: 3600,
-    duration: "(3 рази на тиждень по 90 хв.)",
-    details: [
-      "Ціна за 12 уроків",
-      "Міні-група до 6 осіб",
-      "Розмовний клуб",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-  {
-    name: "Тариф “Підлітки”",
-    price: 1600,
-    duration: "(2 рази на тиждень по 45 хв.)",
-    details: [
-      "Ціна за 8 уроків",
-      "Міні-група до 6 осіб",
-      "Вік від 10 до 15 років",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-  {
-    name: "Тариф “Лише ти”",
-    price: 7000,
-    duration: "(2 рази на тиждень по 90 хв.)",
-    details: [
-      "Ціна за 8 уроків",
-      "Індивідуальні уроки",
-      "Розмовний клуб",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-  {
-    name: "Тариф “Удвох”",
-    price: 9000,
-    duration: "(2 рази на тиждень по 90 хв.)",
-    details: [
-      "Ціна за 8 уроків за двох людей",
-      "Група - 2 людини",
-      "Розмовний клуб",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-  {
-    name: "Тариф “Дитячий”",
-    price: 3500,
-    duration: "(2 рази на тиждень по 45 хв.)",
-    details: [
-      "Ціна за 8 уроків",
-      "Індивідуальні уроки",
-      "Вік від 6 до 15 років",
-      "При оплаті 3-х пакетів знижка 10%",
-    ],
-  },
-];
+document.addEventListener("DOMContentLoaded", (event) => {
+  // заполнение тарифов
+  const ratesList = document.querySelector(".rates-container");
+
+  rates.forEach((rate) => {
+    const rateElement = document.createElement("div");
+    rateElement.classList.add("rate-card");
+
+    rateElement.innerHTML = `
+          <div class="rate-header">
+            <h3 class="rate-title">${rate.name}</h3>
+            <p class="rate-price">${rate.price} грн.</p>
+            <p class="rate-duration">${rate.duration}</p>
+          </div>
+          <ul class="rate-details">
+            <li>${rate.details[0]}</li>
+            <li>${rate.details[1]}</li>
+            <li>${rate.details[2]}</li>
+            <li>${rate.details[3]}</li>
+          </ul>
+        <button class="rate-signup apply-button">Записатися</button>
+        `;
+
+    ratesList.appendChild(rateElement);
+  });
+});

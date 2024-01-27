@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var burger = document.querySelector(".burger-menu");
-  var menu = document.querySelector(".fullscreen-menu");
+  const burger = document.querySelector(".burger-menu");
+  const menu = document.querySelector(".fullscreen-menu");
 
   burger.addEventListener("click", function () {
     burger.classList.toggle("open");
