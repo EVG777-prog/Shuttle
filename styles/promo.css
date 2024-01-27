@@ -35,6 +35,7 @@
 }
 
 .promo .trial-button {
+  box-sizing: border-box;
   background-color: #ff9bab;
   color: black;
   font-family: "Helvetica Neue", sans-serif;
