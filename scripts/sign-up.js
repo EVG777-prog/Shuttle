@@ -26,4 +26,38 @@ document.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = "none";
     }
   };
+
+  // Получаем все кастомные селекты
+  var customSelects = document.querySelectorAll(".custom-select");
+
+  customSelects.forEach(function (customSelect) {
+    var selectedValue = customSelect.querySelector(".selected-value");
+    var valueList = customSelect.querySelector(".value-list");
+    var hiddenInput = customSelect.querySelector("input[type=hidden]"); // Предполагается, что у каждого селекта есть свой скрытый input
+
+    // Обработчик клика по выбранному значению
+    selectedValue.addEventListener("click", function () {
+      valueList.classList.toggle("hidden");
+    });
+
+    // Обработчик клика по элементу списка
+    valueList.addEventListener("click", function (e) {
+      if (e.target.tagName.toLowerCase() === "li") {
+        selectedValue.textContent = e.target.textContent;
+        selectedValue.dataset.value = e.target.dataset.value;
+        hiddenInput.value = e.target.dataset.value; // Обновляем значение скрытого input
+        valueList.classList.add("hidden");
+      }
+    });
+  });
+
+  // Закрытие всех открытых списков при клике вне селектов
+  document.addEventListener("click", function (e) {
+    customSelects.forEach(function (customSelect) {
+      var valueList = customSelect.querySelector(".value-list");
+      if (!customSelect.contains(e.target)) {
+        valueList.classList.add("hidden");
+      }
+    });
+  });
 });

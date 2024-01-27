@@ -2,13 +2,14 @@
   background-color: white;
   text-align: center;
   padding: 0 10%;
-  margin-bottom: 10rem;
+  margin: 10rem 0;
+  padding: 0 5.6%;
 }
 
 .language-selection-title {
   margin-bottom: 1rem;
   font-family: "Exo", sans-serif;
-  font-size: 4rem; /* Размер шрифта чисел */
+  font-size: 3.6rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */
   margin-bottom: 5rem;
 }
@@ -45,7 +46,7 @@
   text-align: center; /* Выравнивание текста по центру */
   font-family: Helvetica Neue, "Source Sans Pro";
   font-weight: 400;
-  font-size: 3.1rem; /* Размер шрифта описания */
+  font-size: 3rem; /* Размер шрифта описания */
 }
 
 .languages-grid li:hover {
@@ -67,7 +68,6 @@
   .language-selection {
     background-color: white;
     text-align: center;
-    padding: 0 5%;
     margin-bottom: 5rem;
   }
 

@@ -1,12 +1,12 @@
 .faq-section {
   background-color: transparent;
-  margin: 5rem 0;
+  margin: 10rem 0;
 }
 
 .faq-section h2 {
   text-align: center;
   margin-bottom: 5rem;
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-family: "Exo", sans-serif;
   font-weight: 700; /* Жирное начертание */
 }
@@ -24,7 +24,7 @@
 }
 
 .faq-question {
-  height: 5rem;
+  height: 8rem;
   display: flex;
   align-items: center; /* Выравнивание по центру по вертикали */
   padding: 1rem; /* Внутренний отступ */
@@ -33,15 +33,16 @@
   font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 2rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */
+  line-height: 2.5rem;
 }
 
 .faq-icon {
-  margin-right: 2rem; /* Отступ иконки от текста */
+  width: 2.4rem; /* или другой подходящий размер */
+  height: auto; /* или другой подходящий размер */
+  margin-right: 3rem; /* отступ от иконки до текста вопроса */
   margin-left: 3rem;
-  font-size: 3rem; /* Размер иконки */
-  width: 2rem;
-  text-align: center;
-  color: #5a808a;
+  vertical-align: middle; /* чтобы иконка была выровнена по центру относительно текста */
+  align-content: center;
 }
 
 .faq-answer {
@@ -51,7 +52,8 @@
   transition: max-height 0.3s ease-in-out; /*Плавная анимация*/
   font-family: Helvetica Neue, "Source Sans Pro";
   color: black; /* Цвет описания статистики */
-  font-size: 2rem; /* Размер шрифта описания */
+  font-size: 1.8rem; /* Размер шрифта описания */
+  line-height: 2.2rem;
   margin-left: 8rem;
   margin-top: 1rem;
 }

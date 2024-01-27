@@ -41,6 +41,7 @@
 }
 
 .modal .modal-title {
+  font-family: "Exo", sans-serif;
   font-size: 3.6rem;
   font-weight: 700;
   text-align: center;
@@ -52,8 +53,9 @@
 }
 
 .modal .modal-form .form-row label {
+  font-family: Helvetica Neue, "Source Sans Pro";
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
@@ -62,9 +64,9 @@
 .modal .modal-form .form-row select {
   width: 100%;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #dee6e8;
 }
 
@@ -78,15 +80,55 @@
   background-size: 2rem; /* Размер иконки */
 }
 
-.modal .modal-form .form-row option {
-  padding: 5rem;
-  background: #f8f8f8; /* Фон каждого элемента option */
-  height: 5rem;
+.custom-select {
+  position: relative;
+  font-family: Helvetica Neue, "Source Sans Pro";
+}
+
+.selected-value {
+  padding: 2rem;
+  font-size: 1.8rem;
+  background-color: #dee6e8;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  background-image: url("../assets/icons/icon-select-open.png");
+  background-position: right 2rem top 50%; /* Позиционирование иконки */
+  background-repeat: no-repeat;
+  background-size: 2rem; /* Размер иконки */
+}
+
+.value-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1000;
+  font-size: 1.8rem;
+  border: 1px solid black;
+}
+
+.value-list.hidden {
+  display: none;
+}
+
+.value-list li {
+  padding: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.value-list li:hover {
+  background-color: #dee6e8;
 }
 
 .modal .text-warning {
   margin: 3rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .modal .submit-button {

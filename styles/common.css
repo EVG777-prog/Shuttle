@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: black;
+  font-family: Helvetica Neue, "Source Sans Pro";
 }
 
 *,
@@ -17,6 +19,10 @@ input {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin-left: auto;
@@ -29,14 +35,7 @@ html {
 }
 
 main {
-  padding-top: 11rem; /* Высота должна быть равна или больше высоты вашего хедера */
-  width: 90%;
+  padding-top: 12rem; /* Высота должна быть равна или больше высоты вашего хедера */
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  main {
-    width: 95%;
-  }
 }

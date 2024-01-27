@@ -2,21 +2,22 @@
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  padding: 0 8rem;
 }
 
 .teachers h2 {
   font-family: "Exo", sans-serif;
   color: black;
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 5rem;
 }
 
 .teachers-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(41rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 3rem;
-  max-height: 116rem; /* Высота для двух строк карточек */
+  max-height: 98rem; /* Высота для двух строк карточек */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Плавный переход высоты */
 }
@@ -40,7 +41,7 @@
 .teacher h3 {
   font-family: "Exo", sans-serif;
   color: #ff9bab;
-  font-size: 3rem;
+  font-size: 2.1rem;
   margin-bottom: 1rem;
 }
 
@@ -48,7 +49,7 @@
   border-top: 1px solid #a3b6ba;
   padding-top: 1rem;
   font-family: Helvetica Neue, "Source Sans Pro";
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: left;
   line-height: 1.5;
 }

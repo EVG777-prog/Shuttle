@@ -1,26 +1,29 @@
 /* Устанавливаем box-sizing для всех элементов */
 .rates {
   margin: 5rem auto;
-  /* padding: 2rem; */
-  text-align: center;
-  font-family: Helvetica Neue, "Source Sans Pro";
+  padding: 0 5.6%;
 }
 
 .rates-title {
-  font-size: 4rem;
+  font-family: "Exo", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
   color: black;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .rates-description {
+  font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 1.5rem;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .rates-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-  gap: 5rem; /* Расстояние между карточками */
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3rem; /* Расстояние между карточками */
   margin: 0 auto;
   max-width: 100%; /* Максимальная ширина контейнера для центровки */
   box-sizing: border-box; /* Учитываем padding и border в ширине элемента */
@@ -34,6 +37,8 @@
   color: black;
   margin: 0 auto;
   margin-bottom: 1rem; /* Отступ снизу для всех карточек */
+  display: flex;
+  flex-direction: column;
 }
 
 .rate-header {
@@ -46,18 +51,18 @@
 }
 
 .rate-title {
-  font-size: 2rem;
-  margin-bottom: 0.3125rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
 .rate-price {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .rate-duration {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .rate-details {
@@ -70,7 +75,7 @@
   margin-bottom: 1rem;
   padding: 1rem;
   text-align: left; /* Выравнивает текст элементов списка по левому краю */
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .rates ul.rate-details {
@@ -82,9 +87,9 @@
 .rates ul.rate-details li::before {
   content: url("../assets/list-marker.png"); /* Указываем путь к вашей иконке */
   display: inline-block; /* Делаем псевдоэлемент строчно-блочным элементом */
-  width: 2rem; /* Задаем ширину иконки */
-  height: 2rem; /* Задаем высоту иконки */
-  margin-right: 3rem; /* Добавляем отступ справа для текста */
+  width: 1.8rem; /* Задаем ширину иконки */
+  height: 1.8rem; /* Задаем высоту иконки */
+  margin-right: 2rem; /* Добавляем отступ справа для текста */
   vertical-align: middle; /* Выравнивание иконки по центру относительно текста */
 }
 
@@ -98,22 +103,16 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  width: 80%;
+  width: 75%;
   height: 5rem;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .rate-signup:hover {
   background: #cd961c;
-}
-
-/* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
-@media (max-width: 37.5rem) {
-  .rate-card {
-    max-width: 100%;
-  }
 }
 
 .payment {
@@ -121,8 +120,8 @@
 }
 
 .rates .button {
-  width: 30rem;
-  height: 5rem;
+  width: 25rem;
+  height: 5.5rem;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.2575;
@@ -165,4 +164,11 @@
 
 .rates .icon-mastercard {
   margin-left: 1rem;
+}
+
+/* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
+@media (max-width: 37.5rem) {
+  .rate-card {
+    max-width: 100%;
+  }
 }

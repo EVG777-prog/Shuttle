@@ -2,7 +2,7 @@
   background-color: #dee6e8; /* Цвет фона раздела */
   display: flex;
   justify-content: space-between;
-  padding: 5rem 5%; /* Вертикальные отступы для раздела */
+  padding: 8rem 5.6%; /* Вертикальные отступы для раздела */
   gap: 3rem;
 }
 
@@ -13,15 +13,17 @@
 .stat-number {
   font-family: "Exo", sans-serif;
   color: #ff9bab; /* Цвет чисел статистики */
-  font-size: 6rem; /* Размер шрифта чисел */
+  font-size: 6.4rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */
+  line-height: 8.5rem;
   display: block; /* Чтобы числа были на отдельной строке */
 }
 
 .stat-description {
   font-family: Helvetica Neue, "Source Sans Pro";
   color: black; /* Цвет описания статистики */
-  font-size: 2rem; /* Размер шрифта описания */
+  font-size: 2.4rem; /* Размер шрифта описания */
+  line-height: 2.9rem;
   margin-top: 5px; /* Отступ между числом и описанием */
 }
 

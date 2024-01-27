@@ -1,7 +1,7 @@
 .quote {
   background-color: #edecea; /* Цвет фона для секции отзывов */
-  padding: 2rem; /* Паддинг вокруг секции */
   text-align: center; /* Выравнивание текста по центру */
+  padding: 3rem 5.6%;
 }
 
 .quote .quote-box {
@@ -16,13 +16,13 @@
 
 .quote .quotation-mark {
   position: relative;
-  margin-bottom: 3rem;
   font-family: "Istok Web", sans-serif;
   font-weight: 400;
   line-height: 18rem;
-  font-size: 20rem;
+  font-size: 13rem;
   color: #ff9bab;
   margin-bottom: -10rem;
+  margin-top: -5rem;
 }
 
 .quote .text-quote {
@@ -30,8 +30,8 @@
   margin-bottom: 3rem;
   font-family: Helvetica Neue, "Source Sans Pro";
   font-weight: 400;
-  line-height: 1.2575;
-  font-size: 3.5rem;
+  line-height: 4.2rem;
+  font-size: 3rem;
 }
 .quote .text-quote::after {
   content: "";
@@ -48,7 +48,7 @@
   font-style: normal;
   display: block; /* Блочное отображение для имени автора */
   margin-top: 1rem; /* Отступ сверху для имени автора */
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 /* Медиа-запросы для адаптивности */

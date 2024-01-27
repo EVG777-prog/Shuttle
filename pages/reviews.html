@@ -34,9 +34,7 @@
     <link rel="stylesheet" href="../styles/sign-up.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/review.css" />
-    <link rel="stylesheet" href="../styles/faq.css" />
-    <link rel="stylesheet" href="../styles/gift-cards.css" />
+    <link rel="stylesheet" href="../styles/reviews.css" />
   </head>
   <body>
     <header class="header">
@@ -60,7 +58,7 @@
         </ul>
       </nav>
 
-      <a href="../">
+      <a href="./">
         <div class="logo"></div>
       </a>
       <nav>
@@ -80,10 +78,12 @@
         </ul>
       </nav>
       <div class="contact-info">
-        <p class="phone-number">+38 (097) 000 79 96</p>
+        <p class="phone-number">
+          <a href="tel:+380970007996">+38 (097) 000 79 96</a>
+        </p>
         <div class="contact__social">
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/shuttle_school_?r=nametag"
             target="_blank"
             class="contact__icon icon-instagram"
           >
@@ -93,7 +93,7 @@
             />
           </a>
           <a
-            href="https://www.Telegram.com"
+            href="https://telegram.me/shuttle_school1"
             target="_blank"
             class="contact__icon icon-telegram"
           >
@@ -175,27 +175,40 @@
                     required
                   />
                 </div>
-                <div class="form-row">
-                  <label for="language">Мова*</label>
-                  <select id="language" name="language">
-                    <option value="french">Французька</option>
-                    <option value="spanish">Іспанська</option>
-                    <option value="italian">Італійська</option>
-                    <option value="german">Німецька</option>
-                    <option value="english">Англійська</option>
+
+                <div class="form-row custom-select">
+                  <label for="selectedLanguage">Мова*</label>
+                  <input
+                    type="hidden"
+                    id="selectedLanguage"
+                    name="language"
+                    value=""
+                  />
+                  <div class="selected-value" data-default="Французька">
+                    Французька
+                  </div>
+                  <ul class="value-list hidden">
+                    <li data-value="french">Французька</li>
+                    <li data-value="spanish">Іспанська</li>
+                    <li data-value="italian">Італійська</li>
+                    <li data-value="german">Німецька</li>
+                    <li data-value="english">Англійська</li>
                     <!-- Other language options -->
-                  </select>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="form-row">
+            <div class="form-row custom-select">
               <label for="experience">Ви раніше вивчали мову?*</label>
-              <select id="experience" name="experience">
-                <option value="no">Ні, потрібно з нуля</option>
-                <option value="yes">Так, був досвід</option>
-                <!-- Other experience options -->
-              </select>
+              <input type="hidden" id="experience" name="experience" value="" />
+              <div class="selected-value" data-default="no">
+                Ні, потрібно з нуля
+              </div>
+              <ul class="value-list hidden">
+                <li data-value="no">Ні, потрібно з нуля</li>
+                <li data-value="yes">Так, був досвід</li>
+              </ul>
             </div>
             <p class="text-warning">
               *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
@@ -392,7 +405,11 @@
           <!-- End review Card -->
           <!-- ... other review cards ... -->
         </div>
-        <a href="https://google.com" class="button google-button">
+        <a
+          href="https://www.google.com/search?sca_esv=601771759&tbm=lcl&q=Shuttle+school+%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD+%D1%88%D0%BA%D0%BE%D0%BB%D0%B0+%D1%96%D0%BD%D0%BE%D0%B7%D0%B5%D0%BC%D0%BD%D0%B8%D1%85+%D0%BC%D0%BE%D0%B2+%D0%9E%D1%82%D0%B7%D1%8B%D0%B2%D1%8B&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDA1NTazMDE3tzQzszAzNDAyMdrAyPiK0Tc4o7SkJCdVoTg5Iz8_R-HCvgt7L-y-sOHCzgt7FS52XNgFFAByFS5OA4rvu7D9wtYLe4CsHRdbFYCMfRc2KVyYd7HpwvaL3Rc2XexexEpd8wCjn7H_uwAAAA&rldimm=10553684779668610242&hl=ru-FR&sa=X&ved=2ahUKEwjUisHOy_uDAxW7TKQEHSKiB2gQ9fQKegQIOxAF&biw=1440&bih=760&dpr=2#lkt=LocalPoiReviews"
+          target="_blank"
+          class="button google-button"
+        >
           Читати більше відгуків
           <img class="icon-google" src="../assets/icons/icon_google.png" />
         </a>
@@ -402,7 +419,7 @@
     <footer class="footer">
       <div class="footer-content">
         <section class="footer-section logo-section">
-          <a href="../">
+          <a href="./">
             <!-- Предполагаемое место для логотипа -->
             <img
               src="../assets/logo_footer.png"
@@ -467,10 +484,12 @@
           <hr class="footer-divider" />
           <!-- Линия разделения -->
           <div class="contact-info">
-            <p class="phone-number">+38 (097) 000 79 96</p>
+            <p class="phone-number">
+              <a href="tel:+380970007996">+38 (097) 000 79 96</a>
+            </p>
             <div class="contact__social">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/shuttle_school_?r=nametag"
                 target="_blank"
                 class="contact__icon icon-instagram"
               >
@@ -480,7 +499,7 @@
                 />
               </a>
               <a
-                href="https://www.Telegram.com"
+                href="https://telegram.me/shuttle_school1"
                 target="_blank"
                 class="contact__icon icon-telegram"
               >
@@ -539,11 +558,16 @@
 
       <div class="footer-bottom">
         <section class="legal-section">
-          <a href="link-to-public-offer" class="legal-link">Публічна оферта</a>
-          <a href="link-to-public-offer" class="legal-link"
+          <a href="../assets/pdf/rules.pdf" target="_blank" class="legal-link"
+            >Публічна оферта</a
+          >
+          <a
+            href="../assets/pdf/offer-teachers.pdf"
+            target="_blank"
+            class="legal-link"
             >Публічна оферта (викладачі)</a
           >
-          <a href="link-to-teaching-rules" class="legal-link"
+          <a href="../assets/pdf/rules.pdf" target="_blank" class="legal-link"
             >Правила проведення занять</a
           >
         </section>
