@@ -40,6 +40,16 @@ main {
   margin-right: auto;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding-top: 8rem; /* Высота должна быть равна или больше высоты вашего хедера */

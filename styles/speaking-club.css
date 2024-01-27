@@ -1,12 +1,14 @@
 .speaking-club {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #dee6e8; /* Adjust background color as needed */
-  gap: 5rem;
-  padding: 10rem 8rem;
-  margin: 0 auto;
+  gap: 5%;
+  padding: 7% 5.6%;
+  margin: 5rem auto;
   box-sizing: inherit;
+}
+.speaking-club .container {
+  gap: 5%;
 }
 
 .speaker-image-container {
@@ -14,6 +16,7 @@
   position: relative;
   /* width: 50%; */
   margin: 0 auto; /* Центрируем контейнер */
+  margin-bottom: 2rem;
 }
 
 .speaker-image {
@@ -21,11 +24,15 @@
   height: auto; /* Высота будет установлена автоматически для сохранения пропорций */
 }
 
-.club-info h2 {
+.speaking-club h2 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
   font-size: 3.6rem;
   margin-bottom: 2rem;
+  position: relative;
+  top: 6rem;
+  left: 17rem;
+  margin-top: -10rem;
 }
 
 .club-info p {
@@ -39,6 +46,7 @@
 .club-info {
   align-self: flex-start; /* Выравнивание только этого элемента по верхнему краю */
   color: black; /* Adjust the color as needed */
+  margin-top: 6rem;
 }
 
 .speaker-image-container,
@@ -57,25 +65,25 @@
   .club-info {
     flex-basis: 100%; /* Каждый элемент займет 100% ширины родителя, становясь шириной в один столбец */
   }
-  .speaking-club {
+  .speaking-club .container {
     flex-direction: column; /* Элементы будут располагаться в одном столбце, один за другим */
   }
 
-  .speaker-image-container,
+  .speaking-club h2 {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+  }
+
   .club-info {
-    /* Можно добавить дополнительные стили, чтобы улучшить читаемость на мобильных устройствах */
-    padding: 2rem;
+    margin-top: 0;
   }
 }
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 480px) {
-  .speaking-club {
-    padding: 0;
-  }
-
-  .club-info h2 {
-    font-size: 3rem; /* Уменьшенный размер шрифта для заголовка */
+  .speaking-club h2 {
+    font-size: 2.2rem; /* Уменьшенный размер шрифта для заголовка */
   }
 
   .club-info p {
