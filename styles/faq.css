@@ -1,6 +1,7 @@
 .faq-section {
   background-color: transparent;
   margin: 10rem 0;
+  padding: 0 5.6%;
 }
 
 .faq-section h2 {
@@ -12,7 +13,7 @@
 }
 
 .faq-container {
-  width: 60%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,8 +52,8 @@
   overflow: hidden;
   transition: max-height 0.3s ease-in-out; /*Плавная анимация*/
   font-family: Helvetica Neue, "Source Sans Pro";
-  color: black; /* Цвет описания статистики */
-  font-size: 1.8rem; /* Размер шрифта описания */
+  color: black; /*Цвет описания статистики*/
+  font-size: 1.8rem; /*Размер шрифта описания*/
   line-height: 2.2rem;
   margin-left: 8rem;
   margin-top: 1rem;
@@ -60,4 +61,50 @@
 
 .faq-item.active .faq-answer {
   max-height: 1000px; /* Максимальная высота, достаточная для отображения любого контента */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 90%; /* Увеличиваем ширину контейнера на меньших экранах */
+  }
+
+  .faq-section h2 {
+    font-size: 3rem; /* Уменьшаем размер заголовка */
+  }
+
+  .faq-question {
+    height: 6rem; /* Уменьшаем высоту вопроса */
+    font-size: 1.5rem; /* Уменьшаем размер шрифта вопроса */
+  }
+
+  .faq-answer {
+    font-size: 1.5rem; /* Уменьшаем размер шрифта ответа */
+    line-height: 2rem;
+    margin-left: 7rem; /* Уменьшаем отступ слева */
+  }
+
+  .faq-icon {
+    width: 2rem; /* или другой подходящий размер */
+    height: auto; /* или другой подходящий размер */
+    margin-right: 2rem; /* отступ от иконки до текста вопроса */
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    width: 100%; /* Делаем контейнер ещё шире на очень маленьких экранах */
+  }
+
+  .faq-answer {
+    margin-left: 5rem; /* Уменьшаем отступ слева для ответов */
+  }
+
+  .faq-icon {
+    width: 2rem; /* или другой подходящий размер */
+    height: auto; /* или другой подходящий размер */
+    margin-right: 1rem; /* отступ от иконки до текста вопроса */
+    margin-left: 1rem;
+  }
 }
