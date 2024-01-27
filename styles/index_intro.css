@@ -25,6 +25,10 @@
   margin-left: 7%; /* Отступ слева */
 }
 
+.intro-content img {
+  display: none;
+}
+
 .intro h1 {
   font-family: "Exo", sans-serif;
   font-optical-sizing: auto;
@@ -51,9 +55,84 @@
   padding: 1vw 3vw;
   cursor: pointer;
   border-radius: 5px;
+  width: 28vw;
+  height: 5vw;
+  margin-bottom: 1rem;
+}
+
+.lang-button {
+  display: none;
+  background-color: transparent;
+  color: black;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.5vw;
+  border: none;
+  padding: 1vw 3vw;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
   width: 20vw;
   height: 3.5vw;
 }
+
+.lang-button:hover {
+  background-color: #dee6e8;
+}
+
 .trial-button:hover {
   background-color: #f4667d;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+  .trial-button,
+  .lang-button {
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro img {
+    display: none;
+  }
+
+  .intro-content img {
+    display: block;
+  }
+
+  .intro {
+    margin: 0;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Выравнивание по горизонтали */
+    text-align: center; /* Выравнивание текста влево */
+    margin-bottom: 8rem;
+  }
+
+  .intro-content {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    max-width: 100%; /* Максимальная ширина контентной области */
+    margin-left: 0; /* Отступ слева */
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
 }

@@ -2,6 +2,7 @@
   background-color: #edecea; /* Цвет фона для секции отзывов */
   text-align: center; /* Выравнивание текста по центру */
   padding: 3rem 5.6%;
+  /* padding-bottom: 14rem; */
 }
 
 .quote .quote-box {

@@ -4,10 +4,12 @@
   padding: 0 10%;
   margin: 10rem 0;
   padding: 0 5.6%;
+  padding-top: 12rem; /* Замените на реальное значение */
+  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
 }
 
 .language-selection-title {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-family: "Exo", sans-serif;
   font-size: 3.6rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */

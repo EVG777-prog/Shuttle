@@ -1,6 +1,13 @@
 .about {
-  background-color: white; /* Цвет фона секции */
-  padding: 14rem 5.6%; /* Отступы внутри секции */
+  padding: 8rem 5.6%; /* Отступы внутри секции */
+  padding-top: 22rem; /* Замените на реальное значение */
+  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
+}
+
+.text-background-pink {
+  background-color: #ff9bab;
+  border-radius: 10px;
+  padding: 0 1rem;
 }
 
 .about .container {
