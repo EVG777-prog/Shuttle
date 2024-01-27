@@ -53,8 +53,81 @@
   background-color: #f4667d;
 }
 
-.promo-img img {
+.promo-img-desktop img {
   max-width: 110%;
   height: auto;
   margin-left: -15%;
+}
+
+.promo-img-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.promo-img-mobile img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.promo-img-desktop {
+  display: block; /* Показываем на больших экранах */
+}
+
+.promo-img-mobile {
+  display: none; /* Скрываем на больших экранах */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .promo {
+    flex-direction: column; /* Элементы в колонку на маленьких экранах */
+    padding: 3rem 1rem;
+    gap: 2rem;
+    margin-top: 0rem;
+  }
+
+  .promo-content,
+  .promo-img {
+    flex-basis: 100%; /* Элементы занимают всю ширину */
+  }
+
+  .promo-content h1 {
+    font-size: 3.6rem; /* Уменьшаем размер заголовка */
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .promo-content h2 {
+    font-size: 2.4rem; /* Уменьшаем размер подзаголовка */
+    margin-bottom: 2rem;
+  }
+
+  .promo-content p {
+    font-size: 1.6rem; /* Уменьшаем размер текста */
+  }
+
+  .promo .trial-button {
+    width: 100%; /* Кнопка на всю ширину */
+    height: 6rem; /* Уменьшаем высоту кнопки */
+    font-size: 2rem; /* Уменьшаем размер шрифта кнопки */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .promo-img img {
+    max-width: 100%; /* Картинка на всю ширину */
+    margin-left: 0; /* Сброс отрицательного отступа */
+  }
+
+  .promo-img-desktop {
+    display: none; /* Показываем на больших экранах */
+  }
+
+  .promo-img-mobile {
+    display: flex; /* Скрываем на больших экранах */
+  }
 }

@@ -41,3 +41,9 @@
   margin-left: 1rem; /* Расстояние до стрелки, необходимо уточнить */
   color: black; /* Цвет стрелки, необходимо уточнить */
 }
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
