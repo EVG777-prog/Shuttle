@@ -239,10 +239,6 @@ header .no-scroll {
   background: transparent; /* Скрыть центральную полосу */
 }
 
-.burger-menu.open {
-  margin-right: 1.8rem;
-}
-
 .burger-menu.open .burger-bar::before,
 .burger-menu.open .burger-bar::after {
   top: 0; /* Обе полосы в центр */
