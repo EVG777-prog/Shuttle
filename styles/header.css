@@ -17,7 +17,7 @@ header .logo {
   width: 20rem;
   height: 11.8rem;
   position: relative;
-  background-size: 100% 169.492%;
+  background-size: 100%;
   background-position: -0rem -2.9rem;
   background-image: url("../assets/logo.png");
   flex-shrink: 0;
@@ -62,9 +62,11 @@ header .contact-info {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 header .contact-info .phone-number {
-  margin: 0rem 0.6rem 0.8rem 0rem;
+  margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.4;
@@ -108,6 +110,8 @@ header .buttons {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 header .button {
@@ -158,7 +162,7 @@ header .icon-mastercard {
   margin-left: 1rem;
 }
 
-.no-scroll {
+header .no-scroll {
   overflow: hidden;
 }
 
@@ -221,7 +225,7 @@ header .icon-mastercard {
 }
 
 .fullscreen-menu ul li {
-  padding: 20px;
+  padding: 2rem;
 }
 
 .fullscreen-menu ul li a {
@@ -257,13 +261,11 @@ header .icon-mastercard {
 }
 
 /* Стили для адаптивности */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   header .main-navigation {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 900px) {
   header .buttons {
     flex-direction: column;
   }
@@ -274,6 +276,10 @@ header .icon-mastercard {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    height: 8rem;
+  }
+
   .burger-menu {
     display: flex;
   }
@@ -284,5 +290,58 @@ header .icon-mastercard {
 
   header .buttons {
     display: none;
+  }
+
+  header .logo {
+    width: 13.7rem;
+    height: 7.9rem;
+    background-position: -0rem -2rem;
+  }
+
+  header .contact-info .phone-number {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .fullscreen-menu {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 6rem;
+  }
+
+  header .logo {
+    width: 7.9rem;
+    height: 5.5rem;
+    background-position: -0rem -0.9rem;
+  }
+
+  header .contact__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  header .contact-info .phone-number {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .fullscreen-menu {
+    margin-top: 6rem;
+  }
+
+  .burger-menu .burger-bar {
+    width: 2.4rem;
+  }
+
+  .burger-menu .burger-bar::before {
+    transform: translateY(-0.8rem);
+  }
+
+  .burger-menu .burger-bar::after {
+    transform: translateY(0.8rem);
   }
 }

@@ -1,4 +1,4 @@
-.footer {
+footer {
   background-color: #f3f3f3;
   padding: 5rem 5.6%;
   padding-bottom: 3rem;
@@ -23,25 +23,25 @@
   flex-direction: column;
 }
 
-.logo-section .logo,
-.payment-methods .payment-icon,
-.social-media .social-icon {
+footer .logo-section .logo,
+footer .payment-methods .payment-icon,
+footer .social-media .social-icon {
   margin-right: 0.5rem;
 }
 
-.payment-icon {
+footer .payment-icon {
   width: auto; /* или можно установить конкретный размер, например 50px */
   height: 2.5rem; /* высота иконки, измените это значение в соответствии с вашими нуждами */
   object-fit: contain;
 }
 
-.logo-section {
+footer .logo-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo-section .logo {
+footer .logo-section .logo {
   max-width: 100%; /* Ограничивает ширину логотипа шириной родительского контейнера */
   max-height: 30rem; /* Максимальная высота логотипа */
   object-fit: contain; /* Убедитесь, что изображение масштабируется пропорционально */
@@ -55,33 +55,33 @@
   margin-bottom: 1rem;
 }
 
-.languages-section .languages-list {
+footer .languages-section .languages-list {
   list-style: none;
   padding: 0;
 }
 
-.languages-section .language {
+footer .languages-section .language {
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
-.languages-list .language a {
+footer .languages-list .language a {
   color: black;
   text-decoration: none; /* Убрать подчеркивание ссылок */
 }
 
-.languages-list .language a:hover {
+footer .languages-list .language a:hover {
   text-decoration: underline; /* Добавить подчеркивание при наведении */
 }
 
-.contact-info {
+footer .contact-info {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.contact-info .phone-number {
+footer .contact-info .phone-number {
   margin: 0rem 0.6rem 0.8rem 0rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -93,29 +93,29 @@
   align-items: baseline;
   flex-shrink: 0;
 }
-.contact__social {
+footer .contact__social {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.contact__icon {
+footer .contact__icon {
   width: 3rem;
   height: 3rem;
 }
 
-.contact__icon img {
+footer .contact__icon img {
   width: 100%; /* Задайте ширину изображения равной ширине контейнера */
   height: 100%; /* Задайте высоту изображения равной высоте контейнера */
 }
 
-.icon-instagram:hover img {
+footer .icon-instagram:hover img {
   content: url("../assets/icons/icon_instagram_hover.png");
 }
-.icon-telegram:hover img {
+footer .icon-telegram:hover img {
   content: url("../assets/icons/icon_telegram_hover.png");
 }
-.icon-email:hover img {
+footer .icon-email:hover img {
   content: url("../assets/icons/icon_email_hover.png");
 }
 
@@ -175,7 +175,7 @@
   margin-top: 2rem;
 }
 
-.legal-section {
+footer .legal-section {
   display: flex;
   justify-content: space-around;
   width: 90%;
@@ -183,7 +183,7 @@
   margin-right: auto;
 }
 
-.legal-section .legal-link {
+footer .legal-section .legal-link {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
@@ -249,12 +249,12 @@ footer .main-navigation a:hover {
     margin-bottom: 1rem;
   }
 
-  .legal-section {
+  footer .legal-section {
     flex-direction: column;
     align-items: center;
   }
 
-  .legal-section .legal-link {
+  footer .legal-section .legal-link {
     margin-bottom: 1rem;
   }
 }

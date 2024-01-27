@@ -39,3 +39,15 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 8rem; /* Высота должна быть равна или больше высоты вашего хедера */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding-top: 6rem; /* Высота должна быть равна или больше высоты вашего хедера */
+  }
+}
