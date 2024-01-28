@@ -5,7 +5,7 @@
   position: relative;
   background-image: url("../assets/about-background.png");
   background-repeat: no-repeat; /* Убирает повторение изображения */
-  background-size: 50% 70%; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
+  background-size: 50% auto; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
   background-position: left calc(0% + 30rem); /* Располагает изображение по левому краю */
 }
 

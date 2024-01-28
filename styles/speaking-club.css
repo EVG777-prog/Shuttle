@@ -89,4 +89,8 @@
   .club-info p {
     font-size: 1.5rem; /* Уменьшенный размер шрифта для описания */
   }
+
+  .speaking-club {
+    background-color: white; /* Adjust background color as needed */
+  }
 }
