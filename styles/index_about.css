@@ -1,7 +1,45 @@
 .about {
-  padding: 8rem 5.6%; /* Отступы внутри секции */
+  padding: 12rem 5.6%; /* Отступы внутри секции */
   padding-top: 12rem; /* Замените на реальное значение */
   margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
+  position: relative;
+  background-image: url("../assets/about-background.png");
+  background-repeat: no-repeat; /* Убирает повторение изображения */
+  background-size: 50% 70%; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
+  background-position: left calc(0% + 30rem); /* Располагает изображение по левому краю */
+}
+
+.about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12rem; /* Выравниваем по верхнему краю секции */
+  left: 80%; /* Выравниваем по центру секции по горизонтали */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Смещаем на половину его размера влево и вверх для центрирования */
+  width: 11%; /* Ширина круга в процентах от ширины страницы */
+  padding-top: 11%; /* Высота круга равна ширине для сохранения пропорций */
+  border-radius: 50%; /* Делаем круг круглым */
+  background-color: #f4e7ca; /* Цвет круга */
+  z-index: 1; /* Помещаем круг под контент секции */
+}
+
+.about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0; /* Позиционирование в нижней части родителя */
+  left: 85%; /* Позиционирование по центру родителя */
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  width: 20%; /* Ширина круга в процентах от ширины страницы */
+  padding-top: 20%; /* Высота круга равна ширине для сохранения пропорций */
+  background-color: #f4e7ca; /* Цвет полукруга */
+  border-radius: 50% 50% 0 0; /* Создание полукруга */
+  clip-path: ellipse(50% 50% at 50% 100%);
+  z-index: -1;
+  overflow: hidden; /* Обрезка лишней части */
 }
 
 .text-background-pink {
@@ -21,7 +59,7 @@
 }
 
 .about .container-image {
-  width: 40%;
+  width: 50%;
   align-self: stretch; /* Растягиваем по всей доступной высоте */
   display: flex;
   align-items: center; /* Выравнивание по вертикали */
@@ -38,7 +76,7 @@
   margin-top: 10rem;
   padding-top: 1rem;
   border-top: 3px solid #5a808a;
-  max-width: 60%;
+  max-width: 50%;
   align-items: flex-start;
 }
 
@@ -51,7 +89,7 @@
   font-weight: 700;
   position: relative;
   top: 10rem;
-  left: 40%;
+  left: 50%;
 }
 
 .about .intro-text {
