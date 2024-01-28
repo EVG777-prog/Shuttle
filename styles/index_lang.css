@@ -82,6 +82,15 @@
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 2rem;
   }
+
+  .languages-grid .language {
+    height: 6rem;
+  }
+
+  .language-selection-title {
+    font-size: 3rem; /* Размер шрифта чисел */
+    margin-bottom: 4rem;
+  }
 }
 @media (max-width: 480px) {
   .language-selection {
@@ -92,12 +101,22 @@
   }
 
   .languages-grid a {
-    font-size: 2rem; /* Размер шрифта описания */
+    font-size: 1.7rem; /* Размер шрифта описания */
   }
 
   .languages-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 2rem;
+  }
+  .languages-grid .language {
+    height: 5rem;
+  }
+  .languages-grid .language.disabled {
+    display: none;
+  }
+  .language-selection-title {
+    font-size: 2.2rem; /* Размер шрифта чисел */
+    margin-bottom: 3rem;
   }
 }
