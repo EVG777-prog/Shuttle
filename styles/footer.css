@@ -285,5 +285,6 @@ footer .main-navigation a:hover {
 
   .footer-section .button {
     margin-bottom: 1rem;
+    width: 80%;
   }
 }

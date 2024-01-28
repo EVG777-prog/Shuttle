@@ -1,6 +1,6 @@
 .about {
   padding: 8rem 5.6%; /* Отступы внутри секции */
-  padding-top: 22rem; /* Замените на реальное значение */
+  padding-top: 12rem; /* Замените на реальное значение */
   margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
 }
 
@@ -14,18 +14,18 @@
   margin: 0 auto; /* Центрирование контейнера */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start; /* Выравнивание дочерних элементов по верху */
   width: 100%;
   gap: 5%;
 }
 
 .about .container-image {
-  margin-top: -5rem;
   width: 40%;
+  align-self: stretch; /* Растягиваем по всей доступной высоте */
   display: flex;
   align-items: center; /* Выравнивание по вертикали */
-  justify-content: flex-start; /* Выравнивание по горизонтали */
+  justify-content: center; /* Выравнивание по горизонтали */
 }
 
 .about .container-image img {
@@ -35,7 +35,11 @@
 }
 
 .about .container-text {
+  margin-top: 10rem;
+  padding-top: 1rem;
+  border-top: 3px solid #5a808a;
   max-width: 60%;
+  align-items: flex-start;
 }
 
 .about h2 {
@@ -45,7 +49,9 @@
   padding-bottom: 2rem;
   font-size: 3.6rem;
   font-weight: 700;
-  border-bottom: 3px solid #5a808a;
+  position: relative;
+  top: 10rem;
+  left: 40%;
 }
 
 .about .intro-text {
@@ -68,10 +74,15 @@
     max-width: 100%;
     width: 100%; /* Ширина элементов составляет 100% контейнера */
     margin-top: 2rem; /* Добавление небольшого отступа сверху */
+    border-top: none;
   }
 
   .about h2 {
     font-size: 3rem; /* Уменьшение размера шрифта заголовка */
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin-top: 5rem;
   }
 
   .about .intro-text {
