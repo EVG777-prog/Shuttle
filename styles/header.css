@@ -104,14 +104,11 @@ header .icon-email:hover img {
 }
 
 header .buttons {
-  max-width: 42rem;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 header .button {

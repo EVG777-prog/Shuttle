@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger-menu");
   const menu = document.querySelector(".fullscreen-menu");
+  const body = document.body;
 
-  burger.addEventListener("click", function () {
+  // Функция для переключения меню
+  function toggleMenu() {
     burger.classList.toggle("open");
     menu.classList.toggle("show");
-
-    const body = document.body;
 
     // Проверяем, есть ли у body класс 'no-scroll'
     if (body.classList.contains("no-scroll")) {
@@ -16,5 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // Добавляем класс 'no-scroll', убирая прокрутку
       body.classList.add("no-scroll");
     }
+  }
+
+  // Переключение меню при клике на бургер
+  burger.addEventListener("click", toggleMenu);
+
+  // Закрытие меню при клике на любой пункт меню
+  menu.querySelectorAll("a").forEach(function (menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
   });
 });

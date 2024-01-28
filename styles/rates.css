@@ -114,6 +114,7 @@
 }
 
 .rates .button {
+  max-width: 25rem;
   height: 5.5rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -202,5 +203,9 @@
   .rate-signup {
     font-size: 1.5rem;
     height: 4rem;
+  }
+
+  .rates .button {
+    display: none;
   }
 }
