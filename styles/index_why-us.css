@@ -29,6 +29,7 @@
   margin-bottom: 5rem;
   padding-left: 5rem;
   margin-left: 3rem;
+  height: 8rem;
 }
 
 .why-us-icon {
@@ -68,15 +69,31 @@
 
 @media (max-width: 768px) {
   .why-us-grid {
-    grid-template-columns: repeat(2, 1fr); /* Три колонки одинаковой ширины */
-    grid-gap: 5%; /* Отступы между элементами сетки */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-us-title {
+    font-size: 3rem;
+  }
+  .why-us {
+    margin: 6rem 0;
+  }
+  .why-us-item {
+    height: 6rem;
   }
 }
 
 @media (max-width: 480px) {
   .why-us-grid {
-    grid-template-columns: repeat(1, 1fr); /* Три колонки одинаковой ширины */
-    grid-gap: 5%; /* Отступы между элементами сетки */
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 15rem;
+  }
+  .why-us-title {
+    font-size: 2.2rem;
+  }
+  .why-us {
+    margin: 4rem 0;
+  }
+  .why-us-item {
+    height: 5rem;
   }
 }
