@@ -2,7 +2,7 @@ header {
   position: fixed; /* Фиксированное позиционирование хедера */
   top: 0; /* Прикрепить хедер к верху окна просмотра */
   left: 0; /* Прикрепить хедер к левому краю окна просмотра */
-  z-index: 1000; /* Убедитесь, что хедер находится над всеми другими элементами */
+  z-index: 100; /* Убедитесь, что хедер находится над всеми другими элементами */
   box-sizing: border-box;
   width: 100%;
   height: 12rem;
@@ -170,7 +170,7 @@ header .no-scroll {
 .burger-menu {
   display: none; /* Initially hidden */
   cursor: pointer;
-  z-index: 2000;
+  z-index: 200;
   position: relative;
   width: 5rem;
   height: 5rem;
@@ -213,7 +213,7 @@ header .no-scroll {
   top: 0;
   left: 0;
   background: #edecea; /* Semi-transparent black */
-  z-index: 1000;
+  z-index: 101;
   align-items: center;
   justify-content: center;
   margin-top: 11rem;
