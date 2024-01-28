@@ -71,6 +71,8 @@
     background-color: white;
     text-align: center;
     margin-bottom: 5rem;
+    padding-top: 8rem; /* Замените на реальное значение */
+    margin-top: -8rem; /* Такое же значение, но с отрицательным знаком */
   }
 
   .languages-grid a {
@@ -96,8 +98,11 @@
   .language-selection {
     background-color: white;
     text-align: center;
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 2rem;
+    padding-top: 6rem; /* Замените на реальное значение */
+    margin-top: -6rem; /* Такое же значение, но с отрицательным знаком */
   }
 
   .languages-grid a {
