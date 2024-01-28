@@ -1,6 +1,6 @@
 .faq-section {
   background-color: transparent;
-  margin: 10rem 0;
+  margin: 6rem 0;
   padding: 0 5.6%;
 }
 
@@ -13,7 +13,8 @@
 }
 
 .faq-container {
-  width: 70%;
+  width: 100%;
+  max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,8 +56,9 @@
   color: black; /*Цвет описания статистики*/
   font-size: 1.8rem; /*Размер шрифта описания*/
   line-height: 2.2rem;
-  margin-left: 8rem;
+  margin-left: 8.4rem;
   margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .faq-item.active .faq-answer {
@@ -67,9 +69,6 @@
 @media (max-width: 768px) {
   .faq-section {
     margin: 6rem 0;
-  }
-  .faq-container {
-    width: 90%; /* Увеличиваем ширину контейнера на меньших экранах */
   }
 
   .faq-section h2 {

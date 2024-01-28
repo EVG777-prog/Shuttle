@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 3rem;
-  max-height: 98rem; /* Высота для двух строк карточек */
+  max-height: 90rem; /* Высота для двух строк карточек */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Плавный переход высоты */
 }
@@ -67,4 +67,10 @@
 
 .teachers .show-more:hover {
   background-color: #f4667d;
+}
+
+@media screen and (max-width: 480px) {
+  .teachers-container {
+    max-height: 234rem; /* Высота для двух строк карточек */
+  }
 }
