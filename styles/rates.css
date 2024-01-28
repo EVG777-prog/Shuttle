@@ -68,7 +68,7 @@
 .rate-details {
   list-style: none;
   padding: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 .rate-details li {
@@ -78,13 +78,7 @@
   font-size: 1.8rem;
 }
 
-.rates ul.rate-details {
-  list-style-type: none; /* Убираем стандартные маркеры */
-  padding: 0; /* Убираем отступы, чтобы позиционирование иконок было точным */
-  margin-bottom: 3rem;
-}
-
-.rates ul.rate-details li::before {
+.rate-details li::before {
   content: url("../assets/list-marker.png"); /* Указываем путь к вашей иконке */
   display: inline-block; /* Делаем псевдоэлемент строчно-блочным элементом */
   width: 1.8rem; /* Задаем ширину иконки */
@@ -120,7 +114,6 @@
 }
 
 .rates .button {
-  width: 25rem;
   height: 5.5rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -167,8 +160,47 @@
 }
 
 /* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
-@media (max-width: 37.5rem) {
+@media (max-width: 768px) {
   .rate-card {
     max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .rate-card {
+    padding: 2rem;
+  }
+  .rates-title {
+    font-size: 2.2rem;
+  }
+  .rates-description {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .rate-header {
+    padding: 3rem 1rem;
+  }
+  .rate-title {
+    font-size: 1.5rem;
+  }
+
+  .rate-price {
+    font-size: 3.2rem;
+  }
+
+  .rate-duration {
+    font-size: 1.2rem;
+  }
+
+  .rate-details {
+    margin-bottom: 0.5rem;
+  }
+
+  .rate-details li {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .rate-signup {
+    font-size: 1.5rem;
+    height: 4rem;
   }
 }

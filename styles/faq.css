@@ -65,6 +65,9 @@
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
+  .faq-section {
+    margin: 6rem 0;
+  }
   .faq-container {
     width: 90%; /* Увеличиваем ширину контейнера на меньших экранах */
   }
@@ -93,6 +96,9 @@
 }
 
 @media (max-width: 480px) {
+  .faq-section {
+    margin: 4rem 0;
+  }
   .faq-container {
     width: 100%; /* Делаем контейнер ещё шире на очень маленьких экранах */
   }

@@ -244,6 +244,7 @@ footer .main-navigation a:hover {
 
   footer .main-navigation {
     display: flex;
+    margin-bottom: 01rem;
   }
 
   .footer-content {
@@ -264,6 +265,25 @@ footer .main-navigation a:hover {
   }
 
   footer .legal-section .legal-link {
+    margin-bottom: 1rem;
+  }
+
+  footer .contacts-section .footer-heading,
+  footer .contacts-section .footer-divider {
+    display: none;
+  }
+
+  footer .contact-info {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .footer-section .button {
     margin-bottom: 1rem;
   }
 }
