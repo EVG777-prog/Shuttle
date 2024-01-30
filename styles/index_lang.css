@@ -1,11 +1,40 @@
 .language-selection {
-  background-color: white;
+  background-color: transparent;
   text-align: center;
-  padding: 0 10%;
   margin: 10rem 0;
   padding: 0 5.6%;
-  padding-top: 12rem; /* Замените на реальное значение */
+  padding-top: 22rem; /* Замените на реальное значение */
+  padding-bottom: 7rem;
   margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
+  position: relative;
+}
+
+.language-selection::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  padding-top: 30%;
+  border-radius: 50%;
+  background-color: #edecea;
+  z-index: -1;
+}
+
+.language-selection::before {
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  width: 18%;
+  padding-top: 10.62%;
+  background-image: url("../assets/figure-main.png"); /* Путь к вашей картинке */
+  background-size: cover; /* Масштабирует фоновое изображение, чтобы оно полностью покрывало псевдоэлемент */
+  background-position: center; /* Центрирует изображение в псевдоэлементе */
+  background-position: 0 0;
+  z-index: -1;
 }
 
 .language-selection-title {
@@ -68,11 +97,14 @@
 
 @media (max-width: 768px) {
   .language-selection {
-    background-color: white;
     text-align: center;
     margin-bottom: 5rem;
     padding-top: 8rem; /* Замените на реальное значение */
     margin-top: -8rem; /* Такое же значение, но с отрицательным знаком */
+  }
+
+  .language-selection::before {
+    bottom: -5rem;
   }
 
   .languages-grid a {
@@ -96,13 +128,25 @@
 }
 @media (max-width: 480px) {
   .language-selection {
-    background-color: white;
     text-align: center;
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 2rem;
     padding-top: 6rem; /* Замените на реальное значение */
     margin-top: -6rem; /* Такое же значение, но с отрицательным знаком */
+    padding-bottom: 1rem;
+  }
+
+  .language-selection::before {
+    bottom: -2rem;
+    width: 24%;
+    padding-top: 14.16%;
+  }
+
+  .language-selection::after {
+    top: 25%;
+    width: 40%;
+    padding-top: 40%;
   }
 
   .languages-grid a {

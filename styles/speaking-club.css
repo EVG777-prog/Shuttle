@@ -4,8 +4,11 @@
   background-color: #dee6e8; /* Adjust background color as needed */
   gap: 5%;
   padding: 7% 5.6%;
+  padding-bottom: 16rem;
   margin: 5rem auto;
+  margin-bottom: 0;
   box-sizing: inherit;
+  position: relative;
 }
 .speaking-club .container {
   gap: 5%;

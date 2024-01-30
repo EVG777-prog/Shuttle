@@ -1,0 +1,29 @@
+.speaking-club::before {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 66%;
+  width: 29.27%;
+  padding-top: 10.33%;
+  background-image: url("../assets/speaking-club_figure_spanish_desktop.png"); /* Путь к вашей картинке */
+  background-size: cover; /* Масштабирует фоновое изображение, чтобы оно полностью покрывало псевдоэлемент */
+  background-position: center; /* Центрирует изображение в псевдоэлементе */
+  background-position: 0 0;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .speaking-club::before {
+    width: 29.27%;
+    padding-top: 10.33%;
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+  .speaking-club::before {
+    width: 43.9%;
+    padding-top: 15.5%;
+    left: 50%;
+  }
+}
