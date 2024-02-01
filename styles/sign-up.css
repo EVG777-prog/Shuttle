@@ -162,6 +162,13 @@
   gap: 1rem;
 }
 
+.text-warning a {
+  color: #5a808a;
+}
+.text-warning a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .modal .flex-row {
     flex-direction: column;

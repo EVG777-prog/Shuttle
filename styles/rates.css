@@ -74,17 +74,21 @@
 .rate-details li {
   margin-bottom: 1rem;
   padding: 1rem;
+  padding-left: 4rem;
   text-align: left; /* Выравнивает текст элементов списка по левому краю */
   font-size: 1.8rem;
+  position: relative;
 }
 
 .rate-details li::before {
   content: url("../assets/list-marker.png"); /* Указываем путь к вашей иконке */
-  display: inline-block; /* Делаем псевдоэлемент строчно-блочным элементом */
+  display: block; /* Делаем псевдоэлемент строчно-блочным элементом */
+  position: absolute;
   width: 1.8rem; /* Задаем ширину иконки */
   height: 1.8rem; /* Задаем высоту иконки */
-  margin-right: 2rem; /* Добавляем отступ справа для текста */
-  vertical-align: middle; /* Выравнивание иконки по центру относительно текста */
+  left: 0rem;
+  top: 1.4rem;
+  align-items: center;
 }
 
 /* Пример пути к иконке: url('/images/list-icon.png') */

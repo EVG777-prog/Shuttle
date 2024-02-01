@@ -77,6 +77,9 @@ header .contact-info .phone-number {
   align-items: baseline;
   flex-shrink: 0;
 }
+header .contact-info .phone-number:hover {
+  text-decoration: underline;
+}
 header .contact__social {
   width: 100%;
   display: flex;

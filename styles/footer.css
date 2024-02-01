@@ -29,6 +29,9 @@ footer .social-media .social-icon {
   margin-right: 0.5rem;
 }
 
+footer .payment-methods {
+}
+
 footer .payment-icon {
   width: auto; /* или можно установить конкретный размер, например 50px */
   height: 2.5rem; /* высота иконки, измените это значение в соответствии с вашими нуждами */
@@ -92,6 +95,9 @@ footer .contact-info .phone-number {
   display: flex;
   align-items: baseline;
   flex-shrink: 0;
+}
+footer .contact-info .phone-number:hover {
+  text-decoration: underline;
 }
 footer .contact__social {
   width: 100%;
