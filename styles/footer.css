@@ -29,9 +29,6 @@ footer .social-media .social-icon {
   margin-right: 0.5rem;
 }
 
-footer .payment-methods {
-}
-
 footer .payment-icon {
   width: auto; /* или можно установить конкретный размер, например 50px */
   height: 2.5rem; /* высота иконки, измените это значение в соответствии с вашими нуждами */
@@ -46,7 +43,7 @@ footer .logo-section {
 
 footer .logo-section .logo {
   max-width: 100%; /* Ограничивает ширину логотипа шириной родительского контейнера */
-  max-height: 30rem; /* Максимальная высота логотипа */
+  max-height: 21rem; /* Максимальная высота логотипа */
   object-fit: contain; /* Убедитесь, что изображение масштабируется пропорционально */
 }
 
@@ -244,6 +241,11 @@ footer .main-navigation a:hover {
 
 /* Добавьте медиа-запросы для адаптивного дизайна */
 @media (max-width: 768px) {
+  footer {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
   footer .languages-section {
     display: none;
   }
