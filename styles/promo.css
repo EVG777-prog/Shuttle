@@ -3,7 +3,7 @@
   padding-bottom: 5rem;
   gap: 5rem;
   padding-left: 5.6%;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .promo-content {
@@ -15,7 +15,7 @@
   font-weight: 700;
   color: black;
   font-size: 4.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .promo-content h2 {
@@ -23,7 +23,7 @@
   color: #5a808a;
   font-size: 3rem;
   font-weight: 700; /* Жирное начертание */
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .promo-content p {
@@ -45,7 +45,7 @@
   border-radius: 5px;
   width: 45rem;
   height: 8rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .promo .trial-button:hover {
