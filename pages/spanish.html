@@ -137,94 +137,6 @@
       <div class="burger-menu" aria-label="Open Menu">
         <div class="burger-bar"></div>
       </div>
-
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <img
-            class="close-button"
-            src="../assets/icons/icon-close.png"
-            alt="Close icon"
-          />
-          <h2 class="modal-title">Записатися на пробний урок</h2>
-          <form class="modal-form">
-            <div class="flex-row">
-              <div class="flex-column">
-                <div class="form-row">
-                  <label for="name">Ваше ім'я*</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Владислава"
-                    required
-                  />
-                </div>
-                <div class="form-row">
-                  <label for="telegram">Нік в телеграм через @*</label>
-                  <input
-                    type="text"
-                    id="telegram"
-                    name="telegram"
-                    placeholder="@vlada.vlada"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex-column">
-                <div class="form-row">
-                  <label for="phone">Номер телефону*</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+38 (063) 234 5678"
-                    required
-                  />
-                </div>
-
-                <div class="form-row custom-select">
-                  <label for="selectedLanguage">Мова*</label>
-                  <input
-                    type="hidden"
-                    id="selectedLanguage"
-                    name="language"
-                    value=""
-                  />
-                  <div class="selected-value" data-default="Французька">
-                    Французька
-                  </div>
-                  <ul class="value-list hidden">
-                    <li data-value="french">Французька</li>
-                    <li data-value="spanish">Іспанська</li>
-                    <li data-value="italian">Італійська</li>
-                    <li data-value="german">Німецька</li>
-                    <li data-value="english">Англійська</li>
-                    <!-- Other language options -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row custom-select">
-              <label for="experience">Ви раніше вивчали мову?*</label>
-              <input type="hidden" id="experience" name="experience" value="" />
-              <div class="selected-value" data-default="no">
-                Ні, потрібно з нуля
-              </div>
-              <ul class="value-list hidden">
-                <li data-value="no">Ні, потрібно з нуля</li>
-                <li data-value="yes">Так, був досвід</li>
-              </ul>
-            </div>
-            <p class="text-warning">
-              *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
-              Публічної оферти
-            </p>
-            <button type="submit" class="submit-button">Залишити заявку</button>
-          </form>
-        </div>
-      </div>
     </header>
 
     <main>
@@ -385,7 +297,7 @@
               class="logo"
             />
           </a>
-          <div class="payment-methods">
+          <a href="../pages/payment.html" class="payment-methods">
             <img
               src="../assets/icons/icon_ApplePay.png"
               alt="Apple Pay"
@@ -411,7 +323,7 @@
               alt="Visa"
               class="payment-icon"
             />
-          </div>
+          </a>
         </section>
 
         <section class="footer-section languages-section">
@@ -433,6 +345,9 @@
             </li>
             <li class="language">
               <a href="../pages/english.html">Англійська</a>
+            </li>
+            <li class="language">
+              <a href="../pages/chinese.html">Китайська</a>
             </li>
           </ul>
         </section>
@@ -511,7 +426,7 @@
               </li>
             </ul>
           </nav>
-          <div class="payment-methods">
+          <a href="../pages/payment.html" class="payment-methods">
             <img
               src="../assets/icons/icon_ApplePay.png"
               alt="Apple Pay"
@@ -537,13 +452,16 @@
               alt="Visa"
               class="payment-icon"
             />
-          </div>
+          </a>
         </section>
       </div>
 
       <div class="footer-bottom">
         <section class="legal-section">
-          <a href="../assets/pdf/rules.pdf" target="_blank" class="legal-link"
+          <a
+            href="../assets/pdf/offer-students.pdf"
+            target="_blank"
+            class="legal-link"
             >Публічна оферта</a
           >
           <a
@@ -558,6 +476,97 @@
         </section>
       </div>
     </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <img
+          class="close-button"
+          src="../assets/icons/icon-close.png"
+          alt="Close icon"
+        />
+        <h2 class="modal-title">Записатися на пробний урок</h2>
+        <form class="modal-form">
+          <div class="flex-row">
+            <div class="flex-column">
+              <div class="form-row">
+                <label for="name">Ваше ім'я*</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Владислава"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="telegram">Нік в телеграм через @*</label>
+                <input
+                  type="text"
+                  id="telegram"
+                  name="telegram"
+                  placeholder="@vlada.vlada"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="form-row">
+                <label for="phone">Номер телефону*</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+38 (063) 234 5678"
+                  required
+                />
+              </div>
+
+              <div class="form-row custom-select">
+                <label for="selectedLanguage">Мова*</label>
+                <input
+                  type="hidden"
+                  id="selectedLanguage"
+                  name="language"
+                  value=""
+                />
+                <div class="selected-value" data-default="Французька">
+                  Французька
+                </div>
+                <ul class="value-list hidden">
+                  <li data-value="french">Французька</li>
+                  <li data-value="spanish">Іспанська</li>
+                  <li data-value="italian">Італійська</li>
+                  <li data-value="german">Німецька</li>
+                  <li data-value="english">Англійська</li>
+                  <li data-value="chinese">Китайська</li>
+                  <!-- Other language options -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row custom-select">
+            <label for="experience">Ви раніше вивчали мову?*</label>
+            <input type="hidden" id="experience" name="experience" value="" />
+            <div class="selected-value" data-default="no">
+              Ні, потрібно з нуля
+            </div>
+            <ul class="value-list hidden">
+              <li data-value="no">Ні, потрібно з нуля</li>
+              <li data-value="yes">Так, був досвід</li>
+            </ul>
+          </div>
+          <p class="text-warning">
+            *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
+            <a href="../assets/pdf/rules.pdf" target="_blank"
+              >Публічної оферти</a
+            >
+          </p>
+          <button type="submit" class="submit-button">Залишити заявку</button>
+        </form>
+      </div>
+    </div>
 
     <script src="../scripts/data-spanish-teachers.js"></script>
     <script src="../scripts/data-rates.js"></script>
