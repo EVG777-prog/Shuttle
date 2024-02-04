@@ -10,13 +10,14 @@
   overflow: auto; /* Enable scroll if needed */
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .modal .modal-content {
   background-color: white;
   padding: 7rem;
   border: none;
-  width: 80%; /* You can adjust width */
+  width: 90%; /* You can adjust width */
   max-width: 100rem;
   transform: translate(-50%, -50%);
   position: absolute;
