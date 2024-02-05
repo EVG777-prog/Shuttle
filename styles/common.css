@@ -54,6 +54,10 @@ main {
   flex-direction: column;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding-top: 8rem; /* Высота должна быть равна или больше высоты вашего хедера */

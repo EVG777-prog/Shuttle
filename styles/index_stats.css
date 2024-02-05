@@ -32,5 +32,17 @@
   .stats {
     flex-direction: column; /* Элементы идут в колонку */
     align-items: center; /* Выравнивание элементов по центру */
+    padding: 4rem 5.6%; /* Вертикальные отступы для раздела */
+  }
+
+  .stat-number {
+    font-size: 3.2rem; /* Размер шрифта чисел */
+    line-height: 5rem;
+  }
+
+  .stat-description {
+    font-size: 1.5rem; /* Размер шрифта описания */
+    line-height: 1.5rem;
+    margin-top: 0.5rem; /* Отступ между числом и описанием */
   }
 }

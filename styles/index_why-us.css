@@ -89,11 +89,38 @@
   }
   .why-us-title {
     font-size: 2.2rem;
+    border: none;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
   .why-us {
     margin: 4rem 0;
   }
   .why-us-item {
-    height: 5rem;
+    height: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    margin-left: 1rem;
+  }
+
+  .why-us-text {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .why-us-icon {
+    width: 3rem; /* Размеры иконки */
+    height: 3rem;
+    margin-right: 1rem; /* Отступ между иконкой и текстом */
+    position: absolute;
+    top: -1rem;
+    left: 0;
+  }
+
+  .icon-text {
+    top: 30%;
+    left: -20%;
+    line-height: 3rem;
+    font-size: 2.2rem;
   }
 }

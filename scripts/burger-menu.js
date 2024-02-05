@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("show");
 
     // Проверяем, есть ли у body класс 'no-scroll'
-    if (body.classList.contains("no-scroll")) {
-      // Удаляем класс 'no-scroll', возвращая прокрутку
-      body.classList.remove("no-scroll");
-    } else {
+    if (burger.classList.contains("open")) {
       // Добавляем класс 'no-scroll', убирая прокрутку
       body.classList.add("no-scroll");
+    } else {
+      // Удаляем класс 'no-scroll', возвращая прокрутку
+      body.classList.remove("no-scroll");
     }
   }
 

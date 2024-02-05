@@ -88,9 +88,13 @@
     gap: 2rem;
     margin-top: 0rem;
     background-image: url("../assets/promo_background_mobile.png");
-    background-position: top center;
+    background-position: center 8rem;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .promo-content h1 {
+    font-size: 2.2rem;
   }
 
   .promo-content {
@@ -122,11 +126,13 @@
   }
 
   .promo .trial-button {
-    width: 100%; /* Кнопка на всю ширину */
-    height: 6rem; /* Уменьшаем высоту кнопки */
-    font-size: 2rem; /* Уменьшаем размер шрифта кнопки */
-    margin-top: 3rem;
+    width: 80%; /* Кнопка на всю ширину */
+    height: auto;
+    font-size: 1.5rem; /* Уменьшаем размер шрифта кнопки */
+    margin-top: 1rem;
     margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     order: 2;
   }
 
@@ -143,5 +149,19 @@
 @media (max-width: 540px) {
   .promo {
     background-size: contain;
+  }
+
+  .promo-content h1 {
+    font-size: 3.6rem; /* Уменьшаем размер заголовка */
+  }
+
+  .promo-content h2 {
+    font-size: 1.5rem; /* Уменьшаем размер подзаголовка */
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .promo-content p {
+    font-size: 1.5rem; /* Уменьшаем размер текста */
   }
 }
