@@ -66,4 +66,20 @@
   .certificate-image img {
     max-width: 100%;
   }
+
+  .gift-cards h2 {
+    font-size: 2.2rem;
+  }
+
+  .gift-card-description {
+    font-size: 1.5rem;
+  }
+
+  .certificate-title {
+    font-size: 1.5rem;
+  }
+
+  .certificate-text p {
+    font-size: 1.5rem;
+  }
 }

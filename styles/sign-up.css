@@ -176,6 +176,50 @@
   }
   .modal .modal-content {
     padding: 2rem;
+    padding-top: 5rem;
     width: 100%; /* You can adjust width */
+  }
+
+  .modal .close-button {
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .modal .modal-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .modal .modal-form .form-row label {
+    font-size: 1rem;
+  }
+
+  .modal .modal-form .form-row input[type="text"],
+  .modal .modal-form .form-row input[type="tel"],
+  .modal .modal-form .form-row select {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .modal .modal-form .form-row {
+    margin-bottom: 1rem;
+  }
+
+  .selected-value {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-size: 1.5rem; /* Размер иконки */
+  }
+
+  .value-list {
+    font-size: 1.5rem;
+  }
+
+  .modal .submit-button {
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 }
