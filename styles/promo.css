@@ -93,6 +93,11 @@
     background-size: cover;
   }
 
+  .promo-content {
+    display: flex;
+    flex-direction: column; /* Элементы в колонку на маленьких экранах */
+  }
+
   .promo-content,
   .promo-img {
     flex-basis: 100%; /* Элементы занимают всю ширину */
@@ -102,15 +107,18 @@
     font-size: 3.6rem; /* Уменьшаем размер заголовка */
     margin-bottom: 2rem;
     text-align: center;
+    order: 1;
   }
 
   .promo-content h2 {
     font-size: 2.4rem; /* Уменьшаем размер подзаголовка */
     margin-bottom: 2rem;
+    order: 3;
   }
 
   .promo-content p {
     font-size: 1.6rem; /* Уменьшаем размер текста */
+    order: 4;
   }
 
   .promo .trial-button {
@@ -119,11 +127,7 @@
     font-size: 2rem; /* Уменьшаем размер шрифта кнопки */
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-  .promo-img img {
-    max-width: 100%; /* Картинка на всю ширину */
-    margin-left: 0; /* Сброс отрицательного отступа */
+    order: 2;
   }
 
   .promo-img-desktop {
@@ -132,6 +136,7 @@
 
   .promo-img-mobile {
     display: flex; /* Скрываем на больших экранах */
+    order: 1;
   }
 }
 

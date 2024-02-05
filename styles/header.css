@@ -106,12 +106,17 @@ header .icon-email:hover img {
   content: url("../assets/icons/icon_email_hover.png");
 }
 
-header .buttons {
+header .fullscreen-menu-buttons,
+header .header-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   margin-left: 1rem;
+}
+
+header .fullscreen-menu-buttons {
+  display: none;
 }
 
 header .button {
@@ -254,6 +259,7 @@ header .no-scroll {
 
 .fullscreen-menu.show {
   display: flex; /* Show the menu */
+  flex-direction: column;
 }
 
 /* Стили для адаптивности */
@@ -262,7 +268,8 @@ header .no-scroll {
     flex-direction: column;
   }
 
-  header .buttons {
+  header .fullscreen-menu-buttons,
+  header .header-buttons {
     flex-direction: column;
   }
 
@@ -284,7 +291,13 @@ header .no-scroll {
     display: none;
   }
 
-  header .buttons {
+  header .fullscreen-menu-buttons {
+    display: flex;
+    margin-bottom: 5rem;
+    gap: 5rem;
+  }
+
+  header .header-buttons {
     display: none;
   }
 
