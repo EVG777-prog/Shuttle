@@ -10,6 +10,7 @@
   box-sizing: inherit;
   position: relative;
 }
+
 .speaking-club .container {
   gap: 5%;
 }
@@ -95,5 +96,8 @@
 
   .speaking-club {
     background-color: white; /* Adjust background color as needed */
+    margin: 4rem auto;
+    margin-bottom: 0;
+    padding-bottom: 6rem;
   }
 }

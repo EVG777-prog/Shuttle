@@ -1,43 +1,45 @@
 .quote {
-  background-color: #edecea; /* Цвет фона для секции отзывов */
+  background-color: #edecea; /* Цвет фона для секции цитат */
   text-align: center; /* Выравнивание текста по центру */
-  padding: 3rem 5.6%;
-  /* padding-bottom: 14rem; */
+  padding: 4rem 5.6%; /* Увеличенный верхний и нижний padding, уменьшенные боковые padding */
 }
 
 .quote .quote-box {
-  margin: 0 auto; /* Центрирование отзывов */
-  max-width: 100rem; /* Максимальная ширина блока отзыва */
+  margin: 0 auto; /* Центрирование контейнера цитат */
+  max-width: 90rem; /* Уменьшение максимальной ширины для улучшения читабельности */
 }
 
 .quote blockquote {
-  color: black; /* Цвет текста отзыва */
-  margin: 2rem 0; /* Отступы сверху и снизу отзыва */
+  color: black; /* Более темный цвет текста для лучшего контраста */
+  margin: 0 auto; /* Авто-маржины для центрирования и добавления пространства сверху и снизу */
+  position: relative; /* Для позиционирования псевдоэлементов */
 }
 
 .quote .quotation-mark {
-  position: relative;
   font-family: "Istok Web", sans-serif;
-  font-weight: 400;
-  line-height: 18rem;
-  font-size: 13rem;
-  color: #ff9bab;
-  margin-bottom: -10rem;
-  margin-top: -5rem;
+  font-size: 10rem; /* Уменьшение размера для более дискретного отображения */
+  color: #ff9bab; /* Цвет кавычек */
+  position: absolute; /* Абсолютное позиционирование для контроля над расположением */
+  top: -6rem; /* Смещение вверх для визуального эффекта */
+  left: 50%; /* Центрирование */
+  transform: translateX(-50%); /* Точное центрирование */
 }
 
 .quote .text-quote {
-  position: relative;
-  margin-bottom: 3rem;
+  margin: 0; /* Убираем маржин для текста цитаты */
   font-family: Helvetica Neue, "Source Sans Pro";
   font-weight: 400;
-  line-height: 4.2rem;
+  line-height: 3.6rem;
   font-size: 3rem;
+  position: relative; /* Для позиционирования псевдоэлементов */
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
+
 .quote .text-quote::after {
   content: "";
   position: absolute;
-  bottom: -1.5rem; /* Положение линии под текстом цитаты */
+  bottom: -2rem; /* Положение линии под текстом цитаты */
   left: 50%; /* Центрирование линии */
   transform: translateX(-50%);
   width: 50%; /* Ширина линии */
@@ -46,28 +48,54 @@
 }
 
 .quote cite {
+  margin-top: 5rem;
+  font-size: 2.4rem; /* Меньший размер шрифта для имени автора */
   font-style: normal;
-  display: block; /* Блочное отображение для имени автора */
-  margin-top: 1rem; /* Отступ сверху для имени автора */
-  font-size: 2.4rem;
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
   .quote {
-    padding-top: 0rem;
+    padding: 3rem 5.6%; /* Уменьшение padding на мобильных устройствах */
+  }
+
+  .quote .quotation-mark {
+    font-size: 6rem; /* Уменьшение размера кавычек на мобильных устройствах */
+    top: -4rem; /* Корректировка положения */
   }
 
   .quote .text-quote {
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Уменьшение размера шрифта цитаты для лучшей читабельности на мобильных */
     line-height: 2.2rem;
   }
 
   .quote cite {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Уменьшение размера шрифта для имени автора на мобильных */
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    padding: 2rem 5.6%; /* Уменьшение padding на мобильных устройствах */
   }
 
   .quote .quotation-mark {
-    font-size: 10rem;
+    font-size: 4rem; /* Уменьшение размера кавычек на мобильных устройствах */
+    top: -3rem; /* Корректировка положения */
+  }
+
+  .quote .text-quote {
+    font-size: 1.2rem; /* Уменьшение размера шрифта цитаты для лучшей читабельности на мобильных */
+    line-height: 1.44rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .quote cite {
+    font-size: 1rem; /* Уменьшение размера шрифта для имени автора на мобильных */
+  }
+
+  .quote .text-quote::after {
+    bottom: -1rem; /* Положение линии под текстом цитаты */
+    height: 1px; /* Толщина линии */
   }
 }

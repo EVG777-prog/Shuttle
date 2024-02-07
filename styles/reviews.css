@@ -39,7 +39,7 @@
   font-size: 1.5rem;
   line-height: 2.1rem;
   border-radius: 3rem 6rem 0rem 6rem;
-  border: 1px solid red;
+  border: 1px solid #ff9bab;
   display: flex;
   align-items: center; /*Выравнивание содержимого по вертикали*/
   text-align: left;

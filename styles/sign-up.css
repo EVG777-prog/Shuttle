@@ -71,16 +71,6 @@
   background-color: #dee6e8;
 }
 
-.modal .modal-form .form-row select {
-  -webkit-appearance: none; /* Убираем стандартный стиль в iOS */
-  -moz-appearance: none; /* Убираем стандартный стиль в Firefox */
-  appearance: none; /* Убираем стандартный стиль в остальных браузерах */
-  background-image: url("../assets/icons/icon-select-open.png");
-  background-position: right 2rem top 50%; /* Позиционирование иконки */
-  background-repeat: no-repeat;
-  background-size: 2rem; /* Размер иконки */
-}
-
 .custom-select {
   position: relative;
   font-family: Helvetica Neue, "Source Sans Pro";
@@ -93,7 +83,7 @@
   cursor: pointer;
   user-select: none;
   border-radius: 0.5rem;
-  background-image: url("../assets/icons/icon-select-open.png");
+  background-image: url("../assets/icons/icon-select-open.svg");
   background-position: right 2rem top 50%; /* Позиционирование иконки */
   background-repeat: no-repeat;
   background-size: 2rem; /* Размер иконки */

@@ -4,6 +4,7 @@
   color: black;
   font-family: Helvetica Neue, "Source Sans Pro";
   padding: 0 5.6%;
+  position: relative;
 }
 
 .gift-cards h2 {
@@ -53,14 +54,30 @@
 
 /* Для адаптивного дизайна */
 @media (max-width: 768px) {
+  .gift-cards {
+    margin: 4rem auto;
+    margin-bottom: 0;
+    padding-bottom: 6rem;
+  }
+
   .certificate-section {
     flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
   }
 
   .certificate-text,
   .certificate-image {
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+
+  .certificate-text {
+    order: 2;
+  }
+
+  .certificate-image {
+    order: 1;
   }
 
   .certificate-image img {
@@ -81,5 +98,19 @@
 
   .certificate-text p {
     font-size: 1.5rem;
+  }
+
+  .gift-cards::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 33.3%;
+    padding-top: 30%;
+    background-image: url("../assets/figure-gift-card-mobile.svg"); /* Путь к вашей картинке */
+    background-size: cover; /* Масштабирует фоновое изображение, чтобы оно полностью покрывало псевдоэлемент */
+    background-position: center; /* Центрирует изображение в псевдоэлементе */
+    background-position: 0 0;
+    z-index: -1;
   }
 }

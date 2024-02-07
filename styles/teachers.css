@@ -71,6 +71,11 @@
 }
 
 @media screen and (max-width: 480px) {
+  .teachers {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .teachers-container {
     max-height: 205rem; /* Высота для пяти строк карточек */
   }

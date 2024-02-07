@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const answer = this.nextElementSibling;
 
       if (item.classList.contains("active")) {
-        icon.src = "../assets/icons/icon_minus.png"; // путь к изображению для активного состояния
+        icon.src = "../assets/icons/icon_minus.svg"; // путь к изображению для активного состояния
         answer.style.maxHeight = answer.scrollHeight + "px";
       } else {
-        icon.src = "../assets/icons/icon_plus.png"; // путь к изображению для неактивного состояния
+        icon.src = "../assets/icons/icon_plus.svg"; // путь к изображению для неактивного состояния
         answer.style.maxHeight = "0";
       }
     });

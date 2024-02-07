@@ -113,7 +113,7 @@
     align-items: center; /* Выравнивание по вертикали */
     justify-content: center; /* Выравнивание по горизонтали */
     text-align: center; /* Выравнивание текста влево */
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
   }
 
   .intro-content {
@@ -127,7 +127,7 @@
 
   .intro h1 {
     font-size: 2.2rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
   }
 
   .intro p {
