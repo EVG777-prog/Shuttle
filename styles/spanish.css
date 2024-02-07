@@ -5,7 +5,7 @@
   left: 66%;
   width: 29.27%;
   padding-top: 10.33%;
-  background-image: url("../assets/speaking-club_figure_spanish_desktop.png"); /* Путь к вашей картинке */
+  background-image: url("../assets/speaking-club/speaking-club_figure_spanish_desktop.png"); /* Путь к вашей картинке */
   background-size: cover; /* Масштабирует фоновое изображение, чтобы оно полностью покрывало псевдоэлемент */
   background-position: center; /* Центрирует изображение в псевдоэлементе */
   background-position: 0 0;

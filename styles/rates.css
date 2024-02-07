@@ -81,17 +81,15 @@
 }
 
 .rate-details li::before {
-  content: url("../assets/list-marker.png"); /* Указываем путь к вашей иконке */
+  content: url("../assets/list-marker.svg"); /* Указываем путь к вашей иконке */
   display: block; /* Делаем псевдоэлемент строчно-блочным элементом */
   position: absolute;
-  width: 1.8rem; /* Задаем ширину иконки */
-  height: 1.8rem; /* Задаем высоту иконки */
+  width: 10rem; /* Задаем ширину иконки */
+  height: 12.2rem; /* Задаем высоту иконки */
   left: 0rem;
   top: 1.4rem;
   align-items: center;
 }
-
-/* Пример пути к иконке: url('/images/list-icon.png') */
 
 .rate-signup {
   background: #d9ae4f;

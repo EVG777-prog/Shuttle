@@ -52,6 +52,10 @@
   background-color: #f4667d;
 }
 
+.promo-img-desktop {
+  width: 65%;
+  height: auto;
+}
 .promo-img-desktop img {
   max-width: 110%;
   height: auto;
@@ -87,7 +91,7 @@
     padding: 3rem 1rem;
     gap: 2rem;
     margin-top: 0rem;
-    background-image: url("../assets/promo_background_mobile.png");
+    background-image: url("../assets/promo/promo_background_mobile.png");
     background-position: center 8rem;
     background-repeat: no-repeat;
     background-size: cover;
