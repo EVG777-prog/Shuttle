@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Установить ссылку для мобильных устройств
       link.setAttribute(
         "href",
-        "https://www.google.com/search?hl=ru-FR&biw=1440&bih=760&q=Shuttle%20school%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%96%D0%BD%D0%BE%D0%B7%D0%B5%D0%BC%D0%BD%D0%B8%D1%85%20%D0%BC%D0%BE%D0%B2%20%D0%9E%D1%82%D0%B7%D1%8B%D0%B2%D1%8B&ludocid=10553684779668610242&ibp=gwp%3B0%2C7&sa=X&ved=0CBoQ9fQKKABqFwoTCOifh7Stl4QDFQAAAAAdAAAAABAF#lkt=LocalPoiReviews"
+        "https://search.google.com/local/reviews?placeid=ChIJnzEo1yXP1EARwhyYK2Q4dpI"
       );
     } else {
       // Установить ссылку для десктопов
