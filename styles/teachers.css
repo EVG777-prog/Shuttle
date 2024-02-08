@@ -77,7 +77,7 @@
   }
 
   .teachers-container {
-    max-height: 205rem; /* Высота для пяти строк карточек */
+    max-height: 206rem; /* Высота для пяти строк карточек */
   }
 
   .teachers h2 {
