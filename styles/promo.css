@@ -4,6 +4,7 @@
   gap: 5rem;
   padding-left: 5.6%;
   margin: 0;
+  position: relative;
 }
 
 .promo-content {
@@ -71,7 +72,7 @@
 .promo-img-mobile img {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   height: auto;
   border-radius: 50%;
 }
@@ -91,10 +92,24 @@
     padding: 3rem 1rem;
     gap: 2rem;
     margin-top: 0rem;
-    background-image: url("../assets/promo/promo_background_mobile.png");
-    background-position: center 8rem;
+    background-image: url("../assets/promo/promo_background_mobile.svg");
+    background-position: center 3rem;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  .promo::before {
+    content: "";
+    position: absolute;
+    top: 50rem;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../assets/quadrant-background.svg");
+    background-repeat: no-repeat; /* Убирает повторение изображения */
+    background-size: 50% auto; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
+    background-position: left 50%; /* Располагает изображение по левому краю */
+    z-index: -1;
   }
 
   .promo-content {
@@ -147,10 +162,6 @@
 }
 
 @media (max-width: 470px) {
-  .promo {
-    background-size: contain;
-  }
-
   .promo-content h1 {
     font-size: 2.2rem; /* Уменьшаем размер заголовка */
   }

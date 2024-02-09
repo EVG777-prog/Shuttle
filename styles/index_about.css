@@ -3,7 +3,7 @@
   padding-top: 12rem; /* Замените на реальное значение */
   margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
   position: relative;
-  background-image: url("../assets/about-background.svg");
+  background-image: url("../assets/quadrant-background.svg");
   background-repeat: no-repeat; /* Убирает повторение изображения */
   background-size: 50% auto; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
   background-position: left calc(0% + 30rem); /* Располагает изображение по левому краю */
