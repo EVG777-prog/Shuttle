@@ -21,10 +21,6 @@
   transition: max-height 0.5s ease-in-out; /* Плавный переход высоты */
 }
 
-.teachers-container.expanded {
-  max-height: none; /* При расширении убрать ограничение по высоте */
-}
-
 .teacher {
   background: transparent;
   padding: 1.5rem;

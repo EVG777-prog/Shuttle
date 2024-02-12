@@ -24,8 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         showMoreButton.textContent = "Всі викладачі";
       } else {
         // Раскрываем контейнер
-        teachersContainer.style.maxHeight =
-          teachersContainer.scrollHeight + "px";
+        teachersContainer.style.maxHeight = `${teachersContainer.scrollHeight}px`;
         teachersContainer.classList.add("expanded");
         showMoreButton.textContent = "Приховати";
       }
@@ -35,10 +34,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // updateButtonVisibility();
 
   // Обновляем видимость кнопки при изменении размера окна
-  // window.addEventListener("resize", function () {
-  //   updateTotalHeight();
-  //   updateButtonVisibility();
-  // });
+  window.addEventListener("resize", function () {
+    updateTotalHeight();
+    updateButtonVisibility();
+  });
 
   const teachersCards = teachersContainer.querySelectorAll(".teacher");
 
