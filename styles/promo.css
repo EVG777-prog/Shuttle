@@ -133,6 +133,8 @@
     font-size: 1.8rem; /* Уменьшаем размер подзаголовка */
     margin-bottom: 2rem;
     order: 3;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .promo-content p {

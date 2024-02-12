@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 3rem;
-  max-height: 100rem;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Плавный переход высоты */
 }
@@ -29,7 +28,7 @@
 .teacher {
   background: transparent;
   padding: 1.5rem;
-  height: 46rem;
+  /* height: auto; */
 }
 
 .teacher-photo {
@@ -76,10 +75,6 @@
     margin-bottom: 4rem;
   }
 
-  .teachers-container {
-    max-height: 206rem; /* Высота для пяти строк карточек */
-  }
-
   .teachers h2 {
     font-size: 2.2rem;
     margin-bottom: 3rem;
@@ -92,9 +87,5 @@
   .teacher p {
     font-size: 1.4rem;
     line-height: 1.5;
-  }
-
-  .teacher {
-    height: 35rem;
   }
 }
