@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   } else {
     showTeachers(teachers); // Иначе добавляем учителей в DOM
 
-    window.onload = function () {
+    window.addEventListener("load", function () {
       // Начальное обновление видимых карточек
       updateTotalHeight();
       updateButtonVisibility();
-    };
+    });
 
     showMoreButton.addEventListener("click", () => {
       // Проверяем, раскрыт ли контейнер
@@ -34,10 +34,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // updateButtonVisibility();
 
   // Обновляем видимость кнопки при изменении размера окна
-  window.addEventListener("resize", function () {
-    updateTotalHeight();
-    updateButtonVisibility();
-  });
+  // window.addEventListener("resize", function () {
+  //   window.addEventListener("load", function () {
+  //     // Начальное обновление видимых карточек
+  //     updateTotalHeight();
+  //     updateButtonVisibility();
+  //   });
+  // });
 
   const teachersCards = teachersContainer.querySelectorAll(".teacher");
 
