@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // updateButtonVisibility();
 
   // Обновляем видимость кнопки при изменении размера окна
-  window.addEventListener("resize", function () {
-    // updateTotalHeight();
-    updateButtonVisibility();
-  });
+  // window.addEventListener("resize", function () {
+  //   updateTotalHeight();
+  //   updateButtonVisibility();
+  // });
 
   const teachersCards = teachersContainer.querySelectorAll(".teacher");
 
