@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Обновляем видимость кнопки при изменении размера окна
   window.addEventListener("resize", function () {
-    updateTotalHeight();
+    // updateTotalHeight();
     updateButtonVisibility();
   });
 
