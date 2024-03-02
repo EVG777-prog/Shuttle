@@ -1,8 +1,8 @@
 .teachers {
   text-align: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  padding: 0 5.6%;
+  padding: 5rem 5.6%;
+  padding-top: 17rem; /* Замените на реальное значение */
+  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
 }
 
 .teachers h2 {
@@ -67,8 +67,8 @@
 
 @media screen and (max-width: 480px) {
   .teachers {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 10rem; /* Замените на реальное значение */
+    margin-top: -6rem; /* Такое же значение, но с отрицательным знаком */
   }
 
   .teachers h2 {

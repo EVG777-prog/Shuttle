@@ -1,9 +1,9 @@
 .gift-cards {
-  margin: 10rem auto;
+  margin: 0 auto;
   text-align: center;
   color: black;
   font-family: Helvetica Neue, "Source Sans Pro";
-  padding: 0 5.6%;
+  padding: 5rem 5.6%;
   position: relative;
 }
 
@@ -55,7 +55,7 @@
 /* Для адаптивного дизайна */
 @media (max-width: 768px) {
   .gift-cards {
-    margin: 4rem auto;
+    padding: 3rem 5.6%;
     margin-bottom: 0;
     padding-bottom: 6rem;
   }

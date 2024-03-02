@@ -1,7 +1,9 @@
 /* Устанавливаем box-sizing для всех элементов */
 .rates {
-  margin: 5rem auto;
-  padding: 0 5.6%;
+  margin: 0 auto;
+  padding: 5rem 5.6%;
+  padding-top: 17rem; /* Замените на реальное значение */
+  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
 }
 
 .rates-title {
@@ -164,11 +166,26 @@
 
 /* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
 @media (max-width: 768px) {
+  .rates {
+    padding-bottom: 0;
+    padding-top: 13rem; /* Замените на реальное значение */
+    margin-top: -8rem; /* Такое же значение, но с отрицательным знаком */
+  }
+
   .rate-card {
     max-width: 100%;
   }
+
+  .payment {
+    margin-top: 0;
+  }
 }
 @media (max-width: 480px) {
+  .rates {
+    padding-top: 9rem; /* Замените на реальное значение */
+    margin-top: -6rem; /* Такое же значение, но с отрицательным знаком */
+  }
+
   .rate-card {
     padding: 2rem;
   }
