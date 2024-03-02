@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WM7LGMR6");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
@@ -43,6 +57,16 @@
     <link rel="stylesheet" href="../styles/speaking-club.css" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WM7LGMR6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
       <!-- Existing header content -->
 
@@ -197,7 +221,7 @@
           <img src="../assets/promo/promo-chinese-desktop.webp" alt="China" />
         </div>
       </section>
-      
+
       <section class="quote">
         <div class="quote-box">
           <blockquote>
@@ -457,7 +481,7 @@
       <div class="modal-content">
         <img
           class="close-button"
-          src="../assets/icons/icon-close.svg"
+          src="./assets/icons/icon-close.svg"
           alt="Close icon"
         />
         <h2 class="modal-title">Записатися на пробний урок</h2>
@@ -475,19 +499,9 @@
                 />
               </div>
               <div class="form-row">
-                <label for="telegram">Нік в телеграм через @*</label>
-                <input
-                  type="text"
-                  id="telegram"
-                  name="telegram"
-                  placeholder="@vlada.vlada"
-                  required
-                />
-              </div>
-            </div>
-            <div class="flex-column">
-              <div class="form-row">
-                <label for="phone">Номер телефону*</label>
+                <label for="phone"
+                  >Номер телефону який Ви використовуєте в Telegram*</label
+                >
                 <input
                   type="tel"
                   id="phone"
@@ -496,7 +510,8 @@
                   required
                 />
               </div>
-
+            </div>
+            <div class="flex-column">
               <div class="form-row custom-select">
                 <label for="selectedLanguage">Мова*</label>
                 <input
@@ -518,6 +533,16 @@
                   <!-- Other language options -->
                 </ul>
               </div>
+
+              <div class="form-row">
+                <label for="telegram">Ваш нік в Telegram</label>
+                <input
+                  type="text"
+                  id="telegram"
+                  name="telegram"
+                  placeholder="@vlada.vlada"
+                />
+              </div>
             </div>
           </div>
 
@@ -534,7 +559,7 @@
           </div>
           <p class="text-warning">
             *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
-            <a href="../assets/pdf/rules.pdf" target="_blank"
+            <a href="./assets/pdf/rules.pdf" target="_blank"
               >Публічної оферти</a
             >
           </p>
@@ -542,18 +567,11 @@
         </form>
       </div>
     </div>
-
     <script
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("9NrzRKhONto4fFaOO");
-      })();
-    </script>
 
-    <script src="../scripts/send-email.js"></script>
     <script src="../scripts/data-chinese-teachers.js"></script>
     <script src="../scripts/data-rates.js"></script>
     <script src="../scripts/burger-menu.js"></script>

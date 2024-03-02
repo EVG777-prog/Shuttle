@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+  emailjs.init("-sRJivwCLAK6_wDTd");
+
   // Получаем модальное окно
   const modal = document.getElementById("myModal");
 
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       };
 
       // Отправляем письмо с помощью EmailJS
-      emailjs.send("service_yv1i8y2", "template_455bdyt", formData).then(
+      emailjs.send("service_cxrlixg", "template_nwvu1pd", formData).then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
           alert("Заявку успішно надіслано!");
