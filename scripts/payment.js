@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         body: JSON.stringify({
           amount: amount,
           ccy: 980,
-          redirectUrl: "https://megusta.net.ua/",
+          redirectUrl: "https://shuttleschool.com.ua/",
           merchantPaymInfo: {
             reference: "",
             destination: "Оплата навчання",
