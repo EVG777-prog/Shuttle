@@ -84,12 +84,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
   // Получаем все кастомные селекты
-  var customSelects = document.querySelectorAll(".custom-select");
+  const customSelects = document.querySelectorAll(".modal .custom-select");
 
   customSelects.forEach(function (customSelect) {
-    var selectedValue = customSelect.querySelector(".selected-value");
-    var valueList = customSelect.querySelector(".value-list");
-    var hiddenInput = customSelect.querySelector("input[type=hidden]"); // Предполагается, что у каждого селекта есть свой скрытый input
+    const selectedValue = customSelect.querySelector(".selected-value");
+    const valueList = customSelect.querySelector(".value-list");
+    const hiddenInput = customSelect.querySelector("input[type=hidden]"); // Предполагается, что у каждого селекта есть свой скрытый input
 
     // Обработчик клика по выбранному значению
     selectedValue.addEventListener("click", function () {

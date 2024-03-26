@@ -1,37 +1,91 @@
 .promo {
-  display: flex;
-  padding-bottom: 5rem;
-  gap: 5rem;
-  padding-left: 5.6%;
+  padding: 0;
   margin: 0;
   position: relative;
+  margin-bottom: -3px;
+}
+
+.promo .breadcrumb-nav {
+  text-align: left;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: black;
+  margin: 2rem 0;
+  position: absolute;
+  left: 5.6%;
+  top: 4rem;
+}
+
+.promo .breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.promo .breadcrumb-item {
+  margin-right: 1rem; /* Расстояние между элементами, необходимо уточнить */
+}
+
+.promo .breadcrumb-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.promo .breadcrumb-item--active {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Добавляем стрелку для всех элементов кроме последнего */
+.promo .breadcrumb-item:not(:last-child)::after {
+  content: "›";
+  font-size: 1.8rem;
+  margin-left: 1rem; /* Расстояние до стрелки, необходимо уточнить */
+  color: black; /* Цвет стрелки, необходимо уточнить */
 }
 
 .promo-content {
-  flex-basis: 50%;
+  position: relative;
 }
 
 .promo-content h1 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
   color: black;
-  font-size: 4.8rem;
-  margin-bottom: 1rem;
+  font-size: 3.5vw;
+  position: absolute;
+  top: 19%;
+  left: 5.6%;
 }
 
-.promo-content h2 {
+.promo-content .promo-prefer-list {
+  position: absolute;
+  top: 35%;
+  left: 5.6%;
+}
+
+.promo-content .promo-prefer-item {
   font-family: Helvetica Neue, "Source Sans Pro";
+  font-weight: 500;
   color: #5a808a;
-  font-size: 3rem;
-  font-weight: 700; /* Жирное начертание */
-  margin-bottom: 2rem;
+  font-size: 2.5vw;
 }
 
-.promo-content p {
+.promo-content .text-desktop {
   font-family: Helvetica Neue, "Source Sans Pro";
   color: black;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+  font-size: 2.5vw;
+  position: absolute;
+  top: 52%;
+  left: 5.6%;
+}
+
+.promo-content .text-mobile {
+  display: none;
 }
 
 .promo .trial-button {
@@ -39,14 +93,17 @@
   background-color: #ff9bab;
   color: black;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.7vw;
   border: none;
   padding: 1rem 3rem;
   cursor: pointer;
   border-radius: 5px;
-  width: 45rem;
-  height: 8rem;
+  width: 30vw;
+  height: 5vw;
   margin-top: 2rem;
+  position: absolute;
+  top: 65%;
+  left: 5.6%;
 }
 
 .promo .trial-button:hover {
@@ -54,127 +111,82 @@
 }
 
 .promo-img-desktop {
-  width: 65%;
+  width: 100%;
   height: auto;
+  display: block; /* Показываем на больших экранах */
 }
 .promo-img-desktop img {
-  max-width: 110%;
+  width: 100%;
   height: auto;
-  margin-left: -15%;
 }
 
 .promo-img-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  display: none; /* Скрываем на больших экранах */
 }
 .promo-img-mobile img {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
   height: auto;
-  border-radius: 50%;
-}
-
-.promo-img-desktop {
-  display: block; /* Показываем на больших экранах */
-}
-
-.promo-img-mobile {
-  display: none; /* Скрываем на больших экранах */
 }
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
-  .promo {
-    flex-direction: column; /* Элементы в колонку на маленьких экранах */
-    padding: 3rem 1rem;
-    gap: 2rem;
-    margin-top: 0rem;
-    background-image: url("../assets/promo/promo_background_mobile.svg");
-    background-position: center 3rem;
-    background-repeat: no-repeat;
-    background-size: contain;
+  .promo .breadcrumb-nav {
+    display: none;
   }
-
-  .promo::before {
-    content: "";
-    position: absolute;
-    top: 50rem;
-    left: 0;
-    width: 100%;
-    padding-top: 100%;
-    background-image: url("../assets/quadrant-background.svg");
-    background-repeat: no-repeat; /* Убирает повторение изображения */
-    background-size: 50% auto; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
-    background-position: left 50%; /* Располагает изображение по левому краю */
-    z-index: -1;
-  }
-
-  .promo-content {
-    display: flex;
-    flex-direction: column; /* Элементы в колонку на маленьких экранах */
-  }
-
-  .promo-content,
-  .promo-img {
-    flex-basis: 100%; /* Элементы занимают всю ширину */
-  }
-
-  .promo-content h1 {
-    font-size: 2.6rem; /* Уменьшаем размер заголовка */
-    margin-bottom: 2rem;
-    text-align: center;
-    order: 1;
-  }
-
-  .promo-content h2 {
-    font-size: 1.8rem; /* Уменьшаем размер подзаголовка */
-    margin-bottom: 2rem;
-    order: 3;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .promo-content p {
-    font-size: 1.6rem; /* Уменьшаем размер текста */
-    order: 4;
-  }
-
-  .promo .trial-button {
-    width: 80%; /* Кнопка на всю ширину */
-    height: auto;
-    font-size: 1.5rem; /* Уменьшаем размер шрифта кнопки */
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    order: 2;
-  }
-
   .promo-img-desktop {
-    display: none; /* Показываем на больших экранах */
+    display: none;
   }
 
   .promo-img-mobile {
-    display: flex; /* Скрываем на больших экранах */
-    order: 1;
+    display: block;
   }
-}
 
-@media (max-width: 470px) {
   .promo-content h1 {
-    font-size: 2.2rem; /* Уменьшаем размер заголовка */
-  }
-
-  .promo-content h2 {
-    font-size: 1.5rem; /* Уменьшаем размер подзаголовка */
+    font-size: 2.2rem;
+    position: relative;
     text-align: center;
-    font-weight: 700;
+    margin-top: 2rem;
+    top: 0;
+    left: 0;
   }
 
-  .promo-content p {
-    font-size: 1.5rem; /* Уменьшаем размер текста */
+  .promo-content .promo-prefer-list {
+    display: none;
+  }
+
+  .promo-content .text-desktop {
+    display: none;
+  }
+
+  .promo-content .text-mobile {
+    font-family: Helvetica Neue, "Source Sans Pro";
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5a808a;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 5.6%;
+  }
+
+  .promo .trial-button {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    width: 80%;
+    height: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex; /* Сделать контейнер flex */
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    margin: 3rem auto;
   }
 }

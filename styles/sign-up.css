@@ -71,12 +71,12 @@
   background-color: #dee6e8;
 }
 
-.custom-select {
+.modal .custom-select {
   position: relative;
   font-family: Helvetica Neue, "Source Sans Pro";
 }
 
-.selected-value {
+.modal .selected-value {
   padding: 2rem;
   font-size: 1.8rem;
   background-color: #dee6e8;
@@ -89,7 +89,7 @@
   background-size: 2rem; /* Размер иконки */
 }
 
-.value-list {
+.modal .value-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -103,17 +103,17 @@
   border: 1px solid black;
 }
 
-.value-list.hidden {
+.modal .value-list.hidden {
   display: none;
 }
 
-.value-list li {
+.modal .value-list li {
   padding: 2rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-.value-list li:hover {
+.modal .value-list li:hover {
   background-color: #dee6e8;
 }
 
@@ -153,10 +153,10 @@
   gap: 1rem;
 }
 
-.text-warning a {
+.modal .text-warning a {
   color: #5a808a;
 }
-.text-warning a:hover {
+.modal .text-warning a:hover {
   text-decoration: underline;
 }
 
@@ -197,13 +197,13 @@
     margin-bottom: 1rem;
   }
 
-  .selected-value {
+  .modal .selected-value {
     padding: 1rem;
     font-size: 1.5rem;
     background-size: 1.5rem; /* Размер иконки */
   }
 
-  .value-list {
+  .modal .value-list {
     font-size: 1.5rem;
   }
 

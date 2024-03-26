@@ -1,0 +1,309 @@
+/* Устанавливаем box-sizing для всех элементов */
+.schedule-section {
+  margin: 0 auto;
+  padding: 5rem 5.6%;
+  padding-top: 17rem; /* Замените на реальное значение */
+  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
+}
+
+.schedule-title {
+  font-family: "Exo", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.schedule-description {
+  font-family: Helvetica Neue, "Source Sans Pro";
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.schedule-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding: 0 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-section .custom-select {
+  max-width: 50rem;
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.schedule-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+  gap: 2rem;
+  grid-auto-rows: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.schedule-card {
+  font-family: Helvetica Neue, "МВ Body Text";
+  border-top: 10px solid black;
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 0rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.schedule-card.zero {
+  border-color: #96dc95;
+}
+.schedule-card.zero .schedule-card_level {
+  color: #96dc95;
+}
+
+.schedule-card.A1 {
+  border-color: #31c55b;
+}
+
+.schedule-card.A1 .schedule-card_level {
+  color: #31c55b;
+}
+
+.schedule-card.A2 {
+  border-color: #068d2c;
+}
+
+.schedule-card.A2 .schedule-card_level {
+  color: #068d2c;
+}
+
+.schedule-card.B1 {
+  border-color: #4c9ac6;
+}
+
+.schedule-card.B1 .schedule-card_level {
+  color: #4c9ac6;
+}
+
+.schedule-card.B2 {
+  border-color: #156d9e;
+}
+
+.schedule-card.B2 .schedule-card_level {
+  color: #156d9e;
+}
+
+.schedule-card_level {
+  font-size: 3rem;
+  text-align: right;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.schedule-card_start,
+.schedule-card_schedule,
+.schedule-card_teacher,
+.schedule-card_rate {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-card_start {
+  color: #6c6c6c;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+.schedule-card_info-container {
+  gap: 1rem;
+}
+
+.schedule-card .order {
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+  height: 4rem;
+  font-size: 1.8rem;
+  background-color: #d9ae4f;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.additional-info .order {
+  display: block;
+}
+
+.schedule-card .order:hover {
+  background-color: #cd961c;
+}
+
+.schedule-card .show-more {
+  width: 100%;
+  height: 3rem;
+  background-image: url("../assets/icons/icon-select-open.svg");
+  background-position: center; /* Позиционирование иконки */
+  background-repeat: no-repeat;
+  background-size: 2rem; /* Размер иконки */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.schedule-card.additional-info .show-more {
+  background-image: url("../assets/icons/icon-select-close.svg");
+}
+
+.schedule-section .custom-select {
+  position: relative;
+  font-family: Helvetica Neue, "Source Sans Pro";
+}
+
+.schedule-section .selected-value {
+  padding: 2rem;
+  font-size: 1.8rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-image: url("../assets/icons/icon-select-open.svg");
+  background-position: right 2rem top 50%; /* Позиционирование иконки */
+  background-repeat: no-repeat;
+  background-size: 2rem; /* Размер иконки */
+}
+
+.schedule-section .custom-select.open .selected-value {
+  background-image: url("../assets/icons/icon-select-close.svg");
+}
+
+.schedule-section .value-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1000;
+  font-size: 1.8rem;
+  border: 1px solid black;
+}
+
+.schedule-section .value-list.hidden {
+  display: none;
+}
+
+.schedule-section .value-list li {
+  padding: 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.schedule-section .value-list li:hover {
+  background-color: #dee6e8;
+}
+
+.schedule-section .show-more-lessons {
+  display: none;
+  width: 100%;
+  height: 5rem;
+  background-color: #ff9bab;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-family: Helvetica Neue, "Source Sans Pro";
+  margin-top: 3rem;
+}
+
+/* Добавьте сюда любые медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .schedule-section {
+    padding-bottom: 3rem;
+    padding-top: 13rem; /* Замените на реальное значение */
+    margin-top: -8rem; /* Такое же значение, но с отрицательным знаком */
+  }
+
+  .schedule-card {
+    max-width: 100%;
+  }
+
+  .schedule-filters {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .schedule-section {
+    padding-top: 9rem; /* Замените на реальное значение */
+    margin-top: -6rem; /* Такое же значение, но с отрицательным знаком */
+  }
+
+  .schedule-container {
+    gap: 1rem;
+  }
+
+  .schedule-card {
+    margin-bottom: 0;
+  }
+
+  .schedule-title {
+    font-size: 2.2rem;
+  }
+
+  .schedule-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .schedule-section .selected-value {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    background-size: 1rem; /* Размер иконки */
+  }
+
+  .schedule-card_level {
+    font-size: 2rem;
+  }
+
+  .schedule-card_start {
+    font-size: 1.4rem;
+    top: 0.8rem;
+  }
+
+  .schedule-card_schedule,
+  .schedule-card_teacher,
+  .schedule-card_rate {
+    font-size: 1.5rem;
+    /* margin-bottom: 1rem; */
+  }
+
+  .schedule-card_rate {
+    margin-bottom: 0;
+  }
+
+  .schedule-card .order {
+    margin-top: 1rem;
+  }
+}

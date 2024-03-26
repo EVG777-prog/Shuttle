@@ -49,9 +49,10 @@
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/quote.css" />
-    <link rel="stylesheet" href="../styles/breadcrumbs.css" />
+    <!-- <link rel="stylesheet" href="../styles/breadcrumbs.css" /> -->
     <link rel="stylesheet" href="../styles/promo.css" />
     <link rel="stylesheet" href="../styles/rates.css" />
+    <link rel="stylesheet" href="../styles/schedule.css" />
     <link rel="stylesheet" href="../styles/gift-cards.css" />
     <link rel="stylesheet" href="../styles/teachers.css" />
     <link rel="stylesheet" href="../styles/speaking-club.css" />
@@ -178,51 +179,44 @@
     </header>
 
     <main>
-      <section class="breadcrumbs">
-        <nav class="breadcrumb-nav">
-          <ul class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="../">Головна</a></li>
-            <li class="breadcrumb-item breadcrumb-item--active">Французька</li>
-          </ul>
-        </nav>
-      </section>
-
       <section class="promo">
         <div class="promo-content">
-          <h1>Французька мова</h1>
+          <nav class="breadcrumb-nav">
+            <ul class="breadcrumb-list">
+              <li class="breadcrumb-item"><a href="../">Головна</a></li>
+              <li class="breadcrumb-item breadcrumb-item--active">
+                Французька
+              </li>
+            </ul>
+          </nav>
+          <h1>Курси французької мови<br />онлайн в Shuttle school</h1>
           <div class="promo-img-mobile">
             <img
               src="../assets/promo/promo-french-mobile.webp"
               alt="Вид на Эйфелеву башню"
             />
           </div>
-          <h2>
-            Декілька цікавих фактів про цю, чи не найромантичнішу мову в світі:
-          </h2>
-          <p>
-            <b>Мова кохання:</b> Французька мова часто вважається "мовою
-            кохання". Це пов'язано з тим, що французька мова вважається однією з
-            найромантичніших у світі.
+          <div class="promo-img-desktop">
+            <img
+              src="../assets/promo/promo-french-desktop.webp"
+              alt="Вид на Эйфелеву башню"
+            />
+          </div>
+          <ul class="promo-prefer-list">
+            <li class="promo-prefer-item">• мінігрупи</li>
+            <li class="promo-prefer-item">• живі заняття з викладачем</li>
+            <li class="promo-prefer-item">• комунікативна методика</li>
+          </ul>
+          <p class="text-desktop">
+            Починай говорити французькою вже<br />з перших занять
           </p>
-          <p>
-            <b>Запозичення:</b> шампанське, ресторан, шоколад, кафе та інші
-            слова запозичені з французької. Погодьтесь, самі слова вказують на
-            вміння французів насолоджуватись життям. L’art de vivre - як сенс
-            життя, вміння тут і зараз відчувати гармонію та щастя.
-          </p>
-          <p>
-            <b>Не тільки Франція:</b> у 29 країнах французька є офіційною мовою,
-            в тому числі у Швейцарії, Бельгії, деяких країнах Африки
+          <p class="text-mobile">
+            Живі заняття з викладачем в мінігрупі чи індивідуально. Починай
+            говорити французькою вже з перших занять
           </p>
           <button class="trial-button apply-button">
             Записатися на пробний урок
           </button>
-        </div>
-        <div class="promo-img-desktop">
-          <img
-            src="../assets/promo/promo-french-desktop.webp"
-            alt="Вид на Эйфелеву башню"
-          />
         </div>
       </section>
 
@@ -294,6 +288,45 @@
         <h2>Наші викладачі</h2>
         <div class="teachers-container"></div>
         <button class="show-more">Всі викладачі</button>
+      </section>
+
+      <section id="schedule" class="schedule-section">
+        <h2 class="schedule-title">Розклад</h2>
+        <p class="schedule-description">
+          Обирайте одну з діючих груп або групу з нуля <br />
+          зі зручним для вас розкладом
+        </p>
+        <div class="flex-row schedule-filters">
+          <div class="custom-select">
+            <!-- <label for="selectedLanguage">Мова*</label> -->
+            <input type="hidden" id="selectedTime" name="time" value="any" />
+            <div class="selected-value" data-default="any">Будь-який час</div>
+            <ul class="value-list hidden">
+              <li data-value="any">Будь-який час</li>
+              <li data-value="Ранковий час">Ранковий час</li>
+              <li data-value="Денний час">Денний час</li>
+              <li data-value="Вечірній час">Вечірній час</li>
+              <!-- Other language options -->
+            </ul>
+          </div>
+          <div class="custom-select">
+            <!-- <label for="selectedLanguage">Мова*</label> -->
+            <input type="hidden" id="selectedLevel" name="level" value="any" />
+            <div class="selected-value" data-default="any">Всі рівні</div>
+            <ul class="value-list hidden">
+              <li data-value="any">Всі рівні</li>
+              <li data-value="з нуля">З нуля</li>
+              <li data-value="A1">A1</li>
+              <li data-value="A2">A2</li>
+              <li data-value="B1">B1</li>
+              <li data-value="B2">B2</li>
+              <!-- Other language options -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="schedule-container"></div>
+        <button class="show-more-lessons">Більше</button>
       </section>
 
       <section id="club" class="speaking-club flex-column">
@@ -533,7 +566,7 @@
       <div class="modal-content">
         <img
           class="close-button"
-          src="./assets/icons/icon-close.svg"
+          src="../assets/icons/icon-close.svg"
           alt="Close icon"
         />
         <h2 class="modal-title">Записатися на пробний урок</h2>
@@ -611,7 +644,7 @@
           </div>
           <p class="text-warning">
             *Натискаючи на кнопку “Залишити заявку” ви погоджуєтеся з умовами
-            <a href="./assets/pdf/rules.pdf" target="_blank"
+            <a href="../assets/pdf/rules.pdf" target="_blank"
               >Публічної оферти</a
             >
           </p>
@@ -625,10 +658,12 @@
       src="https://cdn.emailjs.com/dist/email.min.js"
     ></script>
 
+    <script src="../scripts/data-french-schedule.js"></script>
     <script src="../scripts/data-french-teachers.js"></script>
     <script src="../scripts/data-rates.js"></script>
     <script src="../scripts/burger-menu.js"></script>
     <script src="../scripts/teachers.js"></script>
+    <script src="../scripts/schedule.js"></script>
     <script src="../scripts/rates.js"></script>
     <script src="../scripts/sign-up.js"></script>
   </body>
