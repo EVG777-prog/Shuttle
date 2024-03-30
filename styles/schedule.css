@@ -1,9 +1,8 @@
-/* Устанавливаем box-sizing для всех элементов */
 .schedule-section {
   margin: 0 auto;
   padding: 5rem 5.6%;
-  padding-top: 17rem; /* Замените на реальное значение */
-  margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
+  padding-top: 17rem;
+  margin-top: -12rem;
 }
 
 .schedule-title {
@@ -36,19 +35,32 @@
 .schedule-section .custom-select {
   max-width: 50rem;
   width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .schedule-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
-  gap: 2rem;
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem; /* Расстояние между карточками */
   margin: 0 auto;
+  max-width: 100%; /* Максимальная ширина контейнера для центровки */
+  box-sizing: border-box; /* Учитываем padding и border в ширине элемента */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.schedule-column {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  /* margin: 0 auto; */
+  /* width: 35rem; */
+  min-width: 25rem;
   max-width: 100%;
   box-sizing: border-box;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  /* justify-content: space-between; */
+  overflow: hidden;
 }
 
 .schedule-card {
@@ -59,14 +71,16 @@
   padding-left: 2rem;
   padding-right: 0rem;
   padding-bottom: 0.5rem;
+  max-width: 45rem;
   width: 100%;
   color: black;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 0;
+  /* margin-bottom: 1rem; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .schedule-card.zero {
@@ -149,7 +163,7 @@
   cursor: pointer;
 }
 
-.additional-info .order {
+.schedule-card.additional-info .order {
   display: block;
 }
 
@@ -261,6 +275,10 @@
   }
 
   .schedule-container {
+    gap: 1rem;
+  }
+
+  .schedule-column {
     gap: 1rem;
   }
 

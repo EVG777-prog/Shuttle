@@ -76,6 +76,16 @@
   font-family: Helvetica Neue, "Source Sans Pro";
 }
 
+.modal.schedule .custom-select {
+  display: none;
+}
+.modal.schedule .flex-row {
+  flex-direction: column;
+}
+.modal.schedule .modal-content {
+  max-width: 70rem;
+}
+
 .modal .selected-value {
   padding: 2rem;
   font-size: 1.8rem;

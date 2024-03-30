@@ -55,22 +55,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     showLessons(schedule); // Иначе добавляем лекции в DOM
 
+    // Получаем все кнопки, которые открывают модальное окно
+
     showMoreLessonsButton.addEventListener("click", () => {
       // Проверяем, раскрыт ли контейнер
       if (scheduleContainer.classList.contains("expanded")) {
-        showLessons(schedule, false);
+        // showLessons(schedule);
         scheduleContainer.classList.remove("expanded");
         showMoreLessonsButton.textContent = "Більше";
+        setHeightContainer();
       } else {
         // Раскрываем контейнер
-        showLessons(schedule, true);
+        // showLessons(schedule);
         scheduleContainer.classList.add("expanded");
         showMoreLessonsButton.textContent = "Приховати";
+        setHeightContainer();
       }
     });
   }
 
-  function showLessons(schedule, all = false) {
+  function showLessons(schedule) {
+    const screenWidth = window.innerWidth;
+
+    // Получаем модальное окно
+    const modal = document.getElementById("myModal");
+
     const time = selectedTimeInput.value;
     const level = selectLevelInput.value;
     let lessons = [...schedule];
@@ -82,22 +91,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
       lessons = lessons.filter((lesson) => lesson.time.includes(time));
     }
 
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 480) {
-      showMoreLessonsButton.style.display =
-        lessons.length > 10 ? "block" : "none";
-      lessons = all ? lessons : lessons.slice(0, 10);
-    }
-
     scheduleContainer.innerHTML = "";
 
-    lessons.forEach((lesson) => {
+    let countColumns = 4;
+
+    if (screenWidth < 716) {
+      countColumns = 1;
+    } else if ((screenWidth >= 716) & (screenWidth < 1076)) {
+      countColumns = 2;
+    } else if ((screenWidth >= 1076) & (screenWidth < 1436)) {
+      countColumns = 3;
+    } else if ((screenWidth >= 1436) & (screenWidth < 1797)) {
+      countColumns = 4;
+    } else {
+      countColumns = 5;
+    }
+
+    for (i = 0; i < countColumns; i++) {
+      const scheduleColumn = document.createElement("div");
+      scheduleColumn.classList.add("schedule-column");
+      scheduleContainer.appendChild(scheduleColumn);
+    }
+
+    const scheduleColumns =
+      scheduleSection.querySelectorAll(".schedule-column");
+
+    console.log(scheduleColumns);
+
+    lessons.forEach((lesson, i) => {
       const lessonElement = document.createElement("div");
       lessonElement.classList.add("schedule-card");
       lessonElement.classList.add(
         `${lesson.level === "з нуля" ? "zero" : lesson.level}`
       );
+
+      const rate = rates.filter((rate) => rate.name === lesson.rate)[0];
+      const rateText = rate
+        ? `${rate.price} грн/${rate.quantity} уроків`
+        : lesson.rate;
 
       lessonElement.innerHTML = `
             <span class="schedule-card_start">${
@@ -113,14 +144,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
               <div class="schedule-card_info-data">
                 <p class="schedule-card_schedule">${lesson.schedule}</p>
                 <p class="schedule-card_teacher">${lesson.teacher}</p>
-                <p class="schedule-card_rate">${lesson.rate}</p></div>
+                <p class="schedule-card_rate">${rateText}</p></div>
               </div>
             </div>
             <button class="order">Записатися</button>
             <button class="show-more"></button>
             `;
 
-      scheduleContainer.appendChild(lessonElement);
+      scheduleColumns[i % countColumns].appendChild(lessonElement);
     });
 
     const showButtons = scheduleContainer.querySelectorAll(".show-more");
@@ -128,9 +159,77 @@ document.addEventListener("DOMContentLoaded", (event) => {
     showButtons.forEach((showButton) =>
       showButton.addEventListener("click", function () {
         const scheduleCard = this.closest(".schedule-card");
-        console.log(scheduleCard);
         scheduleCard.classList.toggle("additional-info");
+        setHeightContainer();
       })
     );
+
+    const btns = document.querySelectorAll(".schedule-section .order");
+
+    // Добавляем обработчик событий для каждой кнопки
+    btns.forEach(function (btn) {
+      btn.onclick = function () {
+        const scheduleCard = btn.closest(".schedule-card");
+
+        console.log(scheduleCard);
+
+        const level = scheduleCard.querySelector(
+          ".schedule-card_level"
+        ).textContent;
+        const schedule = scheduleCard.querySelector(
+          ".schedule-card_info-data .schedule-card_schedule"
+        ).textContent;
+        const teacher = scheduleCard.querySelector(
+          ".schedule-card_info-data .schedule-card_teacher"
+        ).textContent;
+        const rate = scheduleCard.querySelector(
+          ".schedule-card_info-data .schedule-card_rate"
+        ).textContent;
+
+        const data = `${level} ${schedule} ${teacher} ${rate}`;
+
+        modal.dataset.lesson = data;
+
+        modal.style.display = "block";
+        modal.classList.add("schedule");
+        document.body.classList.add("no-scroll");
+      };
+    });
+
+    if (screenWidth <= 715) {
+      showMoreLessonsButton.style.display =
+        lessons.length > 10 ? "block" : "none";
+
+      setHeightContainer();
+    }
+  }
+  function setHeightContainer() {
+    // Получаем вычисленные стили контейнера
+    const computedStyles = window.getComputedStyle(
+      scheduleContainer.querySelector(".schedule-column")
+    );
+
+    // Получаем значение свойства gap
+    const gap = computedStyles.getPropertyValue("gap").replace(/\D/g, "");
+
+    let scheduleCards;
+    if (scheduleContainer.classList.contains("expanded")) {
+      scheduleCards = scheduleContainer.querySelectorAll(".schedule-card");
+    } else {
+      // Получаем первые 10 элементов с классом schedule-card
+      scheduleCards = scheduleContainer.querySelectorAll(
+        ".schedule-card:nth-of-type(-n+10)"
+      );
+    }
+
+    // Инициализируем переменную для хранения высоты
+    let totalHeight = gap * (scheduleCards.length - 1);
+
+    // Итерируемся по первым 10 элементам и суммируем их высоту
+    scheduleCards.forEach((scheduleCard) => {
+      totalHeight += scheduleCard.getBoundingClientRect().height;
+    });
+
+    scheduleContainer.style.maxHeight = `${totalHeight}px`;
   }
 });

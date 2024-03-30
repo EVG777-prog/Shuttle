@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const modal = document.getElementById("myModal");
     modal.style.display = "none";
     document.body.classList.remove("no-scroll");
+    modal.classList.remove("schedule");
 
     // Сброс формы
     document.querySelector(".modal-form").reset();
@@ -68,6 +69,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         experience: document.querySelector(".selected-value[data-default='no']")
           .textContent, // Использование текста выбранного элемента
       };
+
+      if (modal.classList.contains("schedule")) {
+        formData.lesson = modal.dataset.lesson;
+      }
 
       // Отправляем письмо с помощью EmailJS
       emailjs.send("service_cxrlixg", "template_nwvu1pd", formData).then(
