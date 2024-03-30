@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var link = document.querySelector(".google-button");
+  const link = document.querySelector(".google-button");
+  const reviewsCount = document.querySelector(".reviews-count");
+
+  reviewsCount.textContent = `${GOOGLE_MAPS_REVIEWS_COUNT} відгуків`;
 
   function updateLink() {
     if (window.innerWidth <= 768) {
