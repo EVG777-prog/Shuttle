@@ -9,6 +9,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН, СР 9:00",
     time: "Ранковий час",
     teacher: "Катя",
@@ -16,6 +17,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ВТ, ЧТ 16:00 ПТ 12:30",
     time: "Денний час",
     teacher: "Андрій",
@@ -23,6 +25,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН, СР 09:00",
     time: "Ранковий час",
     teacher: "Маргарита",
@@ -30,6 +33,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН, СР, ПТ 14:10",
     time: "Денний час",
     teacher: "Катерина",
@@ -37,6 +41,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН, ЧТ 19:00",
     time: "Вечірній час",
     teacher: "Наталія",
@@ -44,6 +49,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН, СР 12:30",
     time: "Денний час",
     teacher: "Катерина",
@@ -51,6 +57,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ВТ, ПТ 19:00",
     time: "Вечірній час",
     teacher: "Наталія",
@@ -58,6 +65,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "СР, ПТ 9:00 (60 хв.)",
     time: "Ранковий час",
     teacher: "Андрій",
@@ -65,6 +73,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ПН 19:00, СБ 15:50",
     time: "Вечірній час",
     teacher: "Аріна",
@@ -72,6 +81,7 @@ const schedule = [
   },
   {
     level: "A1",
+    timeStart: "",
     schedule: "ВТ, ЧТ 10:40",
     time: "Ранковий час",
     teacher: "Оксана",
@@ -79,6 +89,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ВТ, ПТ 9:00",
     time: "Ранковий час",
     teacher: "Оксана",
@@ -86,6 +97,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ПН, ЧТ 20:35",
     time: "Вечірній час",
     teacher: "Марія",
@@ -93,6 +105,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ПН, ЧТ 19:00, СБ 9:00",
     time: "Вечірній час",
     teacher: "Марія",
@@ -100,6 +113,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ПН 15:50 СБ 12:30",
     time: "Денний час",
     teacher: "Лоліта",
@@ -107,6 +121,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ВТ, ПТ 9:00",
     time: "Ранковий час",
     teacher: "Марія",
@@ -114,6 +129,7 @@ const schedule = [
   },
   {
     level: "A2",
+    timeStart: "",
     schedule: "ВТ, ПТ 9:00",
     time: "Ранковий час",
     teacher: "Оксана",
@@ -121,6 +137,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "СР, ПТ 14:10",
     time: "Денний час",
     teacher: "Марія",
@@ -128,6 +145,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "СР, ПТ 15:50",
     time: "Денний час",
     teacher: "Маргарита",
@@ -135,6 +153,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "ВТ, ЧТ 9:00",
     time: "Ранковий час",
     teacher: "Андрій",
@@ -142,6 +161,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "ПН, ЧТ 10:40",
     time: "Ранковий час",
     teacher: "Катерина",
@@ -149,6 +169,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "СР, ПТ 15:50",
     time: "Денний час",
     teacher: "Катерина",
@@ -156,6 +177,7 @@ const schedule = [
   },
   {
     level: "B1",
+    timeStart: "",
     schedule: "ПН, ЧТ 20:35",
     time: "Вечірній час",
     teacher: "Аріна",

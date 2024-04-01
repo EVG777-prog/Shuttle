@@ -9,6 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   background-color: #edecea;
   padding: 0 5.6%;
 }
@@ -23,27 +24,30 @@ header .logo {
   flex-shrink: 0;
 }
 
+header nav {
+  flex-grow: 1;
+  width: 100%; /* Ширина контейнера на всю доступную область */
+}
 header .main-navigation {
-  /* margin-left: 6rem; */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  gap: 1rem; /* Расстояние между пунктами меню */
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ширина контейнера на всю доступную область */
 }
 
 header .menu-item {
-  margin: 0 1rem;
+  margin: 0;
   font-size: 1.8rem;
-  line-height: 2.2rem;
   font-weight: 400;
-  line-height: 1.2575;
   color: #000000;
   font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-header .main-navigation li {
-  margin-right: 2rem;
 }
 
 header .main-navigation a {
@@ -54,6 +58,74 @@ header .main-navigation a {
 
 header .main-navigation a:hover {
   text-decoration: underline;
+}
+
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header .dropdown .dropdown-name:hover {
+  text-decoration: none; /* Убираем подчеркивание текста */
+  cursor: default; /* Задаем стандартный курсор */
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -70%;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 2rem;
+  border: 1px solid #ff9bab;
+}
+
+header .dropdown-content li {
+  width: 100%;
+}
+header .dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+header .dropdown-content a:hover {
+  text-decoration: none;
+  background-color: #ff9bab;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 1px solid #ff9bab;
+  border-color: #ff9bab transparent transparent #ff9bab;
+  z-index: -101;
+}
+
+header .dropdown-content::after {
+  content: "";
+  position: absolute;
+  top: -2.5rem; /* Расстояние от верхней границы подменю */
+  left: 0;
+  width: 100%;
+  height: 2.5rem; /* Высота невидимой области */
+  z-index: 1; /* Убедитесь, что z-index выше, чем у выпадающего меню */
 }
 
 header .contact-info {
@@ -112,7 +184,6 @@ header .header-buttons {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-left: 1rem;
 }
 
 header .fullscreen-menu-buttons {
@@ -260,10 +331,6 @@ header .icon-mastercard {
 
 /* Стили для адаптивности */
 @media screen and (max-width: 1200px) {
-  header .main-navigation {
-    flex-direction: column;
-  }
-
   header .fullscreen-menu-buttons,
   header .header-buttons {
     flex-direction: column;
