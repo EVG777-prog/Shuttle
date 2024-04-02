@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+// document.addEventListener("DOMContentLoaded", (event) => {
+window.onload = function () {
   // заполнение учителей
   const showMoreButton = document.querySelector(".show-more");
   const teachersContainer = document.querySelector(".teachers-container");
@@ -30,17 +31,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   }
-
-  // updateButtonVisibility();
-
-  // Обновляем видимость кнопки при изменении размера окна
-  // window.addEventListener("resize", function () {
-  //   window.addEventListener("load", function () {
-  //     // Начальное обновление видимых карточек
-  //     updateTotalHeight();
-  //     updateButtonVisibility();
-  //   });
-  // });
 
   const teachersCards = teachersContainer.querySelectorAll(".teacher");
 
@@ -124,4 +114,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     return totalHeight;
   }
-});
+};
