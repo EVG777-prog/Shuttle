@@ -116,8 +116,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const scheduleColumns =
       scheduleSection.querySelectorAll(".schedule-column");
 
-    console.log(scheduleColumns);
-
     lessons.forEach((lesson, i) => {
       const lessonElement = document.createElement("div");
       lessonElement.classList.add("schedule-card");

@@ -1,5 +1,4 @@
-// document.addEventListener("DOMContentLoaded", (event) => {
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", (event) => {
   // заполнение учителей
   const showMoreButton = document.querySelector(".show-more");
   const teachersContainer = document.querySelector(".teachers-container");
@@ -32,8 +31,6 @@ window.onload = function () {
     });
   }
 
-  const teachersCards = teachersContainer.querySelectorAll(".teacher");
-
   function showTeachers(teachers) {
     teachers.forEach((teacher) => {
       const teacherElement = document.createElement("div");
@@ -62,6 +59,8 @@ window.onload = function () {
   }
 
   function updateTotalHeight() {
+    const teachersCards = teachersContainer.querySelectorAll(".teacher");
+
     let visibleCount;
     const screenWidth = window.innerWidth;
 
@@ -77,6 +76,7 @@ window.onload = function () {
       teachersCards,
       visibleCount
     );
+
     teachersContainer.style.maxHeight = `${maxHeight}px`;
   }
 
@@ -114,4 +114,4 @@ window.onload = function () {
 
     return totalHeight;
   }
-};
+});
