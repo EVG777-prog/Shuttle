@@ -69,7 +69,7 @@ const schedule = [
     schedule: "СР, ПТ 19:00",
     time: "Вечірній час",
     teacher: "Дарина",
-    rate: "2500 грн./8 уроків",
+    rate: "Тариф “Двічі”",
   },
   {
     level: "A1",

@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
   // заполнение тарифов
   const ratesList = document.querySelector(".rates-container");
+
+  const rates = await getRates();
 
   rates.forEach((rate) => {
     if (rate.details.length > 0) {

@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
   // заполнение учителей
   const showMoreButton = document.querySelector(".show-more");
   const teachersContainer = document.querySelector(".teachers-container");
   const teachersSection = document.querySelector(".teachers");
+
+  const teachers = await getTeachers();
 
   // Если учителей нет, скрываем секцию
   if (teachers.length === 0) {
@@ -38,12 +40,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       teacherElement.innerHTML = `
            <img
-              src="${teacher.photo}"
+              src="../assets/teachers/${teacher.photo}.webp"
               alt="Photo of ${teacher.name}"
               class="teacher-photo"
             />
             <h3>${teacher.name}</h3>
-            <p>${teacher.description}</p>
+            <p>“${teacher.description}”</p>
           `;
 
       teachersContainer.appendChild(teacherElement);

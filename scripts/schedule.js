@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
   // заполнение тарифов
   const scheduleSection = document.querySelector(".schedule-section");
   const scheduleContainer = scheduleSection.querySelector(
@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     scheduleSection.querySelector(".show-more-lessons");
   const selectedTimeInput = scheduleSection.querySelector("#selectedTime");
   const selectLevelInput = scheduleSection.querySelector("#selectedLevel");
+
+  const schedule = await getLessons();
+  let rates;
 
   // Если расписания нет, скрываем секцию
   if (!schedule.length) {
@@ -53,7 +56,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     });
 
-    showLessons(schedule); // Иначе добавляем лекции в DOM
+    setTimeout(async () => {
+      rates = await getRates();
+      showLessons(schedule); // Иначе добавляем лекции в DOM
+    }, 1000);
 
     // Получаем все кнопки, которые открывают модальное окно
 
@@ -73,7 +79,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   }
-
+  // использование с локальными данными
   function showLessons(schedule) {
     const screenWidth = window.innerWidth;
 
@@ -88,7 +94,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
       lessons = lessons.filter((lesson) => lesson.level.includes(level));
 
     if (time !== "any") {
-      lessons = lessons.filter((lesson) => lesson.time.includes(time));
+      lessons = lessons.filter((lesson) => {
+        const timeLesson = parseInt(
+          lesson.schedule.substring(
+            lesson.schedule.indexOf(":") - 2,
+            lesson.schedule.indexOf(":")
+          )
+        );
+        if (time === "Ранковий час" && timeLesson < 12) {
+          return true;
+        } else if (
+          time === "Денний час" &&
+          timeLesson >= 12 &&
+          timeLesson < 17
+        ) {
+          return true;
+        } else if (time === "Вечірній час" && timeLesson >= 17) {
+          return true;
+        }
+        return false;
+      });
     }
 
     scheduleContainer.innerHTML = "";
@@ -201,6 +226,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       setHeightContainer();
     }
   }
+
   function setHeightContainer() {
     // Получаем вычисленные стили контейнера
     const computedStyles = window.getComputedStyle(
