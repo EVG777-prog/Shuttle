@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const selectedTimeInput = scheduleSection.querySelector("#selectedTime");
   const selectLevelInput = scheduleSection.querySelector("#selectedLevel");
 
-  const schedule = await getLessons();
+  const pageTitle = document.title;
+
+  const schedule = await getLessons(pageTitle);
   let rates;
 
   // Если расписания нет, скрываем секцию
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     setTimeout(async () => {
       rates = await getRates();
       showLessons(schedule); // Иначе добавляем лекции в DOM
-    }, 1000);
+    }, 100);
 
     // Получаем все кнопки, которые открывают модальное окно
 

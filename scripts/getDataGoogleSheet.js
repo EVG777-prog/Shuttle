@@ -1,6 +1,7 @@
 let cachedLesson = null;
 let cachedRates = null;
 let cachedTeachers = null;
+let cachedCountGoogleReviews = null;
 
 async function getDataFromGoogleSheet(page, range, sheet_id) {
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheet_id}/values/${page}!${range}?key=${GOOGLE_DOCS_API}`;
@@ -52,14 +53,32 @@ function getTeachersArray(data = []) {
   });
 }
 
-async function getLessons() {
+async function getLessons(pageTitle) {
+  let pageSheet;
+  switch (pageTitle) {
+    case "Французька":
+      pageSheet = "French_lessons";
+      break;
+    case "Іспанська":
+      pageSheet = "Spanish_lessons";
+      break;
+    case "Італійська":
+      pageSheet = "Italian_lessons";
+      break;
+    case "Німецька":
+      pageSheet = "German_lessons";
+      break;
+    case "Англійська":
+      pageSheet = "English_lessons";
+      break;
+  }
   if (!SHEET_ID) return [];
 
   if (cachedLesson === null) {
     try {
       // Ваш код для получения данных, например, запрос к серверу
       const dataLessons = await getDataFromGoogleSheet(
-        "Lessons",
+        pageSheet,
         "A2:E333",
         SHEET_ID
       );
@@ -68,7 +87,7 @@ async function getLessons() {
       cachedLesson = data; // Кэшируем данные
     } catch (error) {
       console.error("Error fetching data:", error);
-      throw error;
+      return [];
     }
   }
   return cachedLesson;
@@ -81,7 +100,7 @@ async function getRates() {
       const dataRates = await getDataFromGoogleSheet(
         "Rates",
         "A2:E333",
-        SHEET_RATES_ID
+        SHEET_ID
       );
       const data = getRatesArray(dataRates.values);
 
@@ -94,14 +113,32 @@ async function getRates() {
   return cachedRates;
 }
 
-async function getTeachers() {
-  if (!SHEET_ID) return [];
+async function getTeachers(pageTitle) {
+  let pageSheet;
+  switch (pageTitle) {
+    case "Французька":
+      pageSheet = "French_teachers";
+      break;
+    case "Іспанська":
+      pageSheet = "Spanish_teachers";
+      break;
+    case "Італійська":
+      pageSheet = "Italian_teachers";
+      break;
+    case "Німецька":
+      pageSheet = "German_teachers";
+      break;
+    case "Англійська":
+      pageSheet = "English_teachers";
+      break;
+  }
+  if (!SHEET_ID) return 100;
 
   if (cachedTeachers === null) {
     try {
       // Ваш код для получения данных, например, запрос к серверу
       const dataTeachers = await getDataFromGoogleSheet(
-        "Teachers",
+        pageSheet,
         "A2:C333",
         SHEET_ID
       );
@@ -110,8 +147,30 @@ async function getTeachers() {
       cachedTeachers = data; // Кэшируем данные
     } catch (error) {
       console.error("Error fetching data:", error);
-      throw error;
+      return [];
     }
   }
   return cachedTeachers;
+}
+
+async function getCountGoogleReviews() {
+  if (!SHEET_ID) return [];
+
+  if (cachedCountGoogleReviews === null) {
+    try {
+      // Ваш код для получения данных, например, запрос к серверу
+      const dataCountGoogleReviews = await getDataFromGoogleSheet(
+        "Settings",
+        "B1:B1",
+        SHEET_ID
+      );
+      const data = dataCountGoogleReviews.values;
+
+      cachedCountGoogleReviews = data; // Кэшируем данные
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      return 100;
+    }
+  }
+  return cachedCountGoogleReviews;
 }

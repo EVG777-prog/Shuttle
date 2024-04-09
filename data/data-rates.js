@@ -1,4 +1,4 @@
-const rates = [
+let rates = [
   {
     name: "Перший урок в групі",
     price: 150,

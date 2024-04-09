@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const teachersContainer = document.querySelector(".teachers-container");
   const teachersSection = document.querySelector(".teachers");
 
-  const teachers = await getTeachers();
+  showTeachers(teachers);
+
+  const pageTitle = document.title;
+
+  teachers = await getTeachers(pageTitle);
 
   // Если учителей нет, скрываем секцию
   if (teachers.length === 0) {
@@ -34,6 +38,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   }
 
   function showTeachers(teachers) {
+    teachersContainer.innerHTML = "";
+
     teachers.forEach((teacher) => {
       const teacherElement = document.createElement("div");
       teacherElement.classList.add("teacher");
