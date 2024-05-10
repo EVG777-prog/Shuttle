@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   // заполнение тарифов
   const ratesList = document.querySelector(".rates-container");
 
-  showRates();
+  // showRates();
 
   rates = await getRates();
 

@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", async (event) => {
-  // заполнение учителей
-  const showMoreButton = document.querySelector(".show-more");
-  const teachersContainer = document.querySelector(".teachers-container");
-  const teachersSection = document.querySelector(".teachers");
+// заполнение учителей
+const showMoreButton = document.querySelector(".show-more");
+const teachersContainer = document.querySelector(".teachers-container");
+const teachersSection = document.querySelector(".teachers");
 
-  showTeachers(teachers);
+document.addEventListener("DOMContentLoaded", async (event) => {
+  // showTeachers(teachers);
 
   const pageTitle = document.title;
 
@@ -16,11 +16,15 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   } else {
     showTeachers(teachers); // Иначе добавляем учителей в DOM
 
-    window.addEventListener("load", function () {
-      // Начальное обновление видимых карточек
-      updateTotalHeight();
-      updateButtonVisibility();
-    });
+    updateTotalHeight();
+    updateButtonVisibility();
+
+    // window.addEventListener("load", function () {
+    //   console.log("LOAD");
+    //   // Начальное обновление видимых карточек
+    //   updateTotalHeight();
+    //   updateButtonVisibility();
+    // });
 
     showMoreButton.addEventListener("click", () => {
       // Проверяем, раскрыт ли контейнер
@@ -49,6 +53,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
               src="../assets/teachers/${teacher.photo}.webp"
               alt="Photo of ${teacher.name}"
               class="teacher-photo"
+              onload="updateTotalHeight()"
             />
             <h3>${teacher.name}</h3>
             <p>“${teacher.description}”</p>
@@ -57,69 +62,68 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       teachersContainer.appendChild(teacherElement);
     });
   }
-
-  function updateButtonVisibility() {
-    const totalHeight = teachersContainer.scrollHeight;
-    const visibleHeight = teachersContainer.clientHeight;
-
-    showMoreButton.style.display =
-      totalHeight > visibleHeight ? "block" : "none";
-  }
-
-  function updateTotalHeight() {
-    const teachersCards = teachersContainer.querySelectorAll(".teacher");
-
-    let visibleCount;
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 480) {
-      visibleCount = 5;
-    } else if (screenWidth > 480 && screenWidth <= 1100) {
-      visibleCount = 4;
-    } else {
-      visibleCount = 6;
-    }
-
-    const maxHeight = calculateTotalHeightForVisibleCards(
-      teachersCards,
-      visibleCount
-    );
-
-    teachersContainer.style.maxHeight = `${maxHeight}px`;
-  }
-
-  function calculateTotalHeightForVisibleCards(cards, visibleCount) {
-    let totalHeight = 0;
-    const gapBetweenCards = 30; // Замените на фактическое значение отступа между карточками
-
-    if (visibleCount == 5) {
-      for (let i = 0; i < visibleCount && i < cards.length; i++) {
-        totalHeight +=
-          cards[i].offsetHeight + (i < visibleCount - 1 ? gapBetweenCards : 0);
-      }
-    } else {
-      let heightFirstRow = 0;
-      let heightSecondRow = 0;
-      const cardsFirstRow = [...cards].slice(0, visibleCount / 2);
-      const cardsSecondRow = [...cards].slice(visibleCount / 2, visibleCount);
-
-      cardsFirstRow.forEach((card) => {
-        const cardHeight = card.offsetHeight;
-        if (cardHeight > heightFirstRow) {
-          heightFirstRow = cardHeight;
-        }
-      });
-
-      cardsSecondRow.forEach((card) => {
-        const cardHeight = card.offsetHeight;
-        if (cardHeight > heightSecondRow) {
-          heightSecondRow = cardHeight;
-        }
-      });
-
-      totalHeight = heightFirstRow + gapBetweenCards + heightSecondRow;
-    }
-
-    return totalHeight;
-  }
 });
+
+function updateButtonVisibility() {
+  const totalHeight = teachersContainer.scrollHeight;
+  const visibleHeight = teachersContainer.clientHeight;
+
+  showMoreButton.style.display = totalHeight > visibleHeight ? "block" : "none";
+}
+
+function updateTotalHeight() {
+  const teachersCards = teachersContainer.querySelectorAll(".teacher");
+
+  let visibleCount;
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 480) {
+    visibleCount = 5;
+  } else if (screenWidth > 480 && screenWidth <= 1100) {
+    visibleCount = 4;
+  } else {
+    visibleCount = 6;
+  }
+
+  const maxHeight = calculateTotalHeightForVisibleCards(
+    teachersCards,
+    visibleCount
+  );
+
+  teachersContainer.style.maxHeight = `${maxHeight}px`;
+}
+
+function calculateTotalHeightForVisibleCards(cards, visibleCount) {
+  let totalHeight = 0;
+  const gapBetweenCards = 30; // Замените на фактическое значение отступа между карточками
+
+  if (visibleCount == 5) {
+    for (let i = 0; i < visibleCount && i < cards.length; i++) {
+      totalHeight +=
+        cards[i].offsetHeight + (i < visibleCount - 1 ? gapBetweenCards : 0);
+    }
+  } else {
+    let heightFirstRow = 0;
+    let heightSecondRow = 0;
+    const cardsFirstRow = [...cards].slice(0, visibleCount / 2);
+    const cardsSecondRow = [...cards].slice(visibleCount / 2, visibleCount);
+
+    cardsFirstRow.forEach((card) => {
+      const cardHeight = card.offsetHeight;
+      if (cardHeight > heightFirstRow) {
+        heightFirstRow = cardHeight;
+      }
+    });
+
+    cardsSecondRow.forEach((card) => {
+      const cardHeight = card.offsetHeight;
+      if (cardHeight > heightSecondRow) {
+        heightSecondRow = cardHeight;
+      }
+    });
+
+    totalHeight = heightFirstRow + gapBetweenCards + heightSecondRow;
+  }
+
+  return totalHeight;
+}
