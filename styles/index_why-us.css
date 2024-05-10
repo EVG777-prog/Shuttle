@@ -39,8 +39,8 @@
   position: relative; /* Позиционирование для вложенного текста */
   margin-right: 1rem; /* Отступ между иконкой и текстом */
   position: absolute;
-  top: -2.5rem;
-  left: -1rem;
+  top: -2.7rem;
+  left: -1.5rem;
   z-index: 1; /* Устанавливаем z-index выше, чем у иконки */
 }
 
@@ -59,10 +59,9 @@
 
 .why-us-text {
   text-align: left;
-  font-family: Helvetica Neue, "Source Sans Pro";
   line-height: 2.5rem;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.8rem;
   z-index: 2; /* Устанавливаем z-index выше, чем у иконки */
 }
 

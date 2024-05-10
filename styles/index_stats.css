@@ -15,12 +15,11 @@
   color: #ff9bab; /* Цвет чисел статистики */
   font-size: 6.4rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */
-  line-height: 8.5rem;
+  line-height: 9.5rem;
   display: block; /* Чтобы числа были на отдельной строке */
 }
 
 .stat-description {
-  font-family: Helvetica Neue, "Source Sans Pro";
   color: black; /* Цвет описания статистики */
   font-size: 2.5rem; /* Размер шрифта описания */
   line-height: 2.9rem;

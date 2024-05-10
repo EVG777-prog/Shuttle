@@ -42,7 +42,6 @@
 }
 
 .intro p {
-  font-family: "Helvetica Neue", sans-serif;
   font-size: 1.7vw;
   color: black; /* Цвет текста для лучшего контраста с фоном */
   margin-bottom: 2vw;
@@ -51,7 +50,6 @@
 .trial-button {
   background-color: #ff9bab;
   color: black;
-  font-family: "Helvetica Neue", sans-serif;
   font-size: 1.7vw;
   border: none;
   padding: 1vw 3vw;
@@ -72,7 +70,6 @@
   display: none;
   background-color: transparent;
   color: black;
-  font-family: "Helvetica Neue", sans-serif;
   font-size: 1.5vw;
   border: none;
   padding: 1vw 3vw;
