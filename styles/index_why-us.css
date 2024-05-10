@@ -1,15 +1,14 @@
 .why-us {
   background-color: transparent; /* Цвет фона для секции */
-  margin: 10rem 0;
-  margin-bottom: 0;
   padding: 0 5.6%;
+  padding-top: 14rem;
 }
 
 .why-us-title {
   text-align: center; /* Выравнивание заголовка по центру */
   border-bottom: 3px solid #5a808a;
   margin-bottom: 6rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   font-family: "Exo", sans-serif;
   line-height: 5rem;
   font-weight: 700;
@@ -19,14 +18,14 @@
 .why-us-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Три колонки одинаковой ширины */
-  grid-gap: 5%; /* Отступы между элементами сетки */
+  grid-gap: 2%; /* Отступы между элементами сетки */
 }
 
 .why-us-item {
   display: flex;
   align-items: left; /* Выравнивание элементов по центру */
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 11rem;
   padding-left: 5rem;
   margin-left: 3rem;
   height: 8rem;
@@ -35,19 +34,19 @@
 .why-us-icon {
   background-color: #d9ae4f; /* Цвет фона иконки */
   border-radius: 50%; /* Скругление краев иконки */
-  width: 7rem; /* Размеры иконки */
-  height: 7rem;
+  width: 8rem; /* Размеры иконки */
+  height: 8rem;
   position: relative; /* Позиционирование для вложенного текста */
   margin-right: 1rem; /* Отступ между иконкой и текстом */
   position: absolute;
   top: -2.5rem;
-  left: 0;
+  left: -1rem;
   z-index: 1; /* Устанавливаем z-index выше, чем у иконки */
 }
 
 .icon-text {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: -35%;
   transform: rotate(-90deg);
   font-weight: bold;
@@ -55,7 +54,7 @@
   font-family: "Exo", sans-serif;
   line-height: 5rem;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 6.5rem;
 }
 
 .why-us-text {
@@ -63,7 +62,7 @@
   font-family: Helvetica Neue, "Source Sans Pro";
   line-height: 2.5rem;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   z-index: 2; /* Устанавливаем z-index выше, чем у иконки */
 }
 
@@ -75,7 +74,8 @@
     font-size: 3rem;
   }
   .why-us {
-    margin: 6rem 0;
+    /* margin: 6rem 0; */
+    padding-top: 5rem;
   }
   .why-us-item {
     height: 6rem;
@@ -94,7 +94,8 @@
     padding-bottom: 1rem;
   }
   .why-us {
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
+    padding-top: 4rem;
   }
   .why-us-item {
     height: 2rem;

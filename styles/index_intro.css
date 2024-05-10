@@ -24,10 +24,10 @@
 
 .text-container {
   position: absolute;
-  left: 0;
+  left: -2rem;
   top: 38%;
   z-index: 2;
-  max-width: 40%; /* Максимальная ширина контентной области */
+  max-width: 50%; /* Максимальная ширина контентной области */
   margin-left: 7%; /* Отступ слева */
 }
 
@@ -36,14 +36,14 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.7vw;
+  font-size: 3.44vw;
   color: black; /* Цвет текста для лучшего контраста с фоном */
   margin-bottom: 1vw;
 }
 
 .intro p {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   color: black; /* Цвет текста для лучшего контраста с фоном */
   margin-bottom: 2vw;
 }
@@ -52,17 +52,17 @@
   background-color: #ff9bab;
   color: black;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   border: none;
   padding: 1vw 3vw;
   cursor: pointer;
   border-radius: 5px;
-  width: 28vw;
+  width: 31.3vw;
   height: 5vw;
   margin-bottom: 1rem;
   position: absolute;
-  left: 0;
-  top: 58%;
+  left: -2rem;
+  top: 62%;
   z-index: 2;
   max-width: 40%; /* Максимальная ширина контентной области */
   margin-left: 7%; /* Отступ слева */
@@ -125,6 +125,7 @@
     margin-bottom: 0;
     position: relative;
     max-width: 100%;
+    left: 0;
   }
 
   .text-container {

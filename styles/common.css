@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   color: black;
-  font-family: Helvetica Neue, "Source Sans Pro";
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-style: normal;
 }
 
 *,

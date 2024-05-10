@@ -1,19 +1,20 @@
 .payment-section {
   text-align: center;
-  margin: 5rem auto;
-  padding: 0 5.6%;
-  font-family: "Exo", sans-serif;
+  margin: 0 auto;
+  padding: 8rem 5.6%;
+  font-family: "Exo 2", sans-serif;
 }
 
 .payment-section h2 {
-  font-size: 3.6rem;
+  font-size: 3.9rem;
+  font-weight: 700;
   color: black;
-  margin-bottom: 5rem;
+  margin-bottom: 5.5rem;
 }
 
 .payment-section .flex-row {
-  margin-top: 3rem;
-  border-top: 3px solid #5a808a;
+  margin-top: 5rem;
+  border-top: 4px solid #5a808a;
   padding-top: 3rem;
   width: 100%;
   justify-content: center;
@@ -31,13 +32,11 @@
   border: 3px solid #5a808a;
   border-radius: 5px;
   background-color: #edecea;
-  padding: 2rem;
-  flex-basis: calc(
-    33.333% - 3rem
-  ); /* Определяет начальный размер карточки, минус зазор */
+  padding: 3.5rem;
+  flex-basis: calc(33.333% - 2rem);
   box-sizing: border-box; /* Включает внутренние отступы и границы в общую ширину элемента */
-  margin-bottom: 2rem;
-  font-family: "Exo", sans-serif;
+  /* margin-bottom: 2rem; */
+  font-family: "Exo 2", sans-serif;
   cursor: pointer;
 }
 
@@ -50,17 +49,20 @@
 }
 
 .payment-card .name {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .payment-card .price {
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 4.1rem;
+  margin-bottom: 0.5rem;
 }
 .payment-card .duration {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 .payment-card .quantity {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 /* Стили для обертки и текста */
@@ -71,7 +73,6 @@
   padding-left: 4rem;
   cursor: pointer;
   user-select: none;
-  font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 2.4rem;
   text-align: left;
 }
@@ -128,6 +129,9 @@
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
+  .payment-section {
+    padding: 6rem 5.6%;
+  }
   .payment-card {
     flex-basis: calc(
       50% - 3rem
@@ -136,10 +140,17 @@
 }
 
 @media (max-width: 480px) {
+  .payment-section {
+    padding: 3rem 5.6%;
+  }
+  .payment-section h2 {
+    margin-bottom: 3rem;
+  }
   .payment-card {
     flex-basis: 100%; /* На очень маленьких экранах, карточка занимает всю ширину */
+    padding: 2rem;
   }
   .payment-cards {
-    gap: 1rem;
+    gap: 2rem;
   }
 }

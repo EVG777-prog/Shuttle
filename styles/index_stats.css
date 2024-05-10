@@ -1,7 +1,7 @@
 .stats {
   background-color: #dee6e8; /* Цвет фона раздела */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 8rem 5.6%; /* Вертикальные отступы для раздела */
   gap: 3rem;
 }
@@ -22,9 +22,9 @@
 .stat-description {
   font-family: Helvetica Neue, "Source Sans Pro";
   color: black; /* Цвет описания статистики */
-  font-size: 2.4rem; /* Размер шрифта описания */
+  font-size: 2.5rem; /* Размер шрифта описания */
   line-height: 2.9rem;
-  margin-top: 5px; /* Отступ между числом и описанием */
+  margin-top: 1rem; /* Отступ между числом и описанием */
 }
 
 /* Стили для планшетов и мобильных устройств */

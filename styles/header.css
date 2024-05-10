@@ -9,17 +9,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: #edecea;
   padding: 0 5.6%;
 }
 
 header .logo {
-  width: 20rem;
+  width: 14.3rem;
   height: 11.8rem;
   position: relative;
+  top: -0.2rem;
+  left: -1rem;
   background-size: 100%;
-  background-position: -0rem -2.9rem;
   background-image: url("../assets/logo.png");
   flex-shrink: 0;
 }
@@ -44,8 +45,8 @@ header .menu-item {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 400;
+  line-height: 2rem;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -90,7 +91,7 @@ header .dropdown-content a {
   padding: 10px;
   text-decoration: none;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   width: 100%;
   padding-left: 1rem;
 }
@@ -139,7 +140,7 @@ header .contact-info {
 }
 header .contact-info .phone-number {
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
   color: #1b1b1b;
@@ -183,7 +184,7 @@ header .header-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 header .fullscreen-menu-buttons {
@@ -195,9 +196,7 @@ header .button {
   height: 5rem;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -350,7 +349,7 @@ header .icon-mastercard {
     display: flex;
   }
 
-  header .main-navigation {
+  header .desktop-menu {
     display: none;
   }
 
@@ -386,9 +385,9 @@ header .icon-mastercard {
   }
 
   header .logo {
-    width: 7.9rem;
-    height: 5.5rem;
-    background-position: -0rem -0.9rem;
+    width: 11rem;
+    height: 6rem;
+    background-position: -0.5rem -1.5rem;
   }
 
   header .contact__icon {

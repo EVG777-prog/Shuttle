@@ -1,47 +1,47 @@
 .reviews {
   text-align: center;
-  margin: 5rem 0;
-  padding: 0 5.6%;
+  padding: 8rem 5.6%;
 }
 
 .reviews h2 {
-  font-family: "Exo", sans-serif;
+  font-family: "Exo 2", sans-serif;
   color: black; /* Цвет чисел статистики */
-  font-size: 3.6rem; /* Размер шрифта чисел */
+  font-size: 3.9rem; /* Размер шрифта чисел */
   font-weight: 700; /* Жирное начертание */
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .review-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 5rem;
+  grid-gap: 4rem 11rem; /* Устанавливаем вертикальный и горизонтальный отступ между элементами */
 }
 
 .review-card {
   background-color: transparent;
   position: relative;
   width: 100%;
+  min-height: 25rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
 
 .review-text {
-  font-family: Helvetica Neue, "Source Sans Pro";
   position: relative;
   margin-bottom: 2rem;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
+  padding-right: 1.4rem;
   background: #edecea;
   border-radius: 1rem;
   font-size: 1.5rem;
   line-height: 2.1rem;
-  border-radius: 3rem 6rem 0rem 6rem;
+  border-radius: 3rem 7rem 0rem 7rem;
   border: 1px solid #ff9bab;
   display: flex;
-  align-items: center; /*Выравнивание содержимого по вертикали*/
+  align-items: center;
   text-align: left;
-  flex-grow: 1; /*Заставляет.review-text растягиваться,чтобы занять все доступное пространство*/
+  flex-grow: 1;
 }
 
 .reviewer-info {
@@ -54,7 +54,7 @@
 .reviewer-name {
   font-size: 1.8rem;
   line-height: 2.2rem;
-  margin: 0.5rem 0;
+  margin: 0.4rem 0;
 }
 
 .reviewer-level {
@@ -133,16 +133,24 @@
 
 /* Адаптивный дизайн */
 @media (max-width: 480px) {
+  .reviews {
+    padding: 2rem;
+  }
+
   .review-cards {
     grid-template-columns: 1fr; /* Один столбец для устройств с меньшим разрешением */
     gap: 2rem;
   }
-  .reviews {
-    padding: 2rem 1rem;
+
+  .review-card {
+    margin-bottom: 1rem;
   }
 
   .reviews h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 3rem;
   }
 
   .review-text {
@@ -151,5 +159,18 @@
 
   .reviewer-info {
     align-items: center; /* Центрирование на мобильных устройствах */
+    margin-right: 7rem;
+  }
+
+  .reviewer-name {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .reviewer-avatar {
+    top: -0.5rem; /* Position the avatar above the .reviewer-info */
+    right: -7rem; /* Align it to the right edge of .reviewer-info */
+    width: 5rem; /* Adjust size as needed */
+    height: 5rem; /* Adjust size as needed */
   }
 }

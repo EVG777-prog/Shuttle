@@ -3,8 +3,8 @@
   justify-content: space-between;
   background-color: #dee6e8; /* Adjust background color as needed */
   gap: 5%;
-  padding: 7% 5.6%;
-  padding-bottom: 16rem;
+  padding: 10.5% 5.6%;
+  padding-bottom: 18rem;
   margin: 0 auto;
   margin-bottom: 0;
   box-sizing: inherit;
@@ -12,7 +12,7 @@
 }
 
 .speaking-club .container {
-  gap: 5%;
+  gap: 2.5%;
 }
 
 .speaker-image-container {
@@ -29,22 +29,22 @@
 }
 
 .speaking-club h2 {
-  font-family: "Exo", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 3.8rem;
   margin-bottom: 2rem;
   position: relative;
-  top: 6rem;
+  top: 4.5rem;
   left: 17rem;
   margin-top: -10rem;
 }
 
 .club-info p {
-  font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
 }
 
 .club-info {

@@ -2,6 +2,7 @@
   background-color: #edecea; /* Цвет фона для секции цитат */
   text-align: center; /* Выравнивание текста по центру */
   padding: 4rem 5.6%; /* Увеличенный верхний и нижний padding, уменьшенные боковые padding */
+  padding-bottom: 7rem;
 }
 
 .quote .quote-box {
@@ -17,23 +18,22 @@
 
 .quote .quotation-mark {
   font-family: "Istok Web", sans-serif;
-  font-size: 10rem; /* Уменьшение размера для более дискретного отображения */
+  font-size: 12.8rem; /* Уменьшение размера для более дискретного отображения */
   color: #ff9bab; /* Цвет кавычек */
   position: absolute; /* Абсолютное позиционирование для контроля над расположением */
-  top: -6rem; /* Смещение вверх для визуального эффекта */
+  top: -11rem; /* Смещение вверх для визуального эффекта */
   left: 50%; /* Центрирование */
   transform: translateX(-50%); /* Точное центрирование */
 }
 
 .quote .text-quote {
   margin: 0; /* Убираем маржин для текста цитаты */
-  font-family: Helvetica Neue, "Source Sans Pro";
   font-weight: 400;
-  line-height: 3.6rem;
+  line-height: 4rem;
   font-size: 3rem;
   position: relative; /* Для позиционирования псевдоэлементов */
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  margin-top: 5.5rem;
 }
 
 .quote .text-quote::after {
@@ -48,8 +48,7 @@
 }
 
 .quote cite {
-  margin-top: 5rem;
-  font-size: 2.4rem; /* Меньший размер шрифта для имени автора */
+  font-size: 2.5rem; /* Меньший размер шрифта для имени автора */
   font-style: normal;
 }
 

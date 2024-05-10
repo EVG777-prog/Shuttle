@@ -2,7 +2,7 @@ footer {
   background-color: #edecea;
   padding: 5rem 5.6%;
   padding-bottom: 3rem;
-  font-family: "Arial", sans-serif;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +24,8 @@ footer {
 }
 
 footer .payment-methods {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
@@ -38,22 +36,23 @@ footer .social-media .social-icon {
 
 footer .payment-icon {
   width: auto; /* или можно установить конкретный размер, например 50px */
-  height: 3rem; /* высота иконки, измените это значение в соответствии с вашими нуждами */
+  height: 2.4rem; /* высота иконки, измените это значение в соответствии с вашими нуждами */
   object-fit: contain;
 }
 
 footer .logo-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 2rem;
 }
 
 footer .logo {
-  width: 20rem;
-  height: 11.8rem;
+  width: 29.5rem;
+  height: 16.5rem;
   position: relative;
   background-size: 100%;
-  background-position: -0rem -2.9rem;
+  background-position: -2.3rem -6rem;
   background-image: url("../assets/logo.png");
   flex-shrink: 0;
   /* margin-bottom: 2rem; */
@@ -67,15 +66,18 @@ footer .logo {
   margin-bottom: 1rem;
 }
 
+footer .languages-section {
+  margin-left: 2rem;
+}
+
 footer .languages-section .languages-list {
   list-style: none;
   padding: 0;
 }
 
 footer .languages-section .language {
-  margin-bottom: 0.5rem;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 footer .languages-list .language a {
@@ -142,7 +144,6 @@ footer .icon-email:hover img {
   font-weight: 400;
   line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -187,13 +188,13 @@ footer .icon-email:hover img {
   width: 100%;
   border-top: 2px solid #5a808a;
   padding-top: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 footer .legal-section {
   display: flex;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -201,10 +202,10 @@ footer .legal-section {
 footer .legal-section .legal-link {
   text-decoration: none;
   font-size: 1.6rem;
+  letter-spacing: -0.5px;
   font-weight: 400;
   line-height: 1.4;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -224,7 +225,6 @@ footer .menu-item {
   font-weight: 400;
   line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -248,7 +248,7 @@ footer .main-navigation a:hover {
   height: 2px;
   background-color: #5a808a; /* Цвет линии */
   width: 100%; /* Длина линии */
-  margin-bottom: 1.5rem; /* Отступ снизу линии */
+  margin-bottom: 0.6rem; /* Отступ снизу линии */
 }
 
 /* Добавьте медиа-запросы для адаптивного дизайна */
@@ -261,13 +261,29 @@ footer .main-navigation a:hover {
   footer .languages-section {
     display: none;
   }
+
+  footer .logo-section {
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
+  }
+
+  footer .logo {
+    width: 29.5rem;
+    height: 16.5rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   footer .logo-section .payment-methods {
     display: none;
   }
 
   footer .main-navigation {
     display: flex;
-    margin-bottom: 01rem;
+    margin-bottom: 1rem;
   }
 
   .footer-content {
@@ -279,7 +295,7 @@ footer .main-navigation a:hover {
   .footer-section {
     width: 100%;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   footer .legal-section {
@@ -288,6 +304,7 @@ footer .main-navigation a:hover {
   }
 
   footer .legal-section .legal-link {
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }

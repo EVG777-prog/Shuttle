@@ -21,16 +21,15 @@
     <meta name="theme-color" content="#000000" />
     <title>Французька</title>
     <link
+      href="../assets/fonts/Helvetica_Neue/stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Istok+Web%3A400"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Helvetica%3A400"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Helvetica+Neue%3A400%2C700"
     />
     <link
       rel="stylesheet"
@@ -41,8 +40,8 @@
       href="https://fonts.googleapis.com/css?family=Inter%3A400%2C600"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Exo%3A400%2C700"
     />
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/sign-up.css" />
@@ -107,7 +106,7 @@
         <div class="logo"></div>
       </a>
 
-      <nav>
+      <nav class="desktop-menu">
         <ul class="main-navigation">
           <li class="menu-item">
             <a href="../">Головна</a>
@@ -272,38 +271,6 @@
         </div>
       </section>
 
-      <section class="gift-cards">
-        <h2>Подарункові сертифікати</h2>
-        <p class="gift-card-description">
-          Подарункові сертифікати на індивідуальні та групові заняття та
-          будь-який тариф <br />[ двічі, тричі, підлітки, дитячий, лише ти,
-          удвох ]
-        </p>
-        <div class="certificate-section">
-          <div class="certificate-text">
-            <p>
-              <span class="certificate-title">Сертифікат</span> — це не просто
-              подарунок, а можливість пізнавати інші культури, комунікувати з
-              людьми з усього світу та обʼєднуватися через мову. Ви не тільки
-              даруєте знання (погодьтесь, кращого подарунку важко знайти), але й
-              враження, які залишаються назавжди.
-            </p>
-            <p>
-              <span class="certificate-title">Вартість сертифіката</span> =
-              вартість обраного тарифу!
-            </p>
-            <p>
-              <span class="certificate-title">Термін дії:</span> необмежений,
-              тому людина зможе почати в комфортний для себе час, не нервуючи,
-              що сертифікат скоро стане неактивним.
-            </p>
-          </div>
-          <div class="certificate-image">
-            <img src="../assets/gift-card.webp" alt="Подарунковий сертифікат" />
-          </div>
-        </div>
-      </section>
-
       <section id="teachers" class="teachers" data-lang="french">
         <h2>Наші викладачі</h2>
         <div class="teachers-container"></div>
@@ -347,6 +314,38 @@
 
         <div class="schedule-container"></div>
         <button class="show-more-lessons">Більше</button>
+      </section>
+
+      <section class="gift-cards">
+        <h2>Подарункові сертифікати</h2>
+        <p class="gift-card-description">
+          Подарункові сертифікати на індивідуальні та групові заняття та
+          будь-який тариф <br />[ двічі, тричі, підлітки, дитячий, лише ти,
+          удвох ]
+        </p>
+        <div class="certificate-section">
+          <div class="certificate-text">
+            <p>
+              <span class="certificate-title">Сертифікат</span> — це не просто
+              подарунок, а можливість пізнавати інші культури, комунікувати з
+              людьми з усього світу та обʼєднуватися через мову. Ви не тільки
+              даруєте знання (погодьтесь, кращого подарунку важко знайти), але й
+              враження, які залишаються назавжди.
+            </p>
+            <p>
+              <span class="certificate-title">Вартість сертифіката</span> =
+              вартість обраного тарифу!
+            </p>
+            <p>
+              <span class="certificate-title">Термін дії:</span> необмежений,
+              тому людина зможе почати в комфортний для себе час, не нервуючи,
+              що сертифікат скоро стане неактивним.
+            </p>
+          </div>
+          <div class="certificate-image">
+            <img src="../assets/gift-card.webp" alt="Подарунковий сертифікат" />
+          </div>
+        </div>
       </section>
 
       <section id="club" class="speaking-club flex-column">

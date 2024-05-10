@@ -2,23 +2,24 @@
 .rates {
   margin: 0 auto;
   padding: 5rem 5.6%;
-  padding-top: 17rem; /* Замените на реальное значение */
+  padding-top: 20rem; /* Замените на реальное значение */
   margin-top: -12rem; /* Такое же значение, но с отрицательным знаком */
 }
 
 .rates-title {
-  font-family: "Exo", sans-serif;
-  font-size: 3.6rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 3.8rem;
   font-weight: 700;
   color: black;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .rates-description {
-  font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 1.5rem;
-  margin-bottom: 5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 6rem;
   text-align: center;
 }
 
@@ -34,37 +35,41 @@
 .rate-card {
   background: #edecea;
   border-radius: 5px;
-  padding: 3rem;
+  padding: 2.5rem 3.6rem;
+  padding-bottom: 3.5rem;
   width: 100%;
   color: black;
   margin: 0 auto;
-  margin-bottom: 1rem; /* Отступ снизу для всех карточек */
+  /* margin-bottom: 1rem; */
   display: flex;
   flex-direction: column;
 }
 
 .rate-header {
-  font-family: "Exo", sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-align: center;
   margin: 1rem 0;
+  margin-bottom: 2rem;
   background: #7eb5c3;
   border-radius: 5px;
   padding: 5rem 1rem;
 }
 
 .rate-title {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-size: 1.9rem;
+  font-weight: 500;
 }
 
 .rate-price {
-  font-size: 4rem;
-  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
 }
 
 .rate-duration {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .rate-details {
@@ -74,22 +79,27 @@
 }
 
 .rate-details li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   padding: 1rem;
   padding-left: 4rem;
   text-align: left; /* Выравнивает текст элементов списка по левому краю */
   font-size: 1.8rem;
+  font-weight: 400;
   position: relative;
+  white-space: nowrap;
 }
 
 .rate-details li::before {
-  content: url("../assets/list-marker.svg"); /* Указываем путь к вашей иконке */
+  content: ""; /* Указываем путь к вашей иконке */
   display: block; /* Делаем псевдоэлемент строчно-блочным элементом */
   position: absolute;
-  width: 10rem; /* Задаем ширину иконки */
-  height: 12.2rem; /* Задаем высоту иконки */
+  width: 1.9rem; /* Задаем ширину иконки */
+  height: 1.9rem; /* Задаем высоту иконки */
+  background-image: url("../assets/list-marker.svg");
+  background-size: contain; /* Масштабируем изображение, чтобы оно занимало всю доступную площадь */
+  background-repeat: no-repeat; /* Запрещаем повторение изображения */
   left: 0rem;
-  top: 1.4rem;
+  top: 1rem;
   align-items: center;
 }
 
@@ -102,11 +112,12 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   width: 75%;
-  height: 5rem;
+  height: 5.5rem;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-top: -1rem;
 }
 
 .rate-signup:hover {
@@ -118,13 +129,10 @@
 }
 
 .rates .button {
+  font-size: 1.8rem;
   max-width: 25rem;
   height: 5.5rem;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2575;
   color: #000000;
-  font-family: Helvetica Neue, "Source Sans Pro";
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -221,6 +229,7 @@
   .rate-signup {
     font-size: 1.5rem;
     height: 4rem;
+    margin-top: 0;
   }
 
   .rates .button {

@@ -8,6 +8,7 @@
   background-size: 50% auto; /* Задает размер фонового изображения, чтобы оно занимало 50% ширины и 100% высоты контейнера */
   background-position: left calc(0% + 30rem); /* Располагает изображение по левому краю */
   overflow: hidden;
+  padding-bottom: 30rem;
 }
 
 .about::before {
@@ -15,7 +16,7 @@
   display: block;
   position: absolute;
   top: 12rem; /* Выравниваем по верхнему краю секции */
-  left: 80%; /* Выравниваем по центру секции по горизонтали */
+  left: 77%; /* Выравниваем по центру секции по горизонтали */
   transform: translate(
     -50%,
     -50%
@@ -32,10 +33,10 @@
   display: block;
   position: absolute;
   bottom: 0; /* Позиционирование в нижней части родителя */
-  left: 85%; /* Позиционирование по центру родителя */
+  left: 86%; /* Позиционирование по центру родителя */
   transform: translateX(-50%); /* Центрирование по горизонтали */
-  width: 20%; /* Ширина круга в процентах от ширины страницы */
-  padding-top: 20%; /* Высота круга равна ширине для сохранения пропорций */
+  width: 23%; /* Ширина круга в процентах от ширины страницы */
+  padding-top: 23%; /* Высота круга равна ширине для сохранения пропорций */
   background-color: #f4e7ca; /* Цвет полукруга */
   border-radius: 50% 50% 0 0; /* Создание полукруга */
   clip-path: ellipse(50% 50% at 50% 100%);
@@ -43,14 +44,9 @@
   overflow: hidden; /* Обрезка лишней части */
 }
 
-.text-background-pink {
-  background-color: #ff9bab;
-  border-radius: 10px;
-  padding: 0 1rem;
-}
-
 .about .container {
   margin: 0 auto; /* Центрирование контейнера */
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,7 +56,7 @@
 }
 
 .about .container-image {
-  width: 50%;
+  width: 42%;
   align-self: stretch; /* Растягиваем по всей доступной высоте */
   display: flex;
   align-items: center; /* Выравнивание по вертикали */
@@ -74,10 +70,10 @@
 }
 
 .about .container-text {
-  margin-top: 10rem;
+  margin-top: 16.5rem;
   padding-top: 1rem;
   border-top: 3px solid #5a808a;
-  max-width: 50%;
+  max-width: 51%;
   align-items: flex-start;
 }
 
@@ -86,17 +82,27 @@
   font-family: "Exo", sans-serif; /* Шрифт заголовка, если он подключен */
   margin-bottom: 1rem; /* Отступ после заголовка */
   padding-bottom: 2rem;
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 700;
   position: relative;
-  top: 10rem;
-  left: 50%;
+  top: 18rem;
+  left: 49%;
+}
+
+.text-background-pink {
+  background-color: #ff9bab;
+  border-radius: 5px;
+  padding: 0rem 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .about .intro-text {
   color: black; /* Цвет текста */
   font-family: Helvetica Neue, "Source Sans Pro";
   font-size: 1.8rem;
+  /* letter-spacing: 0.6px; */
   line-height: 2.5rem;
   margin-bottom: 1.5rem; /* Отступ между абзацами */
 }
@@ -123,11 +129,13 @@
   }
 
   .about h2 {
-    font-size: 2.2rem; /* Уменьшение размера шрифта заголовка */
+    font-size: 2.4rem; /* Уменьшение размера шрифта заголовка */
     text-align: center;
     top: 0;
     left: 0;
     margin-top: 5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .about .intro-text {
