@@ -268,6 +268,51 @@
         </div>
       </section>
 
+      <section id="teachers" class="teachers" data-lang="english">
+        <h2>Наші викладачі</h2>
+        <div class="teachers-container"></div>
+        <button class="show-more">Всі викладачі</button>
+      </section>
+
+      <section id="schedule" class="schedule-section">
+        <h2 class="schedule-title">Розклад</h2>
+        <p class="schedule-description">
+          Обирайте одну з діючих груп або групу з нуля <br />
+          зі зручним для вас розкладом
+        </p>
+        <div class="flex-row schedule-filters">
+          <div class="custom-select">
+            <!-- <label for="selectedLanguage">Мова*</label> -->
+            <input type="hidden" id="selectedTime" name="time" value="any" />
+            <div class="selected-value" data-default="any">Будь-який час</div>
+            <ul class="value-list hidden">
+              <li data-value="any">Будь-який час</li>
+              <li data-value="Ранковий час">Ранковий час</li>
+              <li data-value="Денний час">Денний час</li>
+              <li data-value="Вечірній час">Вечірній час</li>
+              <!-- Other language options -->
+            </ul>
+          </div>
+          <div class="custom-select">
+            <!-- <label for="selectedLanguage">Мова*</label> -->
+            <input type="hidden" id="selectedLevel" name="level" value="any" />
+            <div class="selected-value" data-default="any">Всі рівні</div>
+            <ul class="value-list hidden">
+              <li data-value="any">Всі рівні</li>
+              <li data-value="з нуля">З нуля</li>
+              <li data-value="A1">A1</li>
+              <li data-value="A2">A2</li>
+              <li data-value="B1">B1</li>
+              <li data-value="B2">B2</li>
+              <!-- Other language options -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="schedule-container"></div>
+        <button class="show-more-lessons">Більше</button>
+      </section>
+
       <section class="gift-cards">
         <h2>Подарункові сертифікати</h2>
         <p class="gift-card-description">
@@ -298,12 +343,6 @@
             <img src="../assets/gift-card.webp" alt="Подарунковий сертифікат" />
           </div>
         </div>
-      </section>
-
-      <section id="teachers" class="teachers" data-lang="english">
-        <h2>Наші викладачі</h2>
-        <div class="teachers-container"></div>
-        <button class="show-more">Всі викладачі</button>
       </section>
     </main>
 

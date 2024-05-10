@@ -4,7 +4,7 @@ const teachersContainer = document.querySelector(".teachers-container");
 const teachersSection = document.querySelector(".teachers");
 
 document.addEventListener("DOMContentLoaded", async (event) => {
-  // showTeachers(teachers);
+  showTeachers(teachers);
 
   const pageTitle = document.title;
 
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   } else {
     showTeachers(teachers); // Иначе добавляем учителей в DOM
 
-    updateTotalHeight();
-    updateButtonVisibility();
+    // updateTotalHeight();
+    // updateButtonVisibility();
 
     // window.addEventListener("load", function () {
     //   console.log("LOAD");
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     showMoreButton.addEventListener("click", () => {
       // Проверяем, раскрыт ли контейнер
       if (teachersContainer.classList.contains("expanded")) {
-        updateTotalHeight();
         teachersContainer.classList.remove("expanded");
         showMoreButton.textContent = "Всі викладачі";
+        updateTotalHeight();
       } else {
         // Раскрываем контейнер
         teachersContainer.style.maxHeight = `${teachersContainer.scrollHeight}px`;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
               src="../assets/teachers/${teacher.photo}.webp"
               alt="Photo of ${teacher.name}"
               class="teacher-photo"
-              onload="updateTotalHeight()"
+              onload="handleImageLoad()"
             />
             <h3>${teacher.name}</h3>
             <p>“${teacher.description}”</p>
@@ -126,4 +126,9 @@ function calculateTotalHeightForVisibleCards(cards, visibleCount) {
   }
 
   return totalHeight;
+}
+
+function handleImageLoad() {
+  updateTotalHeight();
+  updateButtonVisibility();
 }
