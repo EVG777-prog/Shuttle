@@ -14,12 +14,11 @@ async function getDataFromGoogleSheet(page, range, sheet_id) {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching data:", error);
     return null;
   }
 }
 
-function getSheduleArray(data = []) {
+function getSheduleArray(data) {
   return data.map((lesson) => {
     return {
       level: lesson[0],
@@ -31,7 +30,7 @@ function getSheduleArray(data = []) {
   });
 }
 
-function getRatesArray(data = []) {
+function getRatesArray(data) {
   return data.map((rate) => {
     return {
       name: rate[0],
@@ -43,7 +42,7 @@ function getRatesArray(data = []) {
   });
 }
 
-function getTeachersArray(data = []) {
+function getTeachersArray(data) {
   return data.map((teacher) => {
     return {
       name: teacher[0],
@@ -142,7 +141,7 @@ async function getTeachers(pageTitle) {
         "A2:C333",
         SHEET_ID
       );
-      const data = getTeachersArray(dataTeachers.values);
+      const data = getTeachersArray(dataTeachers ? dataTeachers.values : []);
 
       cachedTeachers = data; // Кэшируем данные
     } catch (error) {
