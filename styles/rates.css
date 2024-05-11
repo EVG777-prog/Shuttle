@@ -30,7 +30,7 @@
   margin: 0 auto;
   max-width: 100%; /* Максимальная ширина контейнера для центровки */
   box-sizing: border-box; /* Учитываем padding и border в ширине элемента */
-  max-height: 150rem;
+  /* max-height: 150rem; */
 }
 
 .rate-card {
