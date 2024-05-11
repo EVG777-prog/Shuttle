@@ -9,7 +9,7 @@
   background-size: cover; /* Масштабирует фоновое изображение, чтобы оно полностью покрывало псевдоэлемент */
   background-position: center; /* Центрирует изображение в псевдоэлементе */
   background-position: 0 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
