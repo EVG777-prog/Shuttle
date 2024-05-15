@@ -92,9 +92,9 @@
 .text-background-pink {
   background-color: #ff9bab;
   border-radius: 5px;
-  padding: 0rem 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 900;
+  padding: 0.5rem;
+  /* padding-bottom: 0.5rem; */
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
