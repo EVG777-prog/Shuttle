@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       if (modal.classList.contains("schedule")) {
         formData.lesson = modal.dataset.lesson;
+        formData.language = document.title;
       }
 
       // Отправляем письмо с помощью EmailJS
