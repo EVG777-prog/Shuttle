@@ -52,7 +52,7 @@
   padding: 0; /* Убрать паддинг списка */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-gap: 3rem;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,7 @@
 
   .languages-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
   }
 
@@ -149,7 +149,7 @@
 
   .languages-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 2rem;
   }
   .languages-grid .language {
