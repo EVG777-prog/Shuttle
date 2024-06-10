@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Закрытие модального окна и сброс формы
   function closeModalAndResetForm() {
     // Закрытие модального окна
-    const modal = document.getElementById("myModal");
+    // const modal = document.getElementById("myModal");
     modal.style.display = "none";
     document.body.classList.remove("no-scroll");
     modal.classList.remove("schedule");
@@ -80,7 +80,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
           closeModalAndResetForm(); // Закрытие модального окна и сброс формы после успешной отправки
-          alert("Заявку успішно надіслано! Незабаром ми з вами зв'яжемось.");
+          setTimeout(() => {
+            alert("Заявку успішно надіслано! Незабаром ми з вами зв'яжемось.");
+          }, 100); // Задержка в 100 миллисекунд (можете настроить по необходимости)
         },
         function (error) {
           console.log("FAILED...", error);
