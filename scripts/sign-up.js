@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       emailjs.send("service_cxrlixg", "template_nwvu1pd", formData).then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Заявку успішно надіслано!");
           closeModalAndResetForm(); // Закрытие модального окна и сброс формы после успешной отправки
+          alert("Заявку успішно надіслано! Незабаром ми з вами зв'яжемось.");
         },
         function (error) {
           console.log("FAILED...", error);
