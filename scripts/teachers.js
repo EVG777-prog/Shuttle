@@ -48,6 +48,12 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       const teacherElement = document.createElement("div");
       teacherElement.classList.add("teacher");
 
+      const link = teacher.link
+        ? `<a href="${teacher.link}" target="_blank">
+                  <img src="../assets/icons/icon_play.svg" alt="Icon" class="icon-play"/>
+             </a>`
+        : "";
+
       teacherElement.innerHTML = `
            <img
               src="../assets/teachers/${teacher.photo}.webp"
@@ -56,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
               onload="handleImageLoad()"
             />
             <h3>${teacher.name}</h3>
-            <p>“${teacher.description}”</p>
+            <p>“${teacher.description}”${link}</p>
           `;
 
       teachersContainer.appendChild(teacherElement);

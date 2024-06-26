@@ -48,6 +48,7 @@ function getTeachersArray(data) {
       name: teacher[0],
       description: teacher[1],
       photo: teacher[2],
+      link: teacher[3],
     };
   });
 }
@@ -138,7 +139,7 @@ async function getTeachers(pageTitle) {
       // Ваш код для получения данных, например, запрос к серверу
       const dataTeachers = await getDataFromGoogleSheet(
         pageSheet,
-        "A2:C333",
+        "A2:D333",
         SHEET_ID
       );
       const data = getTeachersArray(dataTeachers ? dataTeachers.values : []);

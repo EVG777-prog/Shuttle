@@ -65,6 +65,13 @@
   background-color: #f4667d;
 }
 
+.icon-play {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom; /* Выравнивание по нижней части текста */
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
   .teachers {
     padding-top: 10rem; /* Замените на реальное значение */
