@@ -48,14 +48,13 @@ footer .logo-section {
 }
 
 footer .logo {
-  width: 29.5rem;
+  width: 20.5rem;
   height: 16.5rem;
   position: relative;
   background-size: 100%;
-  background-position: -2.3rem -6rem;
-  background-image: url("../assets/logo.png");
+  background-position: 2rem -4rem;
+  background-image: url("../assets/logo.svg");
   flex-shrink: 0;
-  /* margin-bottom: 2rem; */
 }
 
 .footer-heading {

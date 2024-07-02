@@ -2,6 +2,9 @@
 const showMoreButton = document.querySelector(".show-more");
 const teachersContainer = document.querySelector(".teachers-container");
 const teachersSection = document.querySelector(".teachers");
+const modalVideoContainer = document.querySelector("#video-modal");
+const iframe = modalVideoContainer.querySelector("#videoIframe");
+const closeModalButton = modalVideoContainer.querySelector(".close");
 
 document.addEventListener("DOMContentLoaded", async (event) => {
   showTeachers(teachers);
@@ -14,17 +17,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   if (teachers.length === 0) {
     teachersSection.style.display = "none";
   } else {
-    showTeachers(teachers); // Иначе добавляем учителей в DOM
-
-    // updateTotalHeight();
-    // updateButtonVisibility();
-
-    // window.addEventListener("load", function () {
-    //   console.log("LOAD");
-    //   // Начальное обновление видимых карточек
-    //   updateTotalHeight();
-    //   updateButtonVisibility();
-    // });
+    showTeachers(teachers);
 
     showMoreButton.addEventListener("click", () => {
       // Проверяем, раскрыт ли контейнер
@@ -41,34 +34,60 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     });
   }
 
-  function showTeachers(teachers) {
-    teachersContainer.innerHTML = "";
+  // Обработчик для закрытия модального окна
+  closeModalButton.addEventListener("click", () => closeVideoModal());
 
-    teachers.forEach((teacher) => {
-      const teacherElement = document.createElement("div");
-      teacherElement.classList.add("teacher");
-
-      const link = teacher.link
-        ? `<a href="${teacher.link}" target="_blank">
-                  <img src="../assets/icons/icon_play.svg" alt="Icon" class="icon-play"/>
-             </a>`
-        : "";
-
-      teacherElement.innerHTML = `
-           <img
-              src="../assets/teachers/${teacher.photo}.webp"
-              alt="Photo of ${teacher.name}"
-              class="teacher-photo"
-              onload="handleImageLoad()"
-            />
-            <h3>${teacher.name}</h3>
-            <p>“${teacher.description}”${link}</p>
-          `;
-
-      teachersContainer.appendChild(teacherElement);
-    });
-  }
+  // Закрытие модального окна при клике вне его содержимого
+  document.querySelector("#video-modal").addEventListener("click", (event) => {
+    if (event.target === event.currentTarget) {
+      closeVideoModal();
+    }
+  });
 });
+
+function closeVideoModal() {
+  modalVideoContainer.style.display = "none";
+  iframe.src = ""; // Останавливаем видео
+  document.body.style.overflow = "auto"; // Включаем прокрутку основного контента
+}
+
+function showTeachers(teachers) {
+  teachersContainer.innerHTML = "";
+
+  teachers.forEach((teacher) => {
+    const teacherElement = document.createElement("div");
+    teacherElement.classList.add("teacher");
+
+    const link = teacher.link
+      ? `<button class="youtube-button" onclick="showTeacherVideo('${teacher.link}')">
+                <img src="../assets/icons/icon_play.svg" alt="Icon" class="icon-play"/>
+           </button>`
+      : "";
+
+    teacherElement.innerHTML = `
+         <img
+            src="../assets/teachers/${teacher.photo}.webp"
+            alt="Photo of ${teacher.name}"
+            class="teacher-photo"
+            onload="handleImageLoad()"
+          />
+          <h3>${teacher.name}</h3>
+          <p>“${teacher.description}”${link}</p>
+        `;
+
+    teachersContainer.appendChild(teacherElement);
+  });
+}
+
+function showTeacherVideo(link) {
+  console.log("Show YouTube Video", link);
+  const modalVideoContainer = document.querySelector("#video-modal");
+  var iframe = document.getElementById("videoIframe");
+
+  iframe.src = link.includes("?") ? `${link}&autoplay=1` : `${link}?autoplay=1`;
+
+  modalVideoContainer.style.display = "block";
+}
 
 function updateButtonVisibility() {
   const totalHeight = teachersContainer.scrollHeight;
