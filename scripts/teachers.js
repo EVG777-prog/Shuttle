@@ -59,7 +59,7 @@ function showTeachers(teachers) {
     teacherElement.classList.add("teacher");
 
     const link = teacher.link
-      ? `<button class="youtube-button" onclick="showTeacherVideo('${teacher.link}')">
+      ? ` <button class="youtube-button" onclick="showTeacherVideo('${teacher.link}')">
                 <img src="../assets/icons/icon_play.svg" alt="Icon" class="icon-play"/>
            </button>`
       : "";
