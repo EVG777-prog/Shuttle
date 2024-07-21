@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const pageTitle = document.title;
 
   const schedule = await getLessons(pageTitle);
+
+  const teachers = await getTeachers(pageTitle);
+
   let rates;
 
   // Если расписания нет, скрываем секцию
@@ -155,6 +158,16 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         ? `${rate.price} грн/${rate.quantity} уроків`
         : lesson.rate;
 
+      const teacher = teachers.filter(
+        (teacher) => teacher.name === lesson.teacher
+      )[0];
+
+      const link = teacher.link
+        ? ` <button class="youtube-button" onclick="showTeacherVideo('${teacher.link}')">
+                <img src="../assets/icons/icon_play.svg" alt="Icon" class="icon-play"/>
+           </button>`
+        : "";
+
       lessonElement.innerHTML = `
             <span class="schedule-card_start">${
               lesson.timeStart ? `Старт: ${lesson.timeStart}` : ""
@@ -168,7 +181,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
               </div>
               <div class="schedule-card_info-data">
                 <p class="schedule-card_schedule">${lesson.schedule}</p>
-                <p class="schedule-card_teacher">${lesson.teacher}</p>
+                <p class="schedule-card_teacher">${lesson.teacher} ${link}</p>
                 <p class="schedule-card_rate">${rateText}</p></div>
               </div>
             </div>
