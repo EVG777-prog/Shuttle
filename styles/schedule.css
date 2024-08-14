@@ -167,6 +167,14 @@
   color: #156d9e;
 }
 
+.schedule-card.C1 {
+  border-color: red;
+}
+
+.schedule-card.C1 .schedule-card_level {
+  color: red;
+}
+
 .schedule-card_level {
   font-size: 3rem;
   text-align: right;

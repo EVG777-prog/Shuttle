@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   const schedule = await getLessons(pageTitle);
 
+  console.log(schedule);
+
   const teachers = await getTeachers(pageTitle);
 
   let rates;
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     const customSelects = document.querySelectorAll(
       ".schedule-section .custom-select"
     );
+
+    fillOptionsSelect();
 
     customSelects.forEach(function (customSelect) {
       const selectedValue = customSelect.querySelector(".selected-value");
@@ -240,6 +244,23 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
       setHeightContainer();
     }
+  }
+
+  function fillOptionsSelect() {
+    const selectLevelOptions = document.querySelector("#selectLevelOptions");
+
+    const uniqueLevels = [...new Set(schedule.map((obj) => obj.level))];
+
+    console.log(uniqueLevels);
+
+    const listItemsHtml = uniqueLevels
+      .map((level) => `<li data-value="${level}">${level}</li>`)
+      .join("");
+
+    selectLevelOptions.innerHTML = `
+    <li data-value="any">Всі рівні</li>
+    ${listItemsHtml}
+    `;
   }
 
   function setHeightContainer() {
