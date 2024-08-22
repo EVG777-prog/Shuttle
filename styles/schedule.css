@@ -168,11 +168,11 @@
 }
 
 .schedule-card.C1 {
-  border-color: red;
+  border-color: black;
 }
 
 .schedule-card.C1 .schedule-card_level {
-  color: red;
+  color: black;
 }
 
 .schedule-card_level {
@@ -271,6 +271,15 @@
   width: 20px;
   height: 20px;
   vertical-align: text-bottom; /* Выравнивание по нижней части текста */
+}
+
+.no-lessons-warning {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  color: red;
+  display: none;
 }
 
 /* Добавьте сюда любые медиа-запросы для адаптивного дизайна */

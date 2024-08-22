@@ -127,6 +127,14 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     scheduleContainer.innerHTML = "";
 
+    const textNoLessonsWarning = document.querySelector(".no-lessons-warning");
+
+    console.log(textNoLessonsWarning);
+
+    textNoLessonsWarning.style.display = lessons.length == 0 ? "block" : "none";
+
+    console.log(textNoLessonsWarning);
+
     let countColumns = 4;
 
     if (screenWidth < 716) {
