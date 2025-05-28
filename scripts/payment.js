@@ -1,9 +1,13 @@
 const token = "mRGb1l9pB2MKb8l0tXkdfxg";
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", async (event) => {
   // заполнение тарифов
   const cardsList = document.querySelector(".payment-cards");
   const checkboxSale = document.querySelector(".custom-checkbox input");
+
+  showRates(1);
+
+  rates = await getRates();
 
   showRates(1);
 

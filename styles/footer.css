@@ -110,9 +110,10 @@ footer .contact-info .phone-number:hover {
   text-decoration: underline;
 }
 footer .contact__social {
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: space-around;
+  margin-right: -10%;
 }
 
 footer .contact__icon {
@@ -133,6 +134,9 @@ footer .icon-telegram:hover img {
 }
 footer .icon-email:hover img {
   content: url("../assets/icons/icon_email_hover.svg");
+}
+footer .icon-tiktok:hover img {
+  content: url("../assets/icons/icon_tiktok_hover.svg");
 }
 
 .footer-section .button {

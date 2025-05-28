@@ -135,8 +135,8 @@ header .contact-info {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 header .contact-info .phone-number {
   margin-bottom: 1rem;
@@ -154,9 +154,10 @@ header .contact-info .phone-number:hover {
   text-decoration: underline;
 }
 header .contact__social {
-  width: 100%;
+  width: 120%;
   display: flex;
   justify-content: space-around;
+  margin-right: -10%;
 }
 
 header .contact__icon {
@@ -177,6 +178,9 @@ header .icon-telegram:hover img {
 }
 header .icon-email:hover img {
   content: url("../assets/icons/icon_email_hover.svg");
+}
+header .icon-tiktok:hover img {
+  content: url("../assets/icons/icon_tiktok_hover.svg");
 }
 
 header .fullscreen-menu-buttons,

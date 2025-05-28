@@ -34,5 +34,19 @@ document.addEventListener("DOMContentLoaded", async (event) => {
         ratesList.appendChild(rateElement);
       }
     });
+
+    // Получаем модальное окно
+    const modal = document.getElementById("myModal");
+
+    // Получаем все кнопки, которые открывают модальное окно
+    const btns = ratesList.querySelectorAll(".apply-button");
+
+    // Добавляем обработчик событий для каждой кнопки
+    btns.forEach(function (btn) {
+      btn.onclick = function () {
+        modal.style.display = "block";
+        document.body.classList.add("no-scroll");
+      };
+    });
   }
 });

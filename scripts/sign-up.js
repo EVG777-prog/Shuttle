@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Получаем все кнопки, которые открывают модальное окно
   const btns = document.querySelectorAll(".apply-button");
-
   // Добавляем обработчик событий для каждой кнопки
   btns.forEach(function (btn) {
     btn.onclick = function () {
@@ -68,6 +67,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ).textContent, // Использование текста выбранного элемента
         experience: document.querySelector(".selected-value[data-default='no']")
           .textContent, // Использование текста выбранного элемента
+
+        utm_source: localStorage.getItem("utm_source"),
+        utm_medium: localStorage.getItem("utm_medium"),
+        utm_campaign: localStorage.getItem("utm_campaign"),
+        utm_term: localStorage.getItem("utm_term"),
+        utm_content: localStorage.getItem("utm_content"),
+        utm_referrer: localStorage.getItem("utm_referrer"),
       };
 
       if (modal.classList.contains("schedule")) {
