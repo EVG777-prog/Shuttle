@@ -453,10 +453,6 @@
             <li class="language">
               <a href="pages/italian.html">Італійська</a>
             </li>
-            <!-- <li class="language"><a href="pages/german.html">Німецька</a></li>
-            <li class="language">
-              <a href="pages/english.html">Англійська</a>
-            </li> -->
           </ul>
         </section>
 
@@ -615,6 +611,8 @@
                   name="name"
                   placeholder="Владислава"
                   required
+                  pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ'\-\s]+$"
+                  title="Лише літери (латиниця або кирилиця), пробіл, апостроф або дефіс"
                 />
               </div>
               <div class="form-row">
@@ -627,6 +625,8 @@
                   name="phone"
                   placeholder="+38 (063) 234 5678"
                   required
+                  pattern="^\+?\d{6,15}$"
+                  title="Тільки цифри, опціонально перший знак '+' (6-15 цифр)"
                 />
               </div>
             </div>
