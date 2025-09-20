@@ -476,6 +476,8 @@
                   name="name"
                   placeholder="Владислава"
                   required
+                  pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ'\-\s]+$"
+                  title="Лише літери (латиниця або кирилиця), пробіл, апостроф або дефіс"
                 />
               </div>
               <div class="form-row">
@@ -486,8 +488,10 @@
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="+38 (063) 234 5678"
+                  placeholder="+380632345678"
                   required
+                  pattern="^\+?\d{6,15}$"
+                  title="Тільки цифри, опціонально перший знак '+' (6-15 цифр)"
                 />
               </div>
             </div>
