@@ -168,11 +168,11 @@
 }
 
 .schedule-card.C1 {
-  border-color: black;
+  border-color: red;
 }
 
 .schedule-card.C1 .schedule-card_level {
-  color: black;
+  color: red;
 }
 
 .schedule-card_level {
