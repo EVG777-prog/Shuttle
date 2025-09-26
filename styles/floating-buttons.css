@@ -8,19 +8,33 @@
 .chat-btn {
   bottom: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
-}
-.chat-btn img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9bab; /* базовый розовый фон */
+  border-radius: 50%; /* круг */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.chat-btn img:hover {
-  transform: scale(1.1);
+.chat-btn:hover {
+  background-color: #f4667d; /* фон при наведении */
+  transform: scale(1.1); /* слегка увеличиваем */
+}
+
+.chat-btn svg {
+  width: 35px;
+  height: 32px;
+  /* цвет облачка через stroke */
+  stroke: #fff;
+  fill: none;
+  transition: stroke 0.3s;
+}
+
+.chat-btn:hover svg {
+  stroke: #fff; /* можно оставить белым, или менять цвет отдельно */
 }
 
 .to-top-btn {
