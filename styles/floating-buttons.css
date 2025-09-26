@@ -27,14 +27,8 @@
 .chat-btn svg {
   width: 35px;
   height: 32px;
-  /* цвет облачка через stroke */
-  stroke: #fff;
   fill: none;
   transition: stroke 0.3s;
-}
-
-.chat-btn:hover svg {
-  stroke: #fff; /* можно оставить белым, или менять цвет отдельно */
 }
 
 .to-top-btn {
