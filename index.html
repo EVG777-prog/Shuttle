@@ -108,6 +108,7 @@
     <link rel="stylesheet" href="styles/index_lang.css" />
     <link rel="stylesheet" href="styles/sign-up.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/floating-buttons.css" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -611,7 +612,7 @@
                   name="name"
                   placeholder="Владислава"
                   required
-                  pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ'\-`’\s]+$"
+                  pattern="^[A-Za-zА-Яа-яЁёЇїІіЄєҐґ'\-`’ʼ\s]+$"
                   title="Лише літери (латиниця або кирилиця), пробіл, апостроф або дефіс"
                 />
               </div>
@@ -686,6 +687,24 @@
       </div>
     </div>
 
+    <!-- Кнопка Telegram -->
+    <a
+      href="https://telegram.me/shuttle_school1"
+      target="_blank"
+      class="chat-btn floating-btn"
+    >
+      <img src="assets/icons/icon_chat.svg" alt="Chat" />
+    </a>
+
+    <!-- Кнопка Наверх -->
+    <a
+      id="toTopBtn"
+      class="to-top-btn floating-btn"
+      href="#top"
+      aria-label="Нагору"
+    >
+      <img src="assets/icons/icon_up.svg" alt="Нагору" />
+    </a>
     <script
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
@@ -694,5 +713,6 @@
     <script src="scripts/saveUTM.js"></script>
     <script src="scripts/burger-menu.js"></script>
     <script src="scripts/sign-up.js"></script>
+    <script src="scripts/floating-buttons.js"></script>
   </body>
 </html>

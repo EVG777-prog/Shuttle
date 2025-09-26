@@ -6,11 +6,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Получаем все кнопки, которые открывают модальное окно
   const btns = document.querySelectorAll(".apply-button");
+
+  // Получаем все "плавающие" кнопки (чат и наверх)
+  const floatingBtns = document.querySelectorAll(".floating-btn");
+
   // Добавляем обработчик событий для каждой кнопки
   btns.forEach(function (btn) {
     btn.onclick = function () {
       modal.style.display = "block";
       document.body.classList.add("no-scroll");
+      floatingBtns.forEach((btn) => btn.classList.add("hidden"));
     };
   });
 
@@ -35,6 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     modal.style.display = "none";
     document.body.classList.remove("no-scroll");
     modal.classList.remove("schedule");
+    floatingBtns.forEach((btn) => btn.classList.remove("hidden"));
 
     // Сброс формы
     document.querySelector(".modal-form").reset();
